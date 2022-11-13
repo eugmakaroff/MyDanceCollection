@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Mouse Move Parallax ✨</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<style>
+  .cssSlider {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+    background-image: url(../Pictures/abonsbackground.jpg);
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.cssSlider .slides {
+	overflow: hidden;
+	overflow: hidden;
+	width: 50%;
+  float: left;
+	height: 90vmin;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.cssSlider .slides > li {
+	width: 50%;
+	height: 90vmin;
+	position: absolute;
+	z-index: 1;
+	overflow: hidden;
+}
+.cssSlider .slides > li > img {
+	width: 65%;
+	margin-left: 200px;
+	height: auto;
+}
+/*
+.cssSlider .slides > li:first-child:not(:target) {
+	z-index: 1;
+	-webkit-transform: translateY(0%);
+	        transform: translateY(0%);
+}
+*/
+.cssSlider .thumbnails {
+	display: block;
+  width: 50%;
+  float: right;
+	position: relative;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.cssSlider .thumbnails > li {
+	float: left;
+  display: contents;
+  text-align: center;
+}
+.cssSlider .thumbnails > li > a {
+	display: block;
+  text-align: left;
+  padding-left: 50px;
+}
+.cssSlider .thumbnails > li > a > img {
+	width: 100%;
+	height: auto;
+}
+
+.cssSlider .slides li:target {
+	z-index: 3;
+	-webkit-animation: slide 1s 1;
+}
+/* .cssSlider .slides li:not(:target):nth-child(1) {
+    opacity: 1;
+	-webkit-animation: hidden 1s 1;
+} */
+.cssSlider .slides li:not(:target) {
+    opacity: 0;
+	-webkit-animation: hidden 1s 1;
+}
+@keyframes slide {
+	0% {
+		-webkit-transform: translateX(-100%);
+		        transform: translateX(-100%);
+	}
+	100% {
+        opacity: 1;
+		-webkit-transform: translateX(0%);
+		        transform: translateX(0%);
+	}
+}
+@keyframes hidden {
+	0% {
+		z-index: 2;
+		-webkit-transform: translateX(0%);
+		        transform: translateX(0%);
+	}
+	100% {
+		z-index: 2;
+		-webkit-transform: translateX(100%);
+		        transform: translateX(100%);
+	}
+}
+
+.cssSlider p{
+	font-size: 20px;
+	padding-top: 10px;
+	color: aliceblue;
+}
+</style>
+
+<body>
+
+  <div class="cssSlider">
+    <ul class="slides">
+        <li id="slide1">
+          <iframe width="100%"
+            height="330"
+            src="https://www.youtube.com/embed/YIZl2RiVLlg"
+            title="НОВЫЕ ТАНЦЫ: 2 сезон 10 выпуск"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </li>
+        <li id="slide2">
+          <iframe width="100%"
+            height="330"
+            src="https://www.youtube.com/embed/YIZl2RiVLlg"
+            title="НОВЫЕ ТАНЦЫ: 2 сезон 10 выпуск"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </li>        
+        <li id="slide3">
+          <iframe width="100%"
+            height="330"
+            src="https://www.youtube.com/embed/YIZl2RiVLlg"
+            title="НОВЫЕ ТАНЦЫ: 2 сезон 10 выпуск"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </li>
+        <li id="slide4">
+          <iframe width="100%"
+            height="330"
+            src="https://www.youtube.com/embed/YIZl2RiVLlg"
+            title="НОВЫЕ ТАНЦЫ: 2 сезон 10 выпуск"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </li>
+    </ul>
+    <ul class="thumbnails">
+        <li><a href="#slide1"><p>CONTEMPORARY</p></a></li>
+        <li><a href="#slide2"><p>HIP-HOP</p></a></li>
+        <li><a href="#slide3"><p>KIDS DANCE</p></a></li>
+        <li><a href="#slide4"><p>LADY DANCE</p></a></li>
+        <li><a href="#slide4"><p>STRETCHING</p></a></li>
+        <li><a href="#slide4"><p>АКТЕРСКОЕ МАСТЕРСТВО</p></a></li>
+    </ul>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+  .flex-container {
+    display: inline-block;
+    position: relative;
+    background-image: url(../Pictures/abonsbackground.jpg);
+    background-size: 100%;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    line-height: 2;
+  }
+  
+  .aboncontainer {
+    display: inline-block;
+    text-align: center;
+    line-height: 1.5;
+    width: 28%;
+    margin-top: 20px;
+  }
+
+  .abonement {
+    width: 100%;
+    height: 100%;
+    border-radius: 23px;
+    margin-bottom: 20px;
+  }
+  .abonimagecontainer{
+    height: 70%;
+    margin: auto;
+    width: 80%;
+  }
+
+  .title{
+    font-family: 'Downcome';
+    letter-spacing: normal;
+    transform: scaleX(1.5);
+    font-style: italic;
+    font-size: 35px;
+  }
+  .text1{
+    font-size: 20px;
+  }
+  .text2{
+    font-size: 20px;
+  }
+  .bottom{
+    width: fit-content;
+    padding: 0 20px 0 20px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: green;
+    border-radius: 10px;
+    color: black;
+    font-size: 40px;
+    font-family: 'Downcome';
+    letter-spacing: normal;
+    transform: scaleX(1.5);
+    /* font-style: italic; */
+  }
+.contbottom{
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+  .contbottomtexttitle{
+    font-size: 30px;
+  }
+  
+  .contbottomtext{
+    font-size: 15px;
+  }

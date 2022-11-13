@@ -1,0 +1,90 @@
+.content{
+  width: 80%;
+  position: relative;
+  height: 250px;
+  margin: auto;
+  background-color: rgb(26, 24, 24);
+  opacity: 0.99;
+  transition: 0.3s;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  z-index: 1;
+}
+.content img{
+  float: right;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 100%;
+  width: 40%;
+  transition: 0.3s;
+}
+.styletext{
+  width: 60%;
+  display: block;
+  text-align: center;
+  padding-top: 30px;
+  font-family: 'Downcome';
+  font-size: 70px;
+  font-style: italic;
+  color: white;
+}
+.videolink{
+  width: 60%;
+  display: block;
+
+  text-align: center;
+  padding-top: 30px;
+  font-size: 40px;
+  font-style: italic;
+  color: white;
+}
+
+.videobox{
+  display: none;
+  width: 80%;
+  height: 70%;
+  overflow: auto;
+  background-color: black;
+  border: 5px solid white;
+  position: fixed;
+  transform: translateX(-50%);
+  left: 50%;
+  z-index: 9999;
+}
+
+.iframe{
+  padding: 30px;
+  width: 50%;
+  display: inline-block;
+}
+.boxsecondtext{
+  width: 40%;
+  color: white;
+  font-size: 20px;
+  display: inline-block;
+}
+.boxsecondtext span{
+  color: gray;
+  font-size: 30px;
+  display: inline-block;
+}
+
+.cancellation{
+   padding: 20px;
+  font-size: 50px;
+  color: white;
+  position: fixed;
+  right: 0;
+}
+
+.container{
+  padding-top: 50px;
+  display: block;
+  position: relative;
+}
+
+@keyframes bordering {
+100% {
+      border: 5px solid green;
+}
+}

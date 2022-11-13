@@ -1,0 +1,242 @@
+.container{
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap;
+}
+.card{
+  position: relative;
+}
+.face{
+  width:200px;
+  height: 200px;
+  transition:.4s; 
+}
+.face1{
+  position: relative;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-content:center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+.card:hover .face.face1{
+  transform: translateY(0);
+  box-shadow:
+  inset 0 0 60px whitesmoke,
+  inset 20px 0 80px rgb(29,120,6),
+  inset -20px 0 80px #0ff,
+  inset 20px 0 300px rgb(29,120,6),
+  inset -20px 0 300px #0ff,
+  0 0 50px #fff,
+  -10px 0 80px rgb(29,120,6),
+  10px 0 80px #0ff; 
+}
+.face.face1 .content{
+  opacity: .6;
+  transition:  0.5s;
+  text-align: center;
+}
+.card:hover .face.face1 .content{
+  opacity: 1;
+}
+.face.face1 .content i{
+  font-size: 3em;
+  color: white;
+  display: inline-block;  
+}
+.face.face1 .content h3{
+  font-size: 1em;
+  color: white;
+  text-align: center;
+}
+.face.face1 .content a{
+   transition: .5s;
+}
+.face.face2{
+  position: relative;
+  background: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0,0,0,.8);
+  transform: translateY(-100px);
+}
+.card:hover .face.face2{
+  transform: translateY(0);
+}
+.container p, a{
+  font-size: 10pt;
+  margin: 0 ;
+  padding: 0;
+  color:#333;
+}
+.container a{
+  text-decoration:none;
+  color: black;
+  box-sizing: border-box;
+  outline : 1px dashed #333;
+  padding: 10px;
+  margin: 15px 0 0;
+  display: inline-block;
+}
+.container a:hover{
+  background: #333 ;
+  color: whitesmoke; 
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+.descr1{
+  position: relative;
+  margin: auto;
+  margin-top: 100px;
+  font-family: 'Downcome';
+  font-style: italic;
+  transform: scaleX(1.5);
+  width: 600px;
+  text-align: center;
+  font-size: 50px;
+  z-index: 2;
+  color: white;
+}
+.descr{
+  position: relative;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: 'Downcome';
+  font-style: italic;
+  transform: scaleX(1.5);
+  width: 600px;
+  text-align: center;
+  font-size: 50px;
+  z-index: 2;
+  color: white;
+}
+.cssSlider {
+	display: block;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+.cssSlider .slides {
+	overflow: hidden;
+	overflow: hidden;
+	width: 100%;
+	height: 90vmin;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.cssSlider .slides > li {
+	width: 100%;
+	height: 90vmin;
+	position: absolute;
+	z-index: 1;
+	overflow: hidden;
+}
+.cssSlider .slides > li > img {
+	width: 100%;
+  margin: auto;
+	height: 100%;
+}
+/*
+.cssSlider .slides > li:first-child:not(:target) {
+	z-index: 1;
+	-webkit-transform: translateY(0%);
+	        transform: translateY(0%);
+}
+*/
+.cssSlider .thumbnails {
+	display: block;
+	position: relative;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.cssSlider .thumbnails > li {
+	float: left;
+	width: 25%;
+  height: 300px;
+}
+.cssSlider .thumbnails > li > a {
+	display: block;
+}
+.cssSlider .thumbnails > li > a > img {
+	width: 100%;
+	height: auto;
+}
+
+.cssSlider .slides li:target {
+	z-index: 3;
+	-webkit-animation: slide 1s 1;
+}
+.cssSlider .slides li:not(:target) {
+	-webkit-animation: hidden 1s 1;
+}
+@keyframes slide {
+	0% {
+		-webkit-transform: translateX(-100%);
+		        transform: translateX(-100%);
+	}
+	100% {
+		-webkit-transform: translateX(0%);
+		        transform: translateX(0%);
+	}
+}
+@keyframes hidden {
+	0% {
+		z-index: 2;
+		-webkit-transform: translateX(0%);
+		        transform: translateX(0%);
+	}
+	100% {
+		z-index: 2;
+		-webkit-transform: translateX(100%);
+		        transform: translateX(100%);
+	}
+}
+
+
+
+
+html,
+body {
+  background-color: #333;
+}
+.images {
+  padding: 10px 0 10px 0;
+  list-style: none;
+  width: 95%;
+  margin: auto;
+}
+.images:hover .image {
+  opacity: 0.8;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+}
+.images .image {
+  cursor: pointer;
+  display: inline-block;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin: 1px;
+  width: 33%;
+  opacity: 1;
+  transition: all 0.3s linear;
+}
+.images .image img{
+    width: 100%;
+    height: 100%;
+}
+.images .image:hover {
+  box-shadow: 0 5px 15px gba(0, 0, 0, 0.4);
+  opacity: 1;
+  transform: scale(1.08);
+  -webkit-filter: blur(0);
+  filter: blur(0);
+}
