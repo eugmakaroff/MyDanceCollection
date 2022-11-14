@@ -96,14 +96,18 @@
     }
   .title{
     font-size: 15px;
+    width: fit-content;
+    margin: auto;
+    right: 0;
+    left: 0;
   }
   .text1{
     font-size: 10px;
-    width: 100px;
+    width: 150px;
   }
   .text2{
     font-size: 10px;
-    width: 100px;
+    width: 150px;
   }
   .bottom{
     font-size: 15px;
