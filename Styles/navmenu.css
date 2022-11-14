@@ -58,7 +58,7 @@ Main Components
     }
     .cd-main-nav a {
       display: block;
-      font-size: 1.8rem;
+      font-size: 1.3rem;
       padding: .5em 1em .5em 1em;
       color: #ffffff;
       -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
@@ -242,7 +242,7 @@ header::before {
   }
   .cd-main-nav a {
       display: block;
-      /* font-size: 1.8rem; */
+      font-size: 1.3rem;
       padding: .9em 2em .9em 1em;
       border-bottom: 1px solid #33414a;
       color: #ffffff;
@@ -537,7 +537,7 @@ header::before {
   position: relative;
   z-index: 2;
   min-height: 100vh;
-  padding-top: 50px;
+  /* padding-top: 50px; */
   -webkit-transition: -webkit-transform 0.3s;
   -moz-transition: -moz-transform 0.3s;
   transition: transform 0.3s;

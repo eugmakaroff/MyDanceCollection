@@ -57,7 +57,6 @@
 	width: 60%;
 	letter-spacing: normal;
 	transform: scaleX(1.5);
-	font-size: 90px;
 	font-family: 'Downcome';
 	text-shadow: 
 	1px -1px 5px #171717, 
@@ -102,6 +101,7 @@
 	font-weight: normal;
 	text-transform: uppercase;
 	opacity: 0;
+	margin: auto;
 	text-align: center;
 	font-size: 30px;
 	transition: .7s;
@@ -147,4 +147,30 @@
 	padding: 10px;
 	color: white;
 	transition: 1s;
+  }
+
+  .hiddenvideo{
+	display: none;
+  }
+
+
+
+
+
+
+  @media only screen and (max-width: 1255px) {
+	  .hiddenvideo{
+		display: block;
+	  }
+	  .mydc_video_text{
+		top: 30%;
+		font-size: 40px;
+	  }
+	  p.view-project-hover {
+		font-size: 10px;
+		width: 70%;
+		top: 45%;
+		right: 0;
+		left: 0;
+	  }
   }
