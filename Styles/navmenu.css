@@ -28,7 +28,7 @@ a {
 .logoimagemain {
   /* margin-left: 20px;
   margin-right: 50px; */
-  /* padding-top: 20px; */
+  margin-left: 10px;
   width: 100px;
 }
 
@@ -58,6 +58,7 @@ Main Components
     }
     .cd-main-nav a {
       display: block;
+      font-family: 'Uni Sans';
       font-size: 1.3rem;
       padding: .5em 1em .5em 1em;
       color: #ffffff;
@@ -72,7 +73,7 @@ Main Components
 }
 /*button zapis online*/
 .button4{
-  font-style: italic;
+  /* font-style: italic; */
   vertical-align: middle;
   font-family: Arial,Helvetica,FreeSans,"Liberation Sans","Nimbus Sans L",sans-serif;
   font-size: 1em;
@@ -84,7 +85,7 @@ Main Components
   padding: .3em 1em;
   outline: none;
   border: none;
-  border-radius: 10px;
+  border-radius: 7px;
   background: linear-gradient(135deg, rgba(48,255,0,1) 0%, rgba(48,48,48,1) 62%);
   box-shadow: inset 0 -1px 1px, inset 0 1px 1px 0 0 0 1px, rgba(0,0,0,.3) 0 2px 5px;
   -webkit-animation: pulsate 1.2s linear infinite;
@@ -242,7 +243,7 @@ header::before {
   }
   .cd-main-nav a {
       display: block;
-      font-size: 1.3rem;
+      font-size: 1.05rem;
       padding: .9em 2em .9em 1em;
       border-bottom: 1px solid #33414a;
       color: #ffffff;
@@ -384,7 +385,7 @@ header::before {
   }
   .cd-main-nav li a {
     /* display: inline-block; */
-    padding: 0 .8em 0 .8em;
+    padding: 0 .6em 0 .6em;
     line-height: 1;
     /* font-size: 2rem; */
     font-family: 'Uni Sans';

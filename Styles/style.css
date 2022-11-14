@@ -39,6 +39,7 @@ Primary style
         text-align: center;
       }
       .cd-main-nav a {
+        font-family: 'Uni Sans';
         display: block;
         font-size: 1.8rem;
         padding: .5em 1em .5em 1em;
