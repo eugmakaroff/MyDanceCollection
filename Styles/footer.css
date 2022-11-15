@@ -94,7 +94,7 @@ header a:focus span {
 	.footer-distributed .footer-right {
 		display: inline-block;
 		width: fit-content;
-		width: 20%;
+		/* width: 20%; */
 		text-align: center;
 		margin: 0 33px 0 33px;
 		vertical-align: middle;
