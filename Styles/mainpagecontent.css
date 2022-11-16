@@ -42,8 +42,10 @@
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	background-image: url(../Videos/LOGO.gif);
+	background-image: url(../Videos/Logo_intro_4K\ \(1\).gif);
 	background-position: center;
+	background-size: 30%;
+	background-repeat: no-repeat;
 	}
   
   .mydc_video{
