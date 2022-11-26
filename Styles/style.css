@@ -487,7 +487,6 @@ Primary style
     z-index: 2;
     min-height: 100vh;
     padding-top: 50px;
-    background-color: #f2f2f2;
     -webkit-transition: -webkit-transform 0.3s;
     -moz-transition: -moz-transform 0.3s;
     transition: transform 0.3s;
