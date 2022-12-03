@@ -20,18 +20,60 @@ body{
   background-color: black;
   margin: 0px;
 }
+header a {
+	overflow: hidden;
+	padding: 0 4px;
+	height: 1em;
+}
+.nospan{
+  overflow: visible;
+  height: fit-content;
+  width: fit-content;
+  padding: 0px !important;
+}
 
-a {
-  text-decoration: none;
+header a span {
+	position: relative;
+	display: inline-block;
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+header a span::before {
+	position: absolute;
+	top: 100%;
+	content: attr(data-hover);
+	font-weight: 700;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+header a:hover span,
+header a:focus span {
+	-webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	transform: translateY(-100%);
 }
 
 .logoimagemain {
-  /* margin-left: 20px;
-  margin-right: 50px; */
-  margin-left: 10px;
   width: 100px;
 }
-
+#hideafterscrolling1{
+  padding: 20px;
+}
+#hideafterscrolling7, #hideafterscrolling8{
+  margin-top: 45px;
+  float: right;
+}
+#hideafterscrolling7{
+  margin-right: 20px;
+}
+.button4 p{
+  height: 100%;
+  padding-top: 7px;
+}
 /* -------------------------------- 
 
 Main Components 
@@ -50,8 +92,14 @@ Main Components
 #showinmobilemenu{
   display: none;
   text-align: center;
+  width: fit-content;
+  margin: auto;
+  font-size: 30px;
 }
-@media only screen and (max-width: 1000px) {
+#showinmobilemenu a{
+  font-size: 20px;
+}
+@media only screen and (max-width: 853px) {
   #showinmobilemenu{
       display: block;
       text-align: center;
@@ -73,35 +121,19 @@ Main Components
 }
 /*button zapis online*/
 .button4{
-  /* font-style: italic; */
   vertical-align: middle;
-  font-family: Arial,Helvetica,FreeSans,"Liberation Sans","Nimbus Sans L",sans-serif;
+  height: 30px;
   font-size: 1em;
   font-weight: 700;
   color: rgb(245,245,245);
   text-shadow: 0 -1px rgba(0,0,0,.1);
   text-decoration: none;
-  user-select: none;
   padding: .3em 1em;
   outline: none;
   border: none;
   border-radius: 7px;
   background: linear-gradient(135deg, rgba(48,255,0,1) 0%, rgba(48,48,48,1) 62%);
   box-shadow: inset 0 -1px 1px, inset 0 1px 1px 0 0 0 1px, rgba(0,0,0,.3) 0 2px 5px;
-  -webkit-animation: pulsate 1.2s linear infinite;
-  animation: pulsate 1.2s linear infinite;
-  margin-right: 30px;
-}
-.button4:hover {
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-  cursor: pointer;
-}
-.button4:active {
-  top: 1px;
-  color: #fff;
-  text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;
-  box-shadow: 0 -1px 3px rgba(0,0,0,.3), 0 1px 1px #fff, inset 0 1px 2px rgba(0,0,0,.8), inset 0 -1px 0 rgba(0,0,0,.05);
 }
 header {
   font-family: 'Uni Sans';
@@ -111,7 +143,7 @@ header {
 3px -3px 5px #2b2b2b;
   position: fixed;
   z-index: 3;
-  height: 50px;
+  height: fit-content;
   width: 100%;
   top: 0;
   left: 0;
@@ -143,7 +175,7 @@ header::before {
   display: none;
   content: 'mobile';
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 853px) {
   header {
     height: 150px;
   }
@@ -164,17 +196,15 @@ header::before {
   position: absolute;
   left: 0;
   top: 0;
-  height: 100%;
+  height: 50px;
   width: 50px;
-  /* hide text */
   overflow: hidden;
+  white-space: nowrap;
   background-color: black;
   opacity: 0.8;
-  white-space: nowrap;
   color: transparent;
 }
 .cd-nav-trigger span {
-  /* hamburger icon created in CSS */
   position: absolute;
   height: 2px;
   width: 20px;
@@ -188,13 +218,11 @@ header::before {
   background-color: #ffffff;
 }
 .cd-nav-trigger span::before, .cd-nav-trigger span::after {
-  /* upper and lower lines of the menu icon */
   content: '';
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: #ffffff;
-  /* Force Hardware Acceleration */
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
   -ms-transform: translateZ(0);
@@ -237,7 +265,7 @@ header::before {
   -o-transform: translateY(0) rotate(45deg);
   transform: translateY(0) rotate(45deg);
 }
-@media only screen and (min-width: 1124px) {
+@media only screen and (min-width: 853px) {
   .cd-nav-trigger {
     display: none;
   }
@@ -263,10 +291,10 @@ header::before {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   visibility: hidden;
-  background: #1e262c;
-  -webkit-transition: visibility 0s 0.3s;
-  -moz-transition: visibility 0s 0.3s;
-  transition: visibility 0s 0.3s;
+  background: black;
+  -webkit-transition: visibility 0s 0s;
+  -moz-transition: visibility 0s 0s;
+  transition: visibility 0s 0s;
 }
 .cd-main-nav li ul {
   position: absolute;
@@ -321,7 +349,6 @@ header::before {
   display: inline-block;
   height: 2px;
   width: 10px;
-  background: #485c68;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -348,23 +375,12 @@ header::before {
   -o-transform-origin: 9px 50%;
   transform-origin: 9px 50%;
 }
-.cd-main-nav .go-back a {
-  padding-left: 2em;
-}
-.cd-main-nav .go-back a::before, .cd-main-nav .go-back a::after {
-  /* arrow goes on the left side - go back button */
-  left: 20px;
-  -webkit-transform-origin: 1px 50%;
-  -moz-transform-origin: 1px 50%;
-  -ms-transform-origin: 1px 50%;
-  -o-transform-origin: 1px 50%;
-  transform-origin: 1px 50%;
-}
+
 .cd-main-nav .placeholder {
   /* never visible or clickable- it is used to take up the same space as the .cd-subnav-trigger */
   display: none;
 }
-@media only screen and (min-width: 1124px) {
+@media only screen and (min-width: 853px) {
   .cd-main-nav {
     position: static;
     visibility: visible;
@@ -379,9 +395,9 @@ header::before {
   }
   .cd-main-nav li {
     display: inline-block;
-    height: 50px;
+    height: fit-content;
     vertical-align: middle;
-    padding: 0 .4em;
+    padding: .5em .5em;
   }
   .cd-main-nav li a {
     /* display: inline-block; */
@@ -412,8 +428,12 @@ header::before {
   }
   .cd-main-nav .cd-subnav-trigger {
     z-index: 0;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 5em;
+    /* border: 1px solid rgba(255, 255, 255, 0.2); */
+    font-size: 20px;
+    float: right !important;
+    /* border-radius: 5em; */
+    height: fit-content;
+    overflow: visible;
     -webkit-transition: border 0.3s;
     -moz-transition: border 0.3s;
     transition: border 0.3s;
@@ -422,7 +442,7 @@ header::before {
     border-color: rgba(255, 255, 255, 0.4);
   }
   .cd-main-nav .cd-subnav-trigger::before, .cd-main-nav .cd-subnav-trigger::after {
-    top: 22px;
+    /* top: 22px; */
     right: 17px;
     background-color: #ffffff;
     /* change transform-origin to rotate the arrow */
@@ -528,7 +548,7 @@ header::before {
   display: none;
   content: 'mobile';
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 853px) {
   .cd-main-content::before {
     content: 'desktop';
   }
@@ -550,7 +570,7 @@ header::before {
   -o-transform: translateX(260px);
   transform: translateX(260px);
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 853px) {
   .cd-main-content {
     padding-top: 80px;
   }
@@ -601,7 +621,7 @@ header::before {
   -o-transform: translateX(0);
   transform: translateX(0);
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 853px) {
   .no-js .cd-main-nav {
     height: 80px;
   }
@@ -625,8 +645,165 @@ header::before {
 .no-js .cd-main-content {
   padding-top: 0;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 853px) {
   .no-js .cd-main-content {
     padding-top: 80px;
   }
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1400px) {
+  .cd-main-nav a{
+    font-size: 1rem;
+  }
+  .logoimagemain{
+    width: 95px;
+  }
+}
+@media only screen and (max-width: 1350px) {
+  .cd-main-nav a{
+    font-size: 0.95rem;
+  }
+  .logoimagemain{
+    width: 90px;
+  }
+  #hideafterscrolling7, #hideafterscrolling8{
+    margin-top: 40px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .cd-main-nav a{
+    font-size: 0.9rem;
+  }
+  .logoimagemain{
+    width: 85px;
+  }
+  .button4{
+    height: 27px;
+    font-size: 0.8em !important;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .cd-main-nav a{
+    font-size: 0.85rem;
+  }
+  .padding-top_header{
+    padding-top: 30px !important;
+  }
+  .logoimagemain{
+    width: 80px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .cd-main-nav a{
+    font-size: 0.8rem;
+  }
+  .padding-top_header{
+    padding-top: 25px !important;
+  }
+  .logoimagemain{
+    width: 75px;
+  }
+  #hideafterscrolling7, #hideafterscrolling8{
+    margin-top: 35px;
+  }
+  .button4{
+    height: 25px;
+    font-size: 0.7em !important;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .cd-main-nav a{
+    font-size: 0.75rem;
+  }
+  .logoimagemain{
+    width: 70px;
+  }
+  .button4{
+    height: 23px;
+    font-size: 0.6em !important;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .cd-main-nav a{
+    font-size: 0.7rem;
+  }
+  .logoimagemain{
+    width: 65px;
+  }
+  #hideafterscrolling7, #hideafterscrolling8{
+    margin-top: 32px;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .cd-main-nav a{
+    font-size: 0.65rem;
+  }
+  .logoimagemain{
+    width: 60px;
+  }
+  .button4{
+    height: 21px;
+    font-size: 0.5em !important;
+  }
+  .button4 p{
+    padding-top: 6px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .cd-main-nav a{
+    font-size: 0.6rem;
+  }
+  .logoimagemain{
+    width: 55px;
+  }
+  .button4{
+    height: 19px;
+    /* font-size: 0.5em !important; */
+  }
+  #hideafterscrolling7, #hideafterscrolling8{
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .cd-main-nav a{
+    font-size: 0.55rem;
+  }
+  .logoimagemain{
+    width: 50px;
+  }
+  .button4{
+    height: 17px;
+    font-size: 0.45em !important;
+  }
+  .button4 p{
+    padding-top: 5px;
+  }
+  #hideafterscrolling7, #hideafterscrolling8{
+    margin-top: 30px;
+  }
+}
+
+
+
+
+
+
+.tel_bottom{
+  position: absolute; margin: auto; width: 100% !important; bottom: 40px;
+}
+.socials_bottom{
+  position: absolute; margin: auto; width: 100% !important; bottom: 0;
+}
+.top_tel_number{
+  font-size: 15px !important; padding-top: 0; padding-bottom: 0;
+}
+.bottom_tel_number{
+  font-size: 15px !important;
 }

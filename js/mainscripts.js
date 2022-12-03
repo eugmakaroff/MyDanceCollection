@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $(window).scroll(function(){
-        if (window.innerWidth > 1000){
+        if (window.innerWidth > 853){
         if($(window).scrollTop()<1){
             $('#hideafterscrolling1').fadeIn(100)
             $('#hideafterscrolling2').fadeIn(100)
@@ -29,7 +29,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $(window).scroll(function(){
-        if (window.innerWidth > 1000){
+        if (window.innerWidth > 853){
         if($(window).scrollTop()>1){
             $('#top').fadeIn(100)
         }else{

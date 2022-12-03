@@ -579,3 +579,19 @@ Primary style
     }
   }
   
+
+
+
+
+  .tel_bottom{
+    position: absolute; margin: auto; width: 100% !important; bottom: 40px;
+  }
+  .socials_bottom{
+    position: absolute; margin: auto; width: 100% !important; bottom: 0;
+  }
+  .top_tel_number{
+    font-size: 15px !important; padding-top: 0; padding-bottom: 0;
+  }
+  .bottom_tel_number{
+    font-size: 15px !important;
+  }

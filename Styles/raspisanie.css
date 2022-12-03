@@ -10,7 +10,6 @@
 }
 .cssSlider .slides {
 	overflow: hidden;
-	overflow: hidden;
 	width: 100%;
 	height: 80vmin;
 	margin: 0;
@@ -60,50 +59,50 @@
 	height: auto;
 }
 
-.cssSlider .slides li:target {
-	z-index: 3;
-	-webkit-animation: slide 1s 1;
+.Circle{
+	width: 70px;
+	height: 70px;
+	font-size: 15px;
+	border: 1px solid white;
+	border-radius: 50px;
+	background-color: black;
 }
-/* .cssSlider .slides li:not(:target):nth-child(1) {
-    opacity: 1;
-	-webkit-animation: hidden 1s 1;
-} */
-.cssSlider .slides li:not(:target) {
-    opacity: 0;
-	-webkit-animation: hidden 1s 1;
+.Circle hr{
+	width: 50%;
+	margin: auto;
+	margin-top: 0;
+	margin-bottom: 0;
 }
-@keyframes slide {
-	0% {
-		-webkit-transform: translateX(-100%);
-		        transform: translateX(-100%);
-	}
-	100% {
-        opacity: 1;
-		-webkit-transform: translateX(0%);
-		        transform: translateX(0%);
-	}
-}
-@keyframes hidden {
-	0% {
-		z-index: 2;
-		-webkit-transform: translateX(0%);
-		        transform: translateX(0%);
-	}
-	100% {
-		z-index: 2;
-		-webkit-transform: translateX(100%);
-		        transform: translateX(100%);
-	}
+.Circle p{
+	padding: 12px 0 5px 0;
+	color: white;
 }
 
 
 
 @media only screen and (max-width: 500px) {
+	.Circle{
+		width: 50px;
+		height: 50px;
+		font-size: 10px;
+		border: 1px solid white;
+		border-radius: 25px;
+		background-color: black;
+	}
+	.Circle hr{
+		width: 50%;
+		margin: auto;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.Circle p{
+		padding: 8px 0 4px 0;
+		color: white;
+	}
 	.cssSlider .slides {
 		overflow: hidden;
-		overflow: hidden;
 		width: 100%;
-		height: 80vmin;
+		height: 70vmin;
 		margin: 0;
 		margin-top: 50px;
 		padding: 0;
@@ -112,7 +111,7 @@
 	}
 	.cssSlider .slides > li {
 		width: 100%;
-		height: 80vmin;
+		height: 70vmin;
 		position: absolute;
 		z-index: 1;
 		overflow: hidden;
