@@ -1,53 +1,4 @@
-.se-container{
-	font-style: italic;
-	display: block;
-	width: 100%;
-	background-color: black;
-    /* background-image: url("../Pictures/fon.png"); */
-    background-size: 100%;
-    background-position: center;
-	overflow: hidden;
-	position: relative;
-}
 
-.firstbox{
-	position: relative;
-	width: 100%;
-	height: 400px;
-	background-color: red;
-}
-.secondbox{
-	position: relative;
-	width: 100%;
-	height: 600px;
-	background-color: yellow;
-}
-.thirdbox{
-	position: relative;
-	width: 100%;
-	height: 400px;
-	background-color: green;
-}
-.ryhr{
-	background-color: red;
-	border: none;
-	transform: rotate(5deg);
-	margin-top: -70px;
-	width: 110%;
-	height: 150px;
-	z-index: 3000;
-	position: absolute;
-}
-.yghr{
-	background-color: green;
-	border: none;
-	transform: rotate(-5deg);
-	margin-top: -75px;
-	width: 110%;
-	height: 150px;
-	z-index: 3000;
-	position: absolute;
-}
 
 #preloader {
 	position: absolute;
@@ -119,6 +70,7 @@
 	animation-fill-mode: forwards;
   }
   p.view-project-hover {
+	opacity: 0;
 	width: 100%;
 	letter-spacing: 1px;
 	font-weight: normal;
@@ -137,14 +89,14 @@
 	animation-fill-mode: forwards;
 	color: white;
   }
-/*   
+  
   .mydc_video p:hover+p {
 	opacity: 1;
 	letter-spacing: 10px;
 	text-align: center;
 	color: darkgray;
 	font-size: 25px;
-  } */
+  }
   
   @-webkit-keyframes pulsate {
 	50% {color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;}
