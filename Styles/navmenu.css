@@ -283,11 +283,11 @@ header::before {
 
 .cd-main-nav {
   position: fixed;
-  z-index: 1;
+  z-index: 9999;
   top: 0;
   left: 0;
   width: 260px;
-  height: 100vh;
+  height: 100%;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   visibility: hidden;
@@ -563,13 +563,13 @@ header::before {
   -moz-transition: -moz-transform 0.3s;
   transition: transform 0.3s;
 }
-.cd-main-content.nav-is-visible {
+/* .cd-main-content.nav-is-visible {
   -webkit-transform: translateX(260px);
   -moz-transform: translateX(260px);
   -ms-transform: translateX(260px);
   -o-transform: translateX(260px);
   transform: translateX(260px);
-}
+} */
 @media only screen and (min-width: 853px) {
   .cd-main-content {
     padding-top: 80px;
