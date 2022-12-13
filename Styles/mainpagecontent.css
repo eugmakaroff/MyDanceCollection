@@ -69,11 +69,11 @@
 	animation-delay: 2s;
 	animation-fill-mode: forwards;
   }
-  p.view-project-hover {
+  .view-project-hover {
 	opacity: 0;
-	width: 100%;
+	width: fit-content;
 	letter-spacing: 1px;
-	font-weight: normal;
+	font-weight: bold;
 	text-transform: uppercase;
 	opacity: 0;
 	margin: auto;
@@ -81,21 +81,15 @@
 	font-size: 30px;
 	transition: .7s;
 	top: 40%;
+	left: 0;
+	right: 0;
 	position: absolute; 
 	z-index: 999; 
-	animation: anim;
-	animation-duration: 5s;
-	animation-delay: 3s;
-	animation-fill-mode: forwards;
 	color: white;
   }
   
   .mydc_video p:hover+p {
 	opacity: 1;
-	letter-spacing: 10px;
-	text-align: center;
-	color: darkgray;
-	font-size: 25px;
   }
   
   @-webkit-keyframes pulsate {
@@ -138,7 +132,7 @@
 		display: block;
 	  }
 	  .mydc_video_text{
-		top: 30%;
+		top: 40%;
 		font-size: 40px;
 	  }
 	  p.view-project-hover {

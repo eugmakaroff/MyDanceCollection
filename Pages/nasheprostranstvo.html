@@ -212,6 +212,35 @@
               <img src="../Pictures/zal4.jpg">
             </div>
           </div>
+
+          <style>
+            #show_on_mobile{
+              display: none;
+            }
+            @media only screen and (max-width: 500px) {
+              #show_on_mobile{
+                display: block;
+              }
+            }
+          </style>
+          <div class="slideshow" id="show_on_mobile">
+            <img src="../Pictures/zal2.jpg" alt="" class="i_2_2">
+            <img src="../Pictures/zal3.jpg" alt="" class="i_3_2">
+            <img src="../Pictures/zal4.jpg" alt="" class="i_4_2">
+            <img src="../Pictures/zal1.jpg" alt="" class="i_1_2">
+          </div>
+          <div class="slideshow" id="show_on_mobile">
+            <img src="../Pictures/zal3.jpg" alt="" class="i_3_3">
+            <img src="../Pictures/zal4.jpg" alt="" class="i_4_3">
+            <img src="../Pictures/zal1.jpg" alt="" class="i_1_3">
+            <img src="../Pictures/zal2.jpg" alt="" class="i_2_3">
+          </div>
+          <div class="slideshow" id="show_on_mobile">
+            <img src="../Pictures/zal4.jpg" alt="" class="i_4_4">
+            <img src="../Pictures/zal1.jpg" alt="" class="i_1_4">
+            <img src="../Pictures/zal2.jpg" alt="" class="i_2_4">
+            <img src="../Pictures/zal3.jpg" alt="" class="i_3_4">
+          </div>
         <div class="pages">
           <!-- <a href="javascript:void(0)" class="firstlink" onclick="showHide('block_id1')">1</a>
           <a href="javascript:void(0)" class="secondlink" onclick="showHide('block_id2')">2</a>
@@ -226,9 +255,19 @@
       <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
 
       <div class="gallery">
-        <div class="gallery__column">
+        <style>
+          #dekstop_visible{
+            display: flex;
+          }
+          @media only screen and (max-width: 800px) {
+            #dekstop_visible{
+              display: none;
+            }
+          }
+        </style>
+        <div class="gallery__column" id="dekstop_visible">
             <figure class="gallery__thumb">
-              <img src="../Pictures/new/шапка.jpg" alt="Portrait by Jessica Felicio" class="gallery__image">
+              <img src="../Pictures/gallery/dark_horiz.jpg" alt="Portrait by Jessica Felicio" class="gallery__image">
             </figure>
       
             <figure class="gallery__thumb">
@@ -236,7 +275,7 @@
             </figure>
       
             <figure class="gallery__thumb">
-              <img src="../Pictures/new/шапка.jpg" alt="Portrait by Jessica Felicio" class="gallery__image">
+              <img src="../Pictures/gallery/all1_horizontal_chb.jpg" alt="Portrait by Jessica Felicio" class="gallery__image">
             </figure>
 
             <figure class="gallery__thumb">
@@ -246,7 +285,7 @@
         
         <div class="gallery__column">
             <figure class="gallery__thumb">
-              <img src="../Pictures/new/zlata.jpg" alt="Portrait by Jessica Felicio" class="gallery__image">
+              <img src="../Pictures/gallery/zlata_chb.jpg" alt="Portrait by Jessica Felicio" class="gallery__image">
             </figure>
           
             <figure class="gallery__thumb">
@@ -258,35 +297,35 @@
             </figure>
 
             <figure class="gallery__thumb">
-              <img src="../Pictures/new/шапка.jpg" alt="Portrait by Jessica Felicio" class="gallery__image">
+              <img src="../Pictures/gallery/masha_horiz_chb.jpg" alt="Portrait by Jessica Felicio" class="gallery__image">
             </figure>
         </div>
         
         <div class="gallery__column">
             <figure class="gallery__thumb">
-              <img src="../Pictures/new/new.jpg" alt="Portrait by Jessica Felicio" class="gallery__image">
+              <img src="../Pictures/gallery/all3_horizontal_chb.jpg" alt="Portrait by Jessica Felicio" class="gallery__image">
             </figure>
           
             <figure class="gallery__thumb">
-              <img src="../Pictures/new/sonya.jpg" alt="Portrait by Jessica Felicio" class="gallery__image">
+              <img src="../Pictures/gallery/polina_chb.jpg" alt="Portrait by Jessica Felicio" class="gallery__image">
             </figure>
       
             <figure class="gallery__thumb">
-              <img src="../Pictures/img1.jpg" alt="Portrait by Jessica Felicio" class="gallery__image">
+              <img src="../Pictures/gallery/all1_horizontal_chb.jpg" alt="Portrait by Jessica Felicio" class="gallery__image">
             </figure>
 
             <figure class="gallery__thumb">
-              <img src="../Pictures/new/vika.jpg" alt="Portrait by Jessica Felicio" class="gallery__image">
+              <img src="../Pictures/gallery/yana_chb.jpg" alt="Portrait by Jessica Felicio" class="gallery__image">
             </figure>
         </div>
         
         <div class="gallery__column">
             <figure class="gallery__thumb">
-              <img src="../Pictures/img5.jpg" alt="Portrait by Jessica Felicio" class="gallery__image">
+              <img src="../Pictures/gallery/sonya_chb.jpg" alt="Portrait by Jessica Felicio" class="gallery__image">
             </figure>
       
             <figure class="gallery__thumb">
-              <img src="../Pictures/img2.jpg" alt="Portrait by Jessica Felicio" class="gallery__image">
+              <img src="../Pictures/gallery/all4_horizontal_chb.jpg" alt="Portrait by Jessica Felicio" class="gallery__image">
             </figure>
           
             <figure class="gallery__thumb">
@@ -294,7 +333,7 @@
             </figure>
 
             <figure class="gallery__thumb">
-              <img src="../Pictures/img2.jpg" alt="Portrait by Jessica Felicio" class="gallery__image">
+              <img src="../Pictures/gallery/sasha_horiz_chb.jpg" alt="Portrait by Jessica Felicio" class="gallery__image">
             </figure>
         </div>
       </div>
