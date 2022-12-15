@@ -37,7 +37,7 @@ body{
 		margin-bottom: 10px;
 		right: 0;
 		left: 0;
-		transform: scaleX(1.5);
+		transform: scaleX(1.5) skewX(6deg);
 		font-style: italic;
 		letter-spacing: 1px;
 		color: white;
@@ -50,7 +50,7 @@ body{
 		right: 0;
 		left: 0;
 		margin-bottom: 40px;
-		transform: scaleX(1.5);
+		transform: scaleX(1.5) skewX(6deg);
 		font-size: 55px;
 		letter-spacing: 1px;
 		font-style: italic;
@@ -708,9 +708,6 @@ body{
 	}
 
 	/* Footers */
-	.footerlogoimage{
-		width: 55px;
-	}
 	.publicdoc{
 		font-size: 7px;
 	}
@@ -734,6 +731,9 @@ body{
 		font-size: 21px;
 		margin-bottom: 10px;
 	}
+	.footerlogoimage{
+		display: none;
+	}
 	.footer-distributed{
 		padding: 40px 20px;
 	}
@@ -751,9 +751,6 @@ body{
 	}
 
 	/* Footers */
-	.footerlogoimage{
-		width: 80px;
-	}
 	.publicdoc{
 		font-size: 25px;
 	}
@@ -778,9 +775,6 @@ body{
 	}
 
 	/* Footers */
-	.footerlogoimage{
-		width: 70px;
-	}
 	.publicdoc{
 		font-size: 23px;
 	}
@@ -805,9 +799,6 @@ body{
 	}
 
 	/* Footers */
-	.footerlogoimage{
-		width: 60px;
-	}
 	.publicdoc{
 		font-size: 20px;
 	}
@@ -819,8 +810,8 @@ body{
 	}
 	/* Effect 2 */
 	.hi-icon {
-		width: 35px;
-		margin: 0 0 0 10px;
+		width: 40px;
+		margin: 0 0 0 13px;
 	}
 }
 @media only screen and (max-width: 500px) {
@@ -832,9 +823,6 @@ body{
 	}
 
 	/* Footers */
-	.footerlogoimage{
-		width: 50px;
-	}
 	.publicdoc{
 		font-size: 18px;
 	}
@@ -846,8 +834,8 @@ body{
 	}
 	/* Effect 2 */
 	.hi-icon {
-		width: 32px;
-		margin: 0 0 0 10px;
+		width: 38px;
+		margin: 0 0 0 12px;
 	}
 }
 @media only screen and (max-width: 430px) {
@@ -859,9 +847,6 @@ body{
 	}
 
 	/* Footers */
-	.footerlogoimage{
-		width: 50px;
-	}
 	.publicdoc{
 		font-size: 17px;
 	}
@@ -873,8 +858,8 @@ body{
 	}
 	/* Effect 2 */
 	.hi-icon {
-		width: 30px;
-		margin: 0 0 0 9px;
+		width: 37px;
+		margin: 0 0 0 12px;
 	}
 }
 @media only screen and (max-width: 400px) {
@@ -894,9 +879,6 @@ body{
 		padding: 12px 10px;
 	}
 	/* Footers */
-	.footerlogoimage{
-		width: 50px;
-	}
 	.publicdoc{
 		font-size: 16px;
 	}
@@ -908,8 +890,8 @@ body{
 	}
 	/* Effect 2 */
 	.hi-icon {
-		width: 29px;
-		margin: 0 0 0 9px;
+		width: 35px;
+		margin: 0 0 0 11px;
 	}
 }
 @media only screen and (max-width: 350px) {
@@ -929,9 +911,6 @@ body{
 		padding: 10px 10px;
 	}
 	/* Footers */
-	.footerlogoimage{
-		width: 50px;
-	}
 	.publicdoc{
 		font-size: 15px;
 	}
@@ -943,8 +922,8 @@ body{
 	}
 	/* Effect 2 */
 	.hi-icon {
-		width: 28px;
-		margin: 0 0 0 9px;
+		width: 34px;
+		margin: 0 0 0 10px;
 	}
 }
 @media only screen and (max-width: 325px) {

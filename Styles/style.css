@@ -50,7 +50,7 @@ Primary style
       }
       .cd-main-nav .mobilemenulinks a{
         display: inline;
-        padding: 5px;
+        padding: 6px;
       }
   }
   header {
@@ -585,10 +585,10 @@ Primary style
 
 
   .tel_bottom{
-    position: absolute; margin: auto; width: 100% !important; bottom: 12%;
+    position: absolute; margin: auto; width: 100% !important; bottom: 11%;
   }
   .socials_bottom{
-    position: absolute; margin: auto; width: 100% !important; bottom: 5%;
+    position: absolute; margin: auto; width: 100% !important; bottom: 3%;
   }
   .top_tel_number{
     font-size: 15px !important; padding-top: 0; padding-bottom: 0;

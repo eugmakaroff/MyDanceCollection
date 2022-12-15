@@ -46,10 +46,10 @@
                 </li>
                 <li id="showinmobilemenu" class="socials_bottom">
                     <div class="mobilemenulinks">
-                        <a href=""><img src="../Pictures/tiktok.png" width="30px"></a>
-                        <a href=""><img src="../Pictures/telegram.png" width="30px"></a>
-                        <a href=""><img src="../Pictures/insta.png" width="30px"></a>
-                        <a href=""><img src="../Pictures/tiktok.png" width="30px"></a>
+                        <a href=""><img src="../Pictures/tiktok.png" width="40px"></a>
+                        <a href=""><img src="../Pictures/telegram.png" width="40px"></a>
+                        <a href=""><img src="../Pictures/insta.png" width="40px"></a>
+                        <a href=""><img src="../Pictures/youtube.png" width="40px"></a>
                     </div>
                 </li>
 
@@ -174,20 +174,19 @@
             </div>
 
             <p class="mydc_video_text">MY DANCE COLLECTION</p>
-            <p class="view-project-hover">Студия танцев, где каждый может попробовать себя в
-                танцах</p>
+            <p class="view-project-hover">Твоя территория танца</p>
         </div>
 
         <div class="container" id="toggle">
             <div class="card">
-                <img src="../Pictures/img1.jpg">
+                <img src="../Pictures//gallery/sasha_horiz_color.jpg">
                 <div class="card__head">Plotting Cat</div>
             </div>
             <div class="card">
-                <img src="../Pictures/img4.jpg">
+                <img src="../Pictures//gallery/masha_horiz_color.jpg">
                 <div class="card__head">Angry Cat</div>
             </div>
-            <div class="card">
+            <!-- <div class="card">
                 <img src="../Pictures/img2.jpg">
                 <div class="card__head">Curious Cat</div>
             </div>
@@ -198,7 +197,7 @@
             <div class="card">
                 <img src="../Pictures/img4.jpg">
                 <div class="card__head">Sleepy Cat</div>
-            </div>
+            </div> -->
         </div>
         <style>
             .container,
@@ -223,9 +222,9 @@
 
             .container .card {
                 flex: 1;
-                transition: all 1s ease-in-out;
+                transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
                 /* transform: skew(-10deg); */
-                transition-delay: 1s;
+                /* transition-delay: 1s; */
                 height: 65vmin;
                 position: relative;
             }
@@ -253,7 +252,8 @@
             }
 
             .container .card:hover {
-                flex-grow: 5;
+                flex-grow: 1.5;
+                transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
             }
 
             .container .card:hover img {
@@ -284,23 +284,23 @@
 
         <div class="container_middle">
             <div class="card">
-                <img src="../Pictures/img1.jpg">
+                <img src="../Pictures/gallery/all1_horizontal_color.jpg">
                 <div class="card__head">Plotting Cat</div>
             </div>
             <div class="card">
-                <img src="../Pictures/img4.jpg">
+                <img src="../Pictures/gallery/all4_horizontal_color.jpg">
                 <div class="card__head">Angry Cat</div>
             </div>
             <div class="card">
-                <img src="../Pictures/img2.jpg">
+                <img src="../Pictures/gallery/all1_horizontal_color.jpg">
                 <div class="card__head">Curious Cat</div>
             </div>
             <div class="card">
-                <img src="../Pictures/img3.jpg">
+                <img src="../Pictures/gallery/all2_horizontal_color.jpg">
                 <div class="card__head">Prowling Cat</div>
             </div>
             <div class="card">
-                <img src="../Pictures/img4.jpg">
+                <img src="../Pictures/gallery/sasha_horiz_color.jpg">
                 <div class="card__head">Sleepy Cat</div>
             </div>
         </div>
@@ -320,7 +320,7 @@
                 flex: 1;
                 transition: all 1s ease-in-out;
                 /* transform: skew(10deg); */
-                transition-delay: 1s;
+                /* transition-delay: 1s; */
                 height: 75vmin;
                 position: relative;
             }
@@ -342,7 +342,8 @@
             }
 
             .container_middle .card:hover {
-                flex-grow: 5;
+                transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+                flex-grow: 2;
             }
 
             .container_middle .card:hover img {
@@ -362,7 +363,7 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-                transition: all 1s ease-in-out;
+                transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
                 filter: grayscale(100%);
             }
 
@@ -373,24 +374,12 @@
 
         <div class="container_bottom">
             <div class="card">
-                <img src="../Pictures/img1.jpg">
+                <img src="../Pictures/zal1.jpg">
                 <div class="card__head">Plotting Cat</div>
             </div>
             <div class="card">
-                <img src="../Pictures/img4.jpg">
+                <img src="../Pictures/zal4.jpg">
                 <div class="card__head">Angry Cat</div>
-            </div>
-            <div class="card">
-                <img src="../Pictures/img2.jpg">
-                <div class="card__head">Curious Cat</div>
-            </div>
-            <div class="card">
-                <img src="../Pictures/img3.jpg">
-                <div class="card__head">Prowling Cat</div>
-            </div>
-            <div class="card">
-                <img src="../Pictures/img4.jpg">
-                <div class="card__head">Sleepy Cat</div>
             </div>
         </div>
         <style>
@@ -409,7 +398,6 @@
                 flex: 1;
                 transition: all 1s ease-in-out;
                 /* transform: skew(-10deg); */
-                transition-delay: 1s;
                 height: 75vmin;
                 position: relative;
             }
@@ -431,7 +419,8 @@
             }
 
             .container_bottom .card:hover {
-                flex-grow: 5;
+                transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+                flex-grow: 1.5;            
             }
 
             .container_bottom .card:hover img {
@@ -451,7 +440,7 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-                transition: all 1s ease-in-out;
+                transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
                 filter: grayscale(100%);
             }
 

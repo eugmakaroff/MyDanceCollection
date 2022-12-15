@@ -1,7 +1,7 @@
 
 
 #preloader {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -30,7 +30,7 @@
   .mydc_video_text{
 	width: 60%;
 	letter-spacing: normal;
-	transform: scaleX(1.5);
+	transform: scaleX(1.5) skewX(4deg);
 	font-family: 'Downcome';
 	text-shadow: 
 	1px -1px 5px #171717, 
@@ -72,7 +72,7 @@
   .view-project-hover {
 	opacity: 0;
 	width: fit-content;
-	letter-spacing: 1px;
+	letter-spacing: 3px;
 	font-weight: bold;
 	text-transform: uppercase;
 	opacity: 0;
@@ -80,7 +80,7 @@
 	text-align: center;
 	font-size: 30px;
 	transition: .7s;
-	top: 40%;
+	top: 37%;
 	left: 0;
 	right: 0;
 	position: absolute; 

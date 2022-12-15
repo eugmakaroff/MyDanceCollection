@@ -116,7 +116,7 @@ Main Components
     }
     .cd-main-nav .mobilemenulinks a{
       display: inline;
-      padding: 5px;
+      padding: 6px;
     }
 }
 /*button zapis online*/
@@ -169,6 +169,7 @@ header.nav-is-visible {
   -ms-transform: translateX(260px);
   -o-transform: translateX(260px);
   transform: translateX(260px);
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 header::before {
   /* never visible - this is used in jQuery to check the current MQ */
@@ -796,10 +797,10 @@ header::before {
 
 
 .tel_bottom{
-  position: absolute; margin: auto; width: 100% !important; bottom: 12%;
+  position: absolute; margin: auto; width: 100% !important; bottom: 11%;
 }
 .socials_bottom{
-  position: absolute; margin: auto; width: 100% !important; bottom: 5%;
+  position: absolute; margin: auto; width: 100% !important; bottom: 3%;
 }
 .top_tel_number{
   font-size: 15px !important; padding-top: 0; padding-bottom: 0;
