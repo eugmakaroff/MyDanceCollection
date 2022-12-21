@@ -1,7 +1,7 @@
 .content{
     width: 80%;
     position: relative;
-    height: 250px;
+    height: 300px;
     margin: auto;
     background-color: rgb(26, 24, 24);
     opacity: 0.99;
@@ -15,7 +15,7 @@
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
     height: 100%;
-    width: 40%;
+    width: auto;
     transition: 0.3s;
   }
   .styletext{
@@ -24,6 +24,7 @@
     text-align: center;
     padding-top: 30px;
     font-family: 'Downcome';
+    transform: scaleX(1.5) skewX(5deg);
     font-size: 70px;
     font-style: italic;
     color: white;
@@ -31,7 +32,6 @@
   .videolink{
     width: 60%;
     display: block;
-
     text-align: center;
     padding-top: 30px;
     font-size: 40px;

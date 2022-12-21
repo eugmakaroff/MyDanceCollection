@@ -319,13 +319,13 @@ filter: grayscale(1);
     width: fit-content;
     left: 0;
     right: 0;
-    font-size: 20px;
+    font-size: 30px;
   }
   .card{
     display: inline-block;
     height: 300px;
     width: 40%;
-    margin: auto;
+    margin: 10px;
   }
   .face{
     width: auto;

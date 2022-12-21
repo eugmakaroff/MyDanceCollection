@@ -20,9 +20,9 @@
 </head>
 
 <body>
-    <div id="preloader">
+    <!-- <div id="preloader">
         <div id="status">&nbsp;</div>
-    </div>  
+    </div>   -->
     <header>
         <nav class="cd-main-nav-wrapper">
             <ul class="cd-main-nav">
@@ -180,11 +180,11 @@
         <div class="container" id="toggle">
             <div class="card">
                 <img src="../Pictures//gallery/sasha_horiz_color.jpg">
-                <div class="card__head">Plotting Cat</div>
+                <div class="card__head">STEPAN KSENZOV</div>
             </div>
             <div class="card">
                 <img src="../Pictures//gallery/masha_horiz_color.jpg">
-                <div class="card__head">Angry Cat</div>
+                <div class="card__head" id="top_right">ANASTASIA AKUDOVICH</div>
             </div>
             <!-- <div class="card">
                 <img src="../Pictures/img2.jpg">
@@ -266,7 +266,10 @@
                 color: white;
                 background: rgba(0, 0, 0, 0.5);
                 font-size: 2em;
-                transform: rotate(0deg) skew(-5deg);
+                transform: rotate(-4deg) skewX(-5deg);
+            }
+            .container .card:hover #top_right{
+                top: calc(100% - 4em);
             }
 
             .container .card img {
@@ -285,23 +288,23 @@
         <div class="container_middle">
             <div class="card">
                 <img src="../Pictures/gallery/all1_horizontal_color.jpg">
-                <div class="card__head">Plotting Cat</div>
+                <div class="card__head" style="margin-top: 110px;" id="pic110">CONTEMPORARY</div>
             </div>
             <div class="card">
                 <img src="../Pictures/gallery/all4_horizontal_color.jpg">
-                <div class="card__head">Angry Cat</div>
+                <div class="card__head" style="margin-top: 85px;" id="pic85">HIP-HOP</div>
             </div>
             <div class="card">
                 <img src="../Pictures/gallery/all1_horizontal_color.jpg">
-                <div class="card__head">Curious Cat</div>
+                <div class="card__head" style="margin-top: 62px;" id="pic62">GIRLY HOREO</div>
             </div>
             <div class="card">
                 <img src="../Pictures/gallery/all2_horizontal_color.jpg">
-                <div class="card__head">Prowling Cat</div>
+                <div class="card__head" style="margin-top: 40px;" id="pic40">KIDS DANCE</div>
             </div>
             <div class="card">
                 <img src="../Pictures/gallery/sasha_horiz_color.jpg">
-                <div class="card__head">Sleepy Cat</div>
+                <div class="card__head" style="margin-top: 20px;" id="pic20">STRETCHING</div>
             </div>
         </div>
         <style>
@@ -331,6 +334,7 @@
                 background: rgba(48, 255, 0, 0.5);
                 padding: 0.5em;
                 transform-origin: 0% 0%;
+                transform: rotate(-4deg) skewX(-5deg);
                 transition: all 0.5s ease-in-out;
                 min-width: 100%;
                 text-align: center;
@@ -339,6 +343,7 @@
                 left: 0;
                 font-size: 2em;
                 white-space: nowrap;
+                /* margin-top: 30px; */
             }
 
             .container_middle .card:hover {
@@ -352,13 +357,27 @@
 
             .container_middle .card:hover .card__head {
                 text-align: center;
-                top: calc(100% - 2em);
+                top: calc(100% - 5em);
                 color: white;
                 background: rgba(0, 0, 0, 0.5);
                 font-size: 2em;
-                transform: rotate(0deg) skew(-5deg);
+                transform: rotate(4deg) skew(5deg);
             }
-
+            .container_middle .card:hover #pic20{
+                top: calc(100% - 5em);
+            }
+            .container_middle .card:hover #pic40{
+                top: calc(100% - 7em);
+            }
+            .container_middle .card:hover #pic62{
+                top: calc(100% - 9em);
+            }
+            .container_middle .card:hover #pic85{
+                top: calc(100% - 11em);
+            }
+            .container_middle .card:hover #pic110{
+                top: calc(100% - 13em);
+            }
             .container_middle .card img {
                 width: 100%;
                 height: 100%;
@@ -375,11 +394,11 @@
         <div class="container_bottom">
             <div class="card">
                 <img src="../Pictures/zal1.jpg">
-                <div class="card__head">Plotting Cat</div>
+                <div class="card__head">НАШ ЗАЛ</div>
             </div>
             <div class="card">
                 <img src="../Pictures/zal4.jpg">
-                <div class="card__head">Angry Cat</div>
+                <div class="card__head" style="margin-top: 55px;" id="bot_right">УДОБСТВА</div>
             </div>
         </div>
         <style>
@@ -407,6 +426,7 @@
                 font-weight: 900;
                 background: rgba(48, 255, 0, 0.5);
                 padding: 0.5em;
+                transform: rotate(4deg) skew(5deg);
                 transform-origin: 0% 0%;
                 transition: all 0.5s ease-in-out;
                 min-width: 100%;
@@ -435,7 +455,9 @@
                 font-size: 2em;
                 transform: rotate(0deg) skew(-5deg);
             }
-
+            .container_bottom .card:hover #bot_right {
+                top: calc(100% - 5em);
+            }
             .container_bottom .card img {
                 width: 100%;
                 height: 100%;

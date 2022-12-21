@@ -2,6 +2,7 @@
     display: inline-block;
     position: relative;
     background-image: url(../Pictures/abonsbackground.jpg);
+    background-position: top;
     background-size: 100%;
     color: white;
     text-align: center;
