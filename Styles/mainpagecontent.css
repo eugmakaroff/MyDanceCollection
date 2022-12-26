@@ -22,7 +22,7 @@
   
   .mydc_video{
 	position: relative;
-	margin-bottom: -80px;
+	/* margin-bottom: -80px; */
 	text-align: center;
 	width: 100%;
 	z-index: 2;

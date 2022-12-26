@@ -73,12 +73,149 @@
 	</header>
 <main class="cd-main-content">
     <div class="cssSlider">
-        <ul class="slides">
+        <ul class="slides" id="pc_version">
             <li id="slide1"><img src="../Pictures/raspisanie1-2.png" alt="" /></li>
             <li id="slide2" style="display: none;"><img src="../Pictures/raspisanie3-4.png" alt="" /></li>
             <li id="slide3" style="display: none;"><img src="../Pictures/raspisanie5-6.png" alt="" /></li>
         </ul>
-        <ul class="thumbnails">
+        <ul class="slides" id="mobile_version">
+            <li id="slide1"><img src="../Pictures/raspisanie1.png" alt="" /></li>
+            <li id="slide2" style="display: none;"><img src="../Pictures/raspisanie2.png" alt="" /></li>
+            <li id="slide3" style="display: none;"><img src="../Pictures/raspisanie3.png" alt="" /></li>
+            <li id="slide4" style="display: none;"><img src="../Pictures/raspisanie4.png" alt="" /></li>
+            <li id="slide5" style="display: none;"><img src="../Pictures/raspisanie5.png" alt="" /></li>
+            <li id="slide6" style="display: none;"><img src="../Pictures/raspisanie6.png" alt="" /></li>
+        </ul>
+        <style>
+            #mobile_version{
+                display: none;
+            }
+            .cssSlider .thumbnails_mobile_version {
+                display: block;
+                position: relative;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                text-align: center;
+            }
+            .cssSlider .thumbnails_mobile_version > li {
+                text-align: center;
+                display: inline-block;
+                margin: 10px;
+                /* width: 5%; */
+            }
+            .cssSlider .thumbnails_mobile_version > li > a {
+                display: block;
+            }
+            .cssSlider .thumbnails_mobile_version > li > a > img {
+                width: 100%;
+                height: auto;
+            }
+
+            .Circle{
+                width: 70px;
+                height: 70px;
+                font-size: 15px;
+                background-color: black;
+            }
+            .Circle p{
+                text-align: center;
+                vertical-align: middle;
+                color: white;
+            }
+            @media only screen and (max-width: 500px) {
+                #mobile_version{
+                    display: block;
+                }
+                #pc_version{
+                    display: none;
+                }
+                #buttons_pc_version{
+                    display: none;
+                }
+                .cssSlider .slides {
+                    overflow: hidden;
+                    width: 100%;
+                    height: 130vmin;
+                    margin: 0;
+                    margin-top: 20px;
+                    padding: 0;
+                    list-style: none;
+                    text-align: center;
+                }
+                .cssSlider .slides > li {
+                    width: 100%;
+                    height: 130vmin;
+                    position: absolute;
+                    z-index: 1;
+                    overflow: hidden;
+                }
+                .cssSlider .thumbnails_mobile_version {
+                    display: block;
+                    position: relative;
+                    list-style: none;
+                    margin: auto;
+                    width: 70%;
+                }
+                .cssSlider .thumbnails_mobile_version > li {
+                    text-align: center;
+                    display: inline-block;
+                    margin: 10px 15px 0 15px;
+                    text-align: center;
+                }
+
+                .Circle{
+                    width: 50px;
+                    height: 50px;
+                    font-size: 15px;
+                    border: 1px solid white;
+                    border-radius: 5px;
+                    background-color: black;
+                }
+                .Circle p{
+                    color: white;
+                }
+            }
+        </style>
+
+
+
+                <ul class="thumbnails_mobile_version">
+                    <li onclick="showHide1('slide1')">
+                        <div class="Circle">
+                            <p>ПОН</p>
+                        </div>
+                    </li>
+                    <li onclick="showHide2('slide2')">
+                        <div class="Circle">
+                            <p>ВТН</p>
+                        </div>
+                    </li>
+                    <li onclick="showHide3('slide3')">
+                        <div class="Circle">
+                            <p>СРД</p>
+                        </div>
+                    </li>
+                    <li onclick="showHide4('slide4')">
+                        <div class="Circle">
+                            <p>ЧТВ</p>
+                        </div>
+                    </li>
+                    <li onclick="showHide5('slide5')">
+                        <div class="Circle">
+                            <p>ПЯТ</p>
+                        </div>
+                    </li>
+                    <li onclick="showHide6('slide6')">
+                        <div class="Circle">
+                            <p>СУБ</p>
+                        </div>
+                    </li>
+                </ul>
+
+
+
+        <ul class="thumbnails" id="buttons_pc_version">
             <li onclick="showHide1('slide1')">
                 <div class="Circle">
                     <p>ПОН</p>
@@ -105,9 +242,6 @@
         <style>
             .cd-main-content{
                 padding-top: 0px;
-            }
-            .cssSlider{
-                padding-top: 100px;
             }
             .footer-distributed{
                 background: transparent;

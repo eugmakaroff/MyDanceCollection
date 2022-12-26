@@ -31,6 +31,9 @@ header a {
   width: fit-content;
   padding: 0px !important;
 }
+a{
+  text-decoration: none;
+}
 
 header a span {
 	position: relative;

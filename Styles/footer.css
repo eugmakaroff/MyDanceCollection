@@ -1,7 +1,7 @@
 *{
 	font-family: 'Uni Sans';
 }
-a {
+.footer-distributed a {
     position: relative;
     display: inline-block;
     margin: 15px 25px;
@@ -14,7 +14,7 @@ a {
     text-shadow: 0 0 1px rgb(255 255 255 / 30%);
     font-size: 1.35em;
 }
-body{
+.footer-distributed body{
 	background-color: black;
 }
 

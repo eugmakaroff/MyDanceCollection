@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="../Styles/mydc_styles.css">
     <link rel="stylesheet" href="../Styles/reset.css"> <!-- CSS reset -->
     <link rel="stylesheet" href="../Styles/style.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="../Styles/mydc_test_styles.css"> Resource style
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <title>MYDC</title>
 </head>
@@ -47,8 +50,8 @@
                 <li id="showinmobilemenu" class="socials_bottom">
                     <div class="mobilemenulinks">
                         <a href=""><img src="../Pictures/tiktok.png" width="40px"></a>
-                        <a href=""><img src="../Pictures/telegram.png" width="40px"></a>
-                        <a href=""><img src="../Pictures/insta.png" width="40px"></a>
+                        <a href="https://t.me/my_dance_collection"><img src="../Pictures/telegram.png" width="40px"></a>
+                        <a href="https://www.instagram.com/my_dance_collection/"><img src="../Pictures/insta.png" width="40px"></a>
                         <a href=""><img src="../Pictures/youtube.png" width="40px"></a>
                     </div>
                 </li>
@@ -78,93 +81,10 @@
         </nav> <!-- .cd-main-nav-wrapper -->
         <a href="#0" class="cd-nav-trigger"><span></span></a>
     </header>
-    <style>
-        .photo {
-            position: relative;
-            top: -80px;
-            left: 0;
-            margin: auto;
-            width: 100%;
-            -o-object-fit: cover;
-            object-fit: cover;
-            -o-object-position: center;
-            object-position: center;
-            z-index: -1;
-            opacity: 0;
-            animation: anim;
-            animation-duration: 5s;
-            animation-delay: 2s;
-            animation-fill-mode: forwards;
-            /* transform: scale(1.1); */
-        }
-    </style>
+
     <main class="cd-main-content">
         <div class="mydc_video">
             <img class="photo" src="../Pictures/new/new.jpg">
-
-            <style>
-                .slideshow {
-                    display: none;
-                    width: 100%;
-                    height: 650px;
-                    margin: auto;
-                }
-
-                .slideshow img {
-                    position: absolute;
-                    opacity: 0;
-                    margin: auto;
-                    width: 100%;
-                    left: 0;
-                    right: 0;
-                    animation: slideshow 20s infinite;
-                }
-
-                @keyframes slideshow {
-                    from {
-                        opacity: 0;
-                    }
-
-                    20% {
-                        opacity: 1;
-                    }
-
-                    40% {
-                        opacity: 0;
-                    }
-                }
-
-                .slideshow .i_1 {
-                    animation-delay: 0s;
-                }
-
-                .slideshow .i_2 {
-                    animation-delay: 5s;
-                }
-
-                .slideshow .i_3 {
-                    animation-delay: 10s;
-                }
-
-                .slideshow .i_4 {
-                    animation-delay: 15s;
-                }
-                @media only screen and (max-width: 500px) {
-                    .slideshow {
-                        display: block;
-                    }
-                
-                    .photo{
-                        display: none;
-                    }
-                    .cd-main-content {
-                        padding-top: 0px;
-                    }               
-                    .mydc_video{
-                        margin-bottom: 0px;
-                    }
-                }
-            </style>
 
             <div class="slideshow">
                 <img src="../Pictures/new/sonya.jpg" alt="" class="i_1">
@@ -177,7 +97,16 @@
             <p class="view-project-hover">Твоя территория танца</p>
         </div>
 
-        <div class="container" id="toggle">
+        <style>
+            .animate__animated.animate__fadeInLeftBig {
+            --animate-duration: 5s;
+            }
+            .animate__animated.animate__fadeInRightBig {
+            --animate-duration: 5s;
+            }
+        </style>
+        <a href="../Pages/pedagogi.html" class="animate__animated animate__fadeInRightBig"><p class="link_text_top">ПЕДАГОГИ</p></a>
+        <div class="animate__animated animate__fadeInLeftBig" id="toggle">
             <div class="card">
                 <img src="../Pictures//gallery/sasha_horiz_color.jpg">
                 <div class="card__head">STEPAN KSENZOV</div>
@@ -199,198 +128,32 @@
                 <div class="card__head">Sleepy Cat</div>
             </div> -->
         </div>
-        <style>
-            .container,
-            .container_middle,
-            .container_bottom {
-                width: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: right;
-                /* float: right; */
-                /* margin-top: 70px; */
-            }
 
-            .container {
-                background-color: transparent;
-                overflow: hidden;
-                clip-path: polygon(0 0,
-                        100% 0%,
-                        100% 80%,
-                        0 100%);
-            }
-
-            .container .card {
-                flex: 1;
-                transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-                /* transform: skew(-10deg); */
-                /* transition-delay: 1s; */
-                height: 65vmin;
-                position: relative;
-            }
-
-            .container .card:nth-child(1),
-            .container_middle .card:nth-child(1),
-            .container_bottom .card:nth-child(1) {
-                /* margin-left: 50px; */
-            }
-
-            .container .card .card__head {
-                color: black;
-                font-weight: 900;
-                background: rgba(48, 255, 0, 0.5);
-                padding: 0.5em;
-                transform-origin: 0% 0%;
-                transition: all 0.5s ease-in-out;
-                min-width: 100%;
-                text-align: center;
-                position: absolute;
-                top: 0;
-                left: 0;
-                font-size: 2em;
-                white-space: nowrap;
-            }
-
-            .container .card:hover {
-                flex-grow: 1.5;
-                transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-            }
-
-            .container .card:hover img {
-                filter: grayscale(0);
-            }
-
-            .container .card:hover .card__head {
-                text-align: center;
-                top: calc(100% - 2em);
-                color: white;
-                background: rgba(0, 0, 0, 0.5);
-                font-size: 2em;
-                transform: rotate(-4deg) skewX(-5deg);
-            }
-            .container .card:hover #top_right{
-                top: calc(100% - 4em);
-            }
-
-            .container .card img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                transition: all 1s ease-in-out;
-                filter: grayscale(100%);
-            }
-
-            .container .card:not(:nth-child(5)) {
-                margin-right: 1em;
-            }
-        </style>
-
+        <a href="../Pages/napravlenia.html"><p class="link_text_middle">НАПРАВЛЕНИЯ</p></a>
         <div class="container_middle">
             <div class="card">
                 <img src="../Pictures/gallery/all1_horizontal_color.jpg">
-                <div class="card__head" style="margin-top: 110px;" id="pic110">CONTEMPORARY</div>
+                <div class="card__head" id="pic110">CONTEMPORARY</div>
             </div>
             <div class="card">
                 <img src="../Pictures/gallery/all4_horizontal_color.jpg">
-                <div class="card__head" style="margin-top: 85px;" id="pic85">HIP-HOP</div>
+                <div class="card__head" id="pic85">HIP-HOP</div>
             </div>
             <div class="card">
                 <img src="../Pictures/gallery/all1_horizontal_color.jpg">
-                <div class="card__head" style="margin-top: 62px;" id="pic62">GIRLY HOREO</div>
+                <div class="card__head" id="pic62">GIRLY HOREO</div>
             </div>
             <div class="card">
                 <img src="../Pictures/gallery/all2_horizontal_color.jpg">
-                <div class="card__head" style="margin-top: 40px;" id="pic40">KIDS DANCE</div>
+                <div class="card__head" id="pic40">KIDS DANCE</div>
             </div>
             <div class="card">
                 <img src="../Pictures/gallery/sasha_horiz_color.jpg">
-                <div class="card__head" style="margin-top: 20px;" id="pic20">STRETCHING</div>
+                <div class="card__head" id="pic20">STRETCHING</div>
             </div>
         </div>
-        <style>
-            .container_middle {
-                background-color: transparent;
-                overflow: hidden;
-                margin-top: -80px;
-                /* transform: skew(-5deg) rotate(-5deg); */
-                clip-path: polygon(0 20%,
-                        100% 0%,
-                        100% 100%,
-                        0 80%);
-            }
 
-            .container_middle .card {
-                flex: 1;
-                transition: all 1s ease-in-out;
-                /* transform: skew(10deg); */
-                /* transition-delay: 1s; */
-                height: 75vmin;
-                position: relative;
-            }
-
-            .container_middle .card .card__head {
-                color: black;
-                font-weight: 900;
-                background: rgba(48, 255, 0, 0.5);
-                padding: 0.5em;
-                transform-origin: 0% 0%;
-                transform: rotate(-4deg) skewX(-5deg);
-                transition: all 0.5s ease-in-out;
-                min-width: 100%;
-                text-align: center;
-                position: absolute;
-                top: 0;
-                left: 0;
-                font-size: 2em;
-                white-space: nowrap;
-                /* margin-top: 30px; */
-            }
-
-            .container_middle .card:hover {
-                transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-                flex-grow: 2;
-            }
-
-            .container_middle .card:hover img {
-                filter: grayscale(0);
-            }
-
-            .container_middle .card:hover .card__head {
-                text-align: center;
-                top: calc(100% - 5em);
-                color: white;
-                background: rgba(0, 0, 0, 0.5);
-                font-size: 2em;
-                transform: rotate(4deg) skew(5deg);
-            }
-            .container_middle .card:hover #pic20{
-                top: calc(100% - 5em);
-            }
-            .container_middle .card:hover #pic40{
-                top: calc(100% - 7em);
-            }
-            .container_middle .card:hover #pic62{
-                top: calc(100% - 9em);
-            }
-            .container_middle .card:hover #pic85{
-                top: calc(100% - 11em);
-            }
-            .container_middle .card:hover #pic110{
-                top: calc(100% - 13em);
-            }
-            .container_middle .card img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-                filter: grayscale(100%);
-            }
-
-            .container_middle .card:not(:nth-child(5)) {
-                margin-right: 1em;
-            }
-        </style>
-
+        <a href="../Pages/nasheprostranstvo.html"><p class="link_text_bottom">НАШЕ ПРОСТРАНСТВО</p></a>
         <div class="container_bottom">
             <div class="card">
                 <img src="../Pictures/zal1.jpg">
@@ -398,78 +161,12 @@
             </div>
             <div class="card">
                 <img src="../Pictures/zal4.jpg">
-                <div class="card__head" style="margin-top: 55px;" id="bot_right">УДОБСТВА</div>
+                <div class="card__head" id="bot_right">УДОБСТВА</div>
             </div>
         </div>
-        <style>
-            .container_bottom {
-                background-color: transparent;
-                overflow: hidden;
-                /* transform: skew(5deg) rotate(5deg); */
-                margin-top: -80px;
-                clip-path: polygon(0 0,
-                        100% 20%,
-                        100% 100%,
-                        0 100%);
-            }
 
-            .container_bottom .card {
-                flex: 1;
-                transition: all 1s ease-in-out;
-                /* transform: skew(-10deg); */
-                height: 75vmin;
-                position: relative;
-            }
 
-            .container_bottom .card .card__head {
-                color: black;
-                font-weight: 900;
-                background: rgba(48, 255, 0, 0.5);
-                padding: 0.5em;
-                transform: rotate(4deg) skew(5deg);
-                transform-origin: 0% 0%;
-                transition: all 0.5s ease-in-out;
-                min-width: 100%;
-                text-align: center;
-                position: absolute;
-                top: 0;
-                left: 0;
-                font-size: 2em;
-                white-space: nowrap;
-            }
 
-            .container_bottom .card:hover {
-                transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-                flex-grow: 1.5;            
-            }
-
-            .container_bottom .card:hover img {
-                filter: grayscale(0);
-            }
-
-            .container_bottom .card:hover .card__head {
-                text-align: center;
-                top: calc(100% - 2em);
-                color: white;
-                background: rgba(0, 0, 0, 0.5);
-                font-size: 2em;
-                transform: rotate(0deg) skew(-5deg);
-            }
-            .container_bottom .card:hover #bot_right {
-                top: calc(100% - 5em);
-            }
-            .container_bottom .card img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-                filter: grayscale(100%);
-            }
-
-            .container_bottom .card:not(:nth-child(5)) {
-                margin-right: 1em;
-            }
-        </style>
         <div class="map">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1367.5842000619664!2d27.4574951806551!3d53.907639782496155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc52d2f060de3%3A0x6eaa6e0c0ffa53db!2zNjIvMSwg0JzQuNC90YHQug!5e0!3m2!1sru!2sby!4v1661412791261!5m2!1sru!2sby"

@@ -16,6 +16,9 @@ Primary style
   .logoimage{
     width: 110px;
 }
+a{
+  text-decoration: none;
+}
   /* -------------------------------- 
   
   Main Components 
