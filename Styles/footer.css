@@ -1,6 +1,9 @@
 *{
 	font-family: 'Uni Sans';
 }
+.footer-distributed {
+	font-size: 62.5%;
+  }
 .footer-distributed a {
     position: relative;
     display: inline-block;

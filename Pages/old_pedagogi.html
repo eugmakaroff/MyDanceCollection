@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../Styles/footer.css">
     <link rel="stylesheet" href="../Styles/navmenu.css">
 	<link rel="stylesheet" href="../Styles/reset.css"> <!-- CSS reset -->
-    <link rel="stylesheet" href="../Styles/napravlenia.css">
+    <link rel="stylesheet" href="../Styles/pedagogi.css">
 
     <link rel="stylesheet" href="../../mouse-move-parallax/dist/style.css">
 
-    <title>Napravlenia</title>
+    <title>Pedagogi</title>
 </head>
 <body>
     <header>
@@ -48,10 +48,10 @@
                 </li>
                 <li id="showinmobilemenu" class="socials_bottom">
                     <div class="mobilemenulinks">
-                        <a href=""><img src="../Pictures/tiktok.png" width="30px"></a>
-                        <a href=""><img src="../Pictures/telegram.png" width="30px"></a>
-                        <a href=""><img src="../Pictures/insta.png" width="30px"></a>
-                        <a href=""><img src="../Pictures/tiktok.png" width="30px"></a>
+                        <a href=""><img src="../Pictures/tiktok.png" width="40px"></a>
+                        <a href=""><img src="../Pictures/telegram.png" width="40px"></a>
+                        <a href=""><img src="../Pictures/insta.png" width="40px"></a>
+                        <a href=""><img src="../Pictures/youtube.png" width="40px"></a>
                     </div>
                 </li>
                 <li id="top" style="float: right; display: none;">
@@ -77,242 +77,102 @@
 <script type="text/javascript">
     window.onload= function() {
         document.getElementById('toggler').onclick = function() {
-            openbox('video_box', this);
+            openbox('box', this);
             return false;
         };
         document.getElementById('close').onclick = function() {
-            closebox('video_box', this);
+            closebox('box', this);
             return true;
         };
     };
     function openbox(id, toggler) {
         var div = document.getElementById(id);
         if(div.style.display == 'none') {
-            $('#video_box').fadeIn(1000);
+            $('#box').fadeIn(1000);
         }
         else {
-            $('#video_box').fadeIn(1000);
+            $('#box').fadeIn(1000);
         }
     }
     function closebox(id, toggler) {
         var div = document.getElementById(id);
         if(div.style.display == 'none') {
-            $('#video_box').fadeOut(1000);
+            $('#box').fadeOut(1000);
         }
         else {
-            $('#video_box').fadeOut(1000);
+            $('#box').fadeOut(1000);
         }
     }
 </script>
+    
 
 <div id="parallax">
     <div class="container">
-
-
-
-        <style>
-            .cssSlider {
-          display: inline-block;
-          position: relative;
-          width: 100%;
-      }
-      .cssSlider .slides {
-          width: 50%;
-        float: left;
-          height: 90vmin;
-          margin: 0;
-          padding: 0;
-          list-style: none;
-      }
-      .cssSlider .slides > li {
-          width: 50%;
-          height: 50%;
-          position: absolute;
-          z-index: 1;
-      }
-      .cssSlider .slides > li > img {
-          width: 65%;
-          margin-left: 200px;
-          height: auto;
-      }
-      
-      .cssSlider .slides li:target {
-          z-index: 3;
-          animation: slide;
-      }
-      .cssSlider .slides li:not(:target) {
-          animation: hidden;
-      }
-      @keyframes slide {
-          0% {
-              opacity: 1;
-          }
-          100% {
-              opacity: 0;
-          }
-      }
-      @keyframes hidden {
-          0% {
-              opacity: 0;
-          }
-          100% {
-              opacity: 1;
-          }
-      }
-      
-      .cssSlider p{
-          font-size: 40px;
-          padding-top: 10px;
-          color: aliceblue;
-      }
-
-
-
-      .list{
-        width: 100%;
-        font-size: 40px;
-      }
-      .thumbnails li{
-        padding: 10px;
-      }
-      </style>
-        <div class="video_box" id="video_box">
-            <div class="cancel_button">
-                <a class="cancellation" id="close" href="#">&#10006;</a>
+        <div class="videobox" id="box">
+            <a class="cancellation" id="close" href="#">&#10006;</a>
+            <div class="iframe">
+                <iframe width="100%"
+                    height="330"
+                    src="https://www.youtube.com/embed/YIZl2RiVLlg"
+                    title="НОВЫЕ ТАНЦЫ: 2 сезон 10 выпуск"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
             </div>
-            <div class="left_content">
-                <div class="video">
-                    <iframe width="100%"
-                        src="https://www.youtube.com/embed/YIZl2RiVLlg"
-                        title="НОВЫЕ ТАНЦЫ: 2 сезон 10 выпуск"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                      </iframe>
-                </div>
-                <div class="video_list">
-                    <iframe 
-                        src="https://www.youtube.com/embed/YIZl2RiVLlg"
-                        title="НОВЫЕ ТАНЦЫ: 2 сезон 10 выпуск"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                      </iframe>
-                      <iframe 
-                        src="https://www.youtube.com/embed/YIZl2RiVLlg"
-                        title="НОВЫЕ ТАНЦЫ: 2 сезон 10 выпуск"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                      </iframe>
-                      <iframe 
-                        src="https://www.youtube.com/embed/YIZl2RiVLlg"
-                        title="НОВЫЕ ТАНЦЫ: 2 сезон 10 выпуск"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                      </iframe>
-                </div>
+            <p class="boxsecondtext"><span>STEPAN KSENZOV</span><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, harum placeat, voluptatibus nemo mollitia accusamus eos non debitis ex voluptatum id! Voluptatum eos voluptates dolores id rem optio, impedit porro.</p>
+            <div class="iframe">
+                <iframe width="100%"
+                    height="330"
+                    src="https://www.youtube.com/embed/YIZl2RiVLlg"
+                    title="НОВЫЕ ТАНЦЫ: 2 сезон 10 выпуск"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
             </div>
-            <div class="right_content">
-                <div class="list">
-                    <ul class="thumbnails">
-                        <li><a href="#slide1"><p>CONTEMPORARY</p></a></li>
-                        <li><a href="#slide2"><p>HIP-HOP</p></a></li>
-                        <li><a href="#slide3"><p>KIDS DANCE</p></a></li>
-                        <li><a href="#slide4"><p>LADY DANCE</p></a></li>
-                        <li><a href="#slide5"><p>STRETCHING</p></a></li>
-                        <li><a href="#slide6"><p>АКТЕРСКОЕ МАСТЕРСТВО</p></a></li>
-                    </ul>
-                </div>
+            <p class="boxsecondtext"><span>ANASTASIA AKUDOVICH</span><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, harum placeat, voluptatibus nemo mollitia accusamus eos non debitis ex voluptatum id! Voluptatum eos voluptates dolores id rem optio, impedit porro.</p>
+            <div class="iframe">
+                <iframe width="100%"
+                    height="330"
+                    src="https://www.youtube.com/embed/YIZl2RiVLlg"
+                    title="НОВЫЕ ТАНЦЫ: 2 сезон 10 выпуск"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
             </div>
+            <p class="boxsecondtext"><span>CONTEMPORARY</span><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, harum placeat, voluptatibus nemo mollitia accusamus eos non debitis ex voluptatum id! Voluptatum eos voluptates dolores id rem optio, impedit porro.</p>
+            <div class="iframe">
+                <iframe width="100%"
+                    height="330"
+                    src="https://www.youtube.com/embed/YIZl2RiVLlg"
+                    title="НОВЫЕ ТАНЦЫ: 2 сезон 10 выпуск"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <p class="boxsecondtext"><span>CONTEMPORARY</span><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, harum placeat, voluptatibus nemo mollitia accusamus eos non debitis ex voluptatum id! Voluptatum eos voluptates dolores id rem optio, impedit porro.</p>
         </div>
-        <style>
-            .video_box{
-                display: none;
-                width: 90%;
-                height: 40%;
-                margin: auto;
-                border: 3px solid white;
-                right: 0;
-                left: 0;
-                position: absolute;
-                background-color: black;
-                color: white;
-                z-index: 10;
-            }
-            .cancellation{
-                font-size: 50px;
-                color: white;
-            }
-            .cancel_button{
-                padding: 20px;
-                z-index: 1;
-                position: sticky;
-                float: right;
-                top: 0;
-            }
-            .left_content{
-                width: 60%;
-                height: 100%;
-                padding-left: 20px;
-            }
-            .right_content{
-                width: 40%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                right: 0;
-                padding: 100px;
-                display: flex;
-                align-items: center;
-                background-color: black;
-                background-image: url(../Pictures/darklogo.png);
-                background-position: center;
-                background-size: 100%;
-            }
-            .video{
-                height: 70%;
-                padding-top: 20px;
-            }
-            .video iframe{
-                height: -webkit-fill-available;
-            }
-            .video_list{
-                height: 30%;
-            }
-            .video_list iframe{
-                display: inline-block;
-                width: 33%;
-                height: auto;
-            }
-        </style>
-
-
-
         <div class="content">
-            <img src="../Pictures/new/new.jpg">
-            <p class="styletext">CONTEMPORARY</p>
+            <img src="../Pictures/img1.jpg">
+            <p class="styletext">STEPAN KSENZOV</p>
             <a class="videolink" id="toggler" href="#">СМОТРЕТЬ ВИДЕО</a>
         </div>
         <div class="content">
-            <img src="../Pictures/gallery/all3_horizontal_color.jpg">
-            <p class="styletext">HIP-HOP</p>
+            <img src="../Pictures/img1.jpg">
+            <p class="styletext">ANASTASIA AKUDOVICH</p>
             <a class="videolink" href="">СМОТРЕТЬ ВИДЕО</a>
         </div>
         <div class="content">
-            <img src="../Pictures/gallery/dark_horiz.jpg">
-            <p class="styletext">KIDS DANCE</p>
+            <img src="../Pictures/img1.jpg">
+            <p class="styletext">STEPAN KSENZOV</p>
             <a class="videolink" href="">СМОТРЕТЬ ВИДЕО</a>
         </div>
         <div class="content">
-            <img src="../Pictures/gallery/all1_horizontal_color.jpg">
-            <p class="styletext">STRETCHING</p>
-            <a class="videolink" href="">СМОТРЕТЬ ВИДЕО</a>
-        </div>
-        <div class="content">
-            <img src="../Pictures/gallery/all3_horizontal_color.jpg">
-            <p class="styletext">GIRLY HOREO</p>
+            <img src="../Pictures/img1.jpg">
+            <p class="styletext">ANASTASIA AKUDOVICH</p>
             <a class="videolink" href="">СМОТРЕТЬ ВИДЕО</a>
         </div>
     </div>

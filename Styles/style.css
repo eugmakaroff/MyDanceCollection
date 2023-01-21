@@ -8,10 +8,6 @@ Primary style
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-  
-  html {
-    font-size: 62.5%;
-  }
 
   .logoimage{
     width: 110px;
@@ -503,9 +499,9 @@ a{
     transform: translateX(260px);
   } */
   @media only screen and (min-width: 1124px) {
-    .cd-main-content {
+    /* .cd-main-content {
       padding-top: 80px;
-    }
+    } */
     .cd-main-content.nav-is-visible {
       -webkit-transform: translateX(0);
       -moz-transform: translateX(0);

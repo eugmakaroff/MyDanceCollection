@@ -12,17 +12,16 @@
     <link rel="stylesheet" href="../Styles/footer.css">
     <link rel="stylesheet" href="../Styles/navmenu.css">
 	<link rel="stylesheet" href="../Styles/reset.css"> <!-- CSS reset -->
-    <link rel="stylesheet" href="../Styles/napravlenia.css">
+    <link rel="stylesheet" href="../Styles/test_abons.css"> <!-- Resource style -->
 
-    <link rel="stylesheet" href="../../mouse-move-parallax/dist/style.css">
-
-    <title>Napravlenia</title>
+  	
+	<title>Napravlenia</title>
 </head>
 <body>
     <header>
 		<nav class="cd-main-nav-wrapper">
 			<ul class="cd-main-nav">
-                <li id="hideafterscrolling1"><a href="MYDC copy.html" class="nospan"><img src="../Pictures/Logo MyDC.png" class="logoimagemain"></a></li>
+                <li id="hideafterscrolling1"><a href="MYDC.html" class="nospan"><img src="../Pictures/Logo MyDC.png" class="logoimagemain"></a></li>
 				<li id="hideafterscrolling2"><a href="abonements.html"><span data-hover="АБОНЕМЕНТЫ">АБОНЕМЕНТЫ</span></a></li>
 				<li id="hideafterscrolling3"><a href="raspisanie.html"><span data-hover="РАСПИСАНИЕ">РАСПИСАНИЕ</span></a></li>
                 <li id="hideafterscrolling4"><a href="napravlenia.html"><span data-hover="НАПРАВЛЕНИЯ">НАПРАВЛЕНИЯ</span></a></li>
@@ -35,7 +34,7 @@
                     <a href="">+375 (29) 333-33-33</a>
                     <a href="">+375 (29) 333-33-33</a>
                 </li>
-                <li id="showinmobilemenu" style="margin-top: 30px;"><a href="MYDC copy.html">ГЛАВНАЯ</a></li>
+                <li id="showinmobilemenu" style="margin-top: 30px;"><a href="MYDC.html">ГЛАВНАЯ</a></li>
                 <li id="showinmobilemenu"><a href="abonements.html">АБОНЕМЕНТЫ</a></li>
 				<li id="showinmobilemenu"><a href="raspisanie.html">РАСПИСАНИЕ</a></li>
                 <li id="showinmobilemenu"><a href="napravlenia.html">НАПРАВЛЕНИЯ</a></li>
@@ -58,7 +57,7 @@
 					<a href="#0" class="cd-subnav-trigger">МЕНЮ</a>
 					<ul>
 						<li class="go-back" style="float: right; padding: 15px;"><a href="#0">&#10006;</a></li>
-                        <li><a href="MYDC copy.html">ГЛАВНАЯ</a></li>
+                        <li><a href="MYDC.html">ГЛАВНАЯ</a></li>
 						<li><a href="abonements.html">АБОНЕМЕНТЫ</a></li>
 						<li><a href="raspisanie.html">РАСПИСАНИЕ</a></li>
 						<li><a href="napravlenia.html">НАПРАВЛЕНИЯ</a></li>
@@ -73,219 +72,43 @@
 		<a href="#0" class="cd-nav-trigger"><span></span></a>
 	</header>
 <main class="cd-main-content">
-<!-- partial:index.partial.html -->
-<script type="text/javascript">
-    window.onload= function() {
-        document.getElementById('toggler').onclick = function() {
-            openbox('box', this);
-            return false;
-        };
-        document.getElementById('close').onclick = function() {
-            closebox('box', this);
-            return true;
-        };
-    };
-    function openbox(id, toggler) {
-        var div = document.getElementById(id);
-        if(div.style.display == 'none') {
-            $('#box').fadeIn(1000);
-        }
-        else {
-            $('#box').fadeIn(1000);
-        }
-    }
-    function closebox(id, toggler) {
-        var div = document.getElementById(id);
-        if(div.style.display == 'none') {
-            $('#box').fadeOut(1000);
-        }
-        else {
-            $('#box').fadeOut(1000);
-        }
-    }
-</script>
-    
-<style>
-      .cssSlider {
-	display: inline-block;
-	position: relative;
-	width: 100%;
-}
-.cssSlider .slides {
-	width: 50%;
-  float: left;
-	height: 90vmin;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-.cssSlider .slides > li {
-	width: 50%;
-	height: 50%;
-	position: absolute;
-	z-index: 1;
-}
-.cssSlider .slides > li > img {
-	width: 65%;
-	margin-left: 200px;
-	height: auto;
-}
-.cssSlider .thumbnails {
-	display: block;
-    width: 50%;
-    float: right;
-	position: relative;
-	padding: 0;
-	margin: 0;
-	list-style: none;
-}
-.cssSlider .thumbnails > li {
-	float: left;
-    display: contents;
-    text-align: center;
-}
-.cssSlider .thumbnails > li > a {
-	display: block;
-    text-align: left;
-    padding-left: 50px;
-}
 
-.cssSlider .slides li:target {
-	z-index: 3;
-	animation: slide;
-}
-.cssSlider .slides li:not(:target) {
-	animation: hidden;
-}
-@keyframes slide {
-	0% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 0;
-	}
-}
-@keyframes hidden {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
 
-.cssSlider p{
-	font-size: 40px;
-	padding-top: 10px;
-	color: aliceblue;
-}
-</style>
-<div id="parallax">
-    <div class="container">
-        <div class="videobox" id="box">
-            <div class="canceldiv">
-                <a class="cancellation" id="close" href="#">&#10006;</a>
-            </div>
-            <div class="cssSlider">
-                <ul class="slides">
-                    <li id="slide1">
-                      <iframe width="100%"
-                        height="330"
-                        src="https://www.youtube.com/embed/YIZl2RiVLlg"
-                        title="НОВЫЕ ТАНЦЫ: 2 сезон 10 выпуск"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                      </iframe>
-                    </li>
-                    <li id="slide2">
-                        <iframe width="100%" height="330" src="https://www.youtube.com/embed/R5or86oB9zs" title="НОВЫЕ ТАНЦЫ: 2 сезон 11 выпуск" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </li>        
-                    <li id="slide3">
-                        <iframe width="100%" height="330" src="https://www.youtube.com/embed/lPRCOPpiJXM" title="НОВЫЕ ТАНЦЫ - шестнадцатый выпуск" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </li>
-                    <li id="slide4">
-                        <iframe width="100%" height="330" src="https://www.youtube.com/embed/_TuneF1VwD8" title="НОВЫЕ ТАНЦЫ - семнадцатый выпуск" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </li>
-                    <li id="slide5">
-                        <iframe width="100%" height="330" src="https://www.youtube.com/embed/pWCMN3HLYmI" title="НОВЫЕ ТАНЦЫ: 2 сезон 3 выпуск" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    </li>
-                    <li id="slide6">
-                        <iframe width="100%" height="330" src="https://www.youtube.com/embed/MZ36Tu75tGo" title="НОВЫЕ ТАНЦЫ: 2 сезон 2 выпуск" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    </li>
-                </ul>
-                <ul class="thumbnails">
-                    <li><a href="#slide1"><p>CONTEMPORARY</p></a></li>
-                    <li><a href="#slide2"><p>HIP-HOP</p></a></li>
-                    <li><a href="#slide3"><p>KIDS DANCE</p></a></li>
-                    <li><a href="#slide4"><p>LADY DANCE</p></a></li>
-                    <li><a href="#slide5"><p>STRETCHING</p></a></li>
-                    <li><a href="#slide6"><p>АКТЕРСКОЕ МАСТЕРСТВО</p></a></li>
-                </ul>
-              </div>
+    <footer class="footer-distributed">
+        <p class="footertop1">ТАНЦЕВАЛЬНАЯ СТУДИЯ MY DANCE COLLECTION</p>
+        <p class="footertop2">УЧИМ ТАНЦЕВАТЬ ДЕТЕЙ И ВЗРОСЛЫХ</p>
+        <div class="footer-left">
+            <img src="../Pictures/Logo MyDC.png" class="footerlogoimage">
         </div>
-        <div class="content">
-            <img src="../Pictures/img1.jpg">
-            <p class="styletext">CONTEMPORARY</p>
-            <a class="videolink" id="toggler" href="#">СМОТРЕТЬ ВИДЕО</a>
+        <div class="footer-left-center">
+            <a class="publicdoc" href="">ПУБЛИЧНЫЙ ДОГОВОР</a>
         </div>
-        <div class="content">
-            <img src="../Pictures/img1.jpg">
-            <p class="styletext">HIP-HOP</p>
-            <a class="videolink" href="">СМОТРЕТЬ ВИДЕО</a>
+        <div class="footer-center">
+            <p class="address">Г. МИНСК
+                УЛИЦА 666</p>
         </div>
-        <div class="content">
-            <img src="../Pictures/img1.jpg">
-            <p class="styletext">KIDS DANCE</p>
-            <a class="videolink" href="">СМОТРЕТЬ ВИДЕО</a>
+        <div class="footer-center-right">
+            <p class="phonenumber">+375-29-333-33-33</p>
+            <p class="phonenumber">+375-29-222-22-22</p>
         </div>
-        <div class="content">
-            <img src="../Pictures/img1.jpg">
-            <p class="styletext">STRETCHING</p>
-            <a class="videolink" href="">СМОТРЕТЬ ВИДЕО</a>
+        <div class="footer-right">
+            <img class="hi-icon" src="../Pictures/tiktok.png">
+            <img class="hi-icon" src="../Pictures/insta.png">
+            <img class="hi-icon" src="../Pictures/telegram.png">
+            <img class="hi-icon" src="../Pictures/email.png">
+            <img class="hi-icon" src="../Pictures/youtube.png">
         </div>
-        <div class="content">
-            <img src="../Pictures/img1.jpg">
-            <p class="styletext">АКТЕРСКОЕ МАСТЕРСТВО</p>
-            <a class="videolink" href="">СМОТРЕТЬ ВИДЕО</a>
+        <hr class="footerline">
+        <div class="footer-bottom">
+            <p class="footer-company-about">
+                <span>About the company</span>
+                Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor
+                lacus
+                vehicula sit amet.
+            </p><br>
+            <p class="footer-company-name">My Dance Collection © 2022</p>
         </div>
-    </div>
-</div>
-<!-- partial -->
-  <script  src="../../mouse-move-parallax/dist/script.js"></script>
-
-  <footer class="footer-distributed">
-    <p class="footertop1">ТАНЦЕВАЛЬНАЯ СТУДИЯ MY DANCE COLLECTION</p>
-    <p class="footertop2">УЧИМ ТАНЦЕВАТЬ ДЕТЕЙ И ВЗРОСЛЫХ</p>
-    <div class="footer-left">
-        <img src="../Pictures/Logo MyDC.png" class="footerlogoimage">
-    </div>
-    <div class="footer-left-center">
-        <a class="publicdoc" href="">ПУБЛИЧНЫЙ ДОГОВОР</a>
-    </div>
-    <div class="footer-center">
-        <p class="address">Г. МИНСК
-        УЛИЦА 666</p>
-    </div>
-    <div class="footer-center-right">
-        <p class="phonenumber">+375-29-333-33-33</p>
-        <p class="phonenumber">+375-29-222-22-22</p>
-    </div>
-    <div class="footer-right">
-        <img class="hi-icon" src="../Pictures/tiktok.png">
-        <img class="hi-icon" src="../Pictures/insta.png">
-        <img class="hi-icon" src="../Pictures/telegram.png">
-        <img class="hi-icon" src="../Pictures/email.png">
-        <img class="hi-icon" src="../Pictures/youtube.png">
-    </div>
-    <hr class="footerline">
-    <div class="footer-bottom">
-        <p class="footer-company-about">
-            <span>About the company</span>
-            Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus
-            vehicula sit amet.
-        </p><br>
-        <p class="footer-company-name">My Dance Collection © 2022</p>
-    </div>
-</footer>
+    </footer>
 </main>
 </body>
 
