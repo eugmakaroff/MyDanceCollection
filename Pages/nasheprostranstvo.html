@@ -197,90 +197,81 @@
         </div>
       </div>
     </div>
+
+
+    
     <p class="descr">ЗАЛ И РАЗМЕЩЕНИЕ</p>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="../Pictures/zal1.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="../Pictures/zal2.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="../Pictures/zal3.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="../Pictures/zal4.jpg" style="width:100%">
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div class="navigation_images">
+      <span class="dot" onclick="currentSlide(0)">        <img src="../Pictures/zal1.jpg" style="width:100%">
+      </span>
+      <span class="dot" onclick="currentSlide(1)">        <img src="../Pictures/zal2.jpg" style="width:100%">
+      </span>
+      <span class="dot" onclick="currentSlide(2)">        <img src="../Pictures/zal3.jpg" style="width:100%">
+      </span>
+      <span class="dot" onclick="currentSlide(3)">        <img src="../Pictures/zal4.jpg" style="width:100%">
+      </span>
+    </div>
     <script>
-      function showHide(element_id) {
-        //Если элемент с id-шником element_id существует
-        if (document.getElementById(element_id)) {
-          //Записываем ссылку на элемент в переменную obj
-          var obj = document.getElementById(element_id);
-          //Если css-свойство display не block, то: 
-          if (obj.style.display != "block") {
-            obj.style.display = "block"; //Показываем элемент
-          }
-          else obj.style.display = "none"; //Скрываем элемент
+      let slideIndex = 0;
+      let timeoutId = null;
+      const slides = document.getElementsByClassName("mySlides");
+      const dots = document.getElementsByClassName("dot");
+      
+      showSlides();
+      function currentSlide(index) {
+           slideIndex = index;
+           showSlides();
+      }
+     function plusSlides(step) {
+        
+        if(step < 0) {
+            slideIndex -= 2;
+            
+            if(slideIndex < 0) {
+              slideIndex = slides.length - 1;
+            }
         }
+        
+        showSlides();
+     }
+      function showSlides() {
+        for(let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+          dots[i].classList.remove('active');
+        }
+        slideIndex++;
+        if(slideIndex > slides.length) {
+          slideIndex = 1
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].classList.add('active');
+         if(timeoutId) {
+            clearTimeout(timeoutId);
+         }
+        timeoutId = setTimeout(showSlides, 5000); // Change image every 5 seconds
       }
     </script>
-    <div class="slideshow">
-      <img src="../Pictures/zal1.jpg" alt="" class="i_1">
-      <img src="../Pictures/zal2.jpg" alt="" class="i_2">
-      <img src="../Pictures/zal3.jpg" alt="" class="i_3">
-      <img src="../Pictures/zal4.jpg" alt="" class="i_4">
-      <div id="block_id1" style="display: none;" class="i_1">
-        <img src="../Pictures/zal1.jpg">
-      </div>
-      <div id="block_id2" style="display: none;" class="i_2">
-        <img src="../Pictures/zal2.jpg">
-      </div>
-      <div id="block_id3" style="display: none;" class="i_3">
-        <img src="../Pictures/zal3.jpg">
-      </div>
-      <div id="block_id4" style="display: none;" class="i_4">
-        <img src="../Pictures/zal4.jpg">
-      </div>
-    </div>
 
-    <style>
-      #show_on_mobile {
-        display: none;
-      }
 
-      @media only screen and (max-width: 800px) {
-        #show_on_mobile {
-          display: block;
-        }
-      }
-    </style>
-    <div class="slideshow" id="show_on_mobile">
-      <img src="../Pictures/zal2.jpg" alt="" class="i_2_2">
-      <img src="../Pictures/zal3.jpg" alt="" class="i_3_2">
-      <img src="../Pictures/zal4.jpg" alt="" class="i_4_2">
-      <img src="../Pictures/zal1.jpg" alt="" class="i_1_2">
-    </div>
-    <div class="slideshow" id="show_on_mobile">
-      <img src="../Pictures/zal3.jpg" alt="" class="i_3_3">
-      <img src="../Pictures/zal4.jpg" alt="" class="i_4_3">
-      <img src="../Pictures/zal1.jpg" alt="" class="i_1_3">
-      <img src="../Pictures/zal2.jpg" alt="" class="i_2_3">
-    </div>
-    <div class="slideshow" id="show_on_mobile">
-      <img src="../Pictures/zal4.jpg" alt="" class="i_4_4">
-      <img src="../Pictures/zal1.jpg" alt="" class="i_1_4">
-      <img src="../Pictures/zal2.jpg" alt="" class="i_2_4">
-      <img src="../Pictures/zal3.jpg" alt="" class="i_3_4">
-    </div>
-    <div class="pages">
-      <!-- <a href="javascript:void(0)" class="firstlink" onclick="showHide('block_id1')">1</a>
-          <a href="javascript:void(0)" class="secondlink" onclick="showHide('block_id2')">2</a>
-          <a href="javascript:void(0)" class="thirdlink" onclick="showHide('block_id3')">3</a>
-          <a href="javascript:void(0)" class="fourthlink" onclick="showHide('block_id4')">4</a> -->
-      <a href="javascript:void(0)" class="firstlink"
-        style="background-image: url('../Pictures/zal1.jpg'); background-size: 100%;"
-        onclick="showHide('block_id1')"></a>
-      <a href="javascript:void(0)" class="secondlink"
-        style="background-image: url('../Pictures/zal2.jpg'); background-size: 100%;"
-        onclick="showHide('block_id2')"></a>
-      <a href="javascript:void(0)" class="thirdlink"
-        style="background-image: url('../Pictures/zal3.jpg'); background-size: 100%;"
-        onclick="showHide('block_id3')"></a>
-      <a href="javascript:void(0)" class="fourthlink"
-        style="background-image: url('../Pictures/zal4.jpg'); background-size: 100%;"
-        onclick="showHide('block_id4')"></a>
-    </div>
+
     <p class="descr">ФОТОГАЛЕРЕЯ</p>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
-
     <div class="gallery">
       <style>
         #dekstop_visible {
@@ -301,7 +292,7 @@
         </a>
         <a class="gallery__link">
           <figure class="gallery__thumb">
-            <img src="../Pictures/new/katya.jpg" class="gallery__image">
+            <img src="../Pictures/gallery/zlata_color.jpg" class="gallery__image">
           </figure>
         </a>
         <a class="gallery__link">
@@ -311,7 +302,7 @@
         </a>
         <a class="gallery__link">
           <figure class="gallery__thumb">
-            <img src="../Pictures/new/zlata.jpg" class="gallery__image">
+            <img src="../Pictures/gallery/zlata_color.jpg" class="gallery__image">
           </figure>
       </div>
 
@@ -328,7 +319,7 @@
         </a>
         <a class="gallery__link">
           <figure class="gallery__thumb">
-            <img src="../Pictures/new/sonya.jpg" class="gallery__image">
+            <img src="../Pictures/gallery/zlata_color.jpg" class="gallery__image">
           </figure>
         </a>
         <a class="gallery__link">
@@ -340,7 +331,7 @@
       <div class="gallery__column">
         <a class="gallery__link">
           <figure class="gallery__thumb">
-            <img src="../Pictures/gallery/all3_horizontal_color.jpg" class="gallery__image">
+            <img src="../Pictures/gallery/all1_horizontal_color.jpg" class="gallery__image">
           </figure>
         </a>
         <a class="gallery__link">
@@ -372,7 +363,7 @@
         </a>
         <a class="gallery__link">
           <figure class="gallery__thumb">
-            <img src="../Pictures/new/vika.jpg" class="gallery__image">
+            <img src="../Pictures/gallery/zlata_color.jpg" class="gallery__image">
           </figure>
         </a>
         <a class="gallery__link">

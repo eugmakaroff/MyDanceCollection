@@ -9,82 +9,107 @@
     <script src="../js/modernizr.js"></script> <!-- Modernizr -->
     <script src="../js/jquery-2.1.1.js"></script>
     <script src="../js/main.js"></script> <!-- Resource jQuery -->
+
+    <script src="../js/test_MYDC_scripts.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="../Styles/footer.css">
     <link rel="stylesheet" href="../Styles/mainpagecontent.css">
-    <link rel="stylesheet" href="../Styles/mydc_styles.css">
+    <!-- <link rel="stylesheet" href="../Styles/mydc_styles.css"> -->
     <link rel="stylesheet" href="../Styles/reset.css"> <!-- CSS reset -->
-    <link rel="stylesheet" href="../Styles/style.css">
-    <link rel="stylesheet" href="../Styles/mydc_test_styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="../Styles/navmenu.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="../Styles/new_mydc_styles.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+
+
+    <link rel="stylesheet" href="jquery.mCustomScrollbar.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="jquery.mCustomScrollbar.concat.min.js"></script>
 
     <title>MYDC</title>
 </head>
-
+<style>
+body, html {
+  height: 100%;
+  overflow: hidden;
+}
+</style>
+  <script>
+    (function ($) {
+      $(window).on("load", function () {
+        $('body').mCustomScrollbar({
+          theme: "dark-thin",
+          autoHideScrollbar: true,
+          autoExpandScrollbar: true,
+          scrollEasing: "linear",
+          mouseWheel: {
+            scrollAmount: '10'
+          }
+        });
+      });
+    })(jQuery);
+  </script>
 <body>
     <!-- <div id="preloader">
         <div id="status">&nbsp;</div>
-    </div>   -->
+    </div> -->
     <header>
-        <nav class="cd-main-nav-wrapper">
-            <ul class="cd-main-nav">
-                <li id="hideafterscrolling1"><img src="../Pictures/Logo MyDC.png" class="logoimagemain"></li>
-                <li id="hideafterscrolling2"><a href="abonements.html" style="margin-top: 0.8em;"><span
-                            data-hover="АБОНЕМЕНТЫ">АБОНЕМЕНТЫ</span></a></li>
-                <li id="hideafterscrolling3"><a href="raspisanie.html" style="margin-top: 0.8em;"><span
-                            data-hover="РАСПИСАНИЕ">РАСПИСАНИЕ</span></a></li>
-                <li id="hideafterscrolling6"><a href="#bottom" style="margin-top: 0.8em;"><span
-                            data-hover="КОНТАКТЫ">КОНТАКТЫ</span></a></li>
-                <li id="showinmobilemenu" style="margin-top: 30px;"><a href="MYDC copy.html">ГЛАВНАЯ</a></li>
+		<nav class="cd-main-nav-wrapper">
+			<ul class="cd-main-nav">
+                <li id="hideafterscrolling1"><a href="MYDC.html" class="nospan"><img src="../Pictures/Logo MyDC.png" class="logoimagemain"></a></li>
+				<li id="hideafterscrolling2"><a href="abonements.html"><span data-hover="АБОНЕМЕНТЫ">АБОНЕМЕНТЫ</span></a></li>
+				<li id="hideafterscrolling3"><a href="raspisanie.html"><span data-hover="РАСПИСАНИЕ">РАСПИСАНИЕ</span></a></li>
+                <li id="hideafterscrolling4"><a href="napravlenia.html"><span data-hover="НАПРАВЛЕНИЯ">НАПРАВЛЕНИЯ</span></a></li>
+                <li id="hideafterscrolling5"><a href="pedagogi.html"><span data-hover="ПЕДАГОГИ">ПЕДАГОГИ</span></a></li>
+                <li id="hideafterscrolling6"><a href="nasheprostranstvo.html"><span data-hover="НАШЕ ПРОСТРАНСТВО">НАШЕ ПРОСТРАНСТВО</span></a></li>
+                <li id="hideafterscrolling7">
+                    <a class="button4" href="mailto:support@company.com"><p>ЗАПИСЬ ОНЛАЙН</p></a>
+                </li>
+                <li id="hideafterscrolling8">
+                    <a href="">+375 (29) 333-33-33</a>
+                    <a href="">+375 (29) 333-33-33</a>
+                </li>
+                <li id="showinmobilemenu" style="margin-top: 30px;"><a href="MYDC.html">ГЛАВНАЯ</a></li>
                 <li id="showinmobilemenu"><a href="abonements.html">АБОНЕМЕНТЫ</a></li>
-                <li id="showinmobilemenu"><a href="raspisanie.html">РАСПИСАНИЕ</a></li>
+				<li id="showinmobilemenu"><a href="raspisanie.html">РАСПИСАНИЕ</a></li>
                 <li id="showinmobilemenu"><a href="napravlenia.html">НАПРАВЛЕНИЯ</a></li>
                 <li id="showinmobilemenu"><a href="pedagogi.html">ПЕДАГОГИ</a></li>
                 <li id="showinmobilemenu"><a href="nasheprostranstvo.html">НАШЕ ПРОСТРАНСТВО</a></li>
                 <li id="showinmobilemenu"><a href="">КОНТАКТЫ</a></li>
                 <li id="showinmobilemenu" class="tel_bottom">
-                    <a href="" class="top_tel_number">+375 (29) 333-33-33 MTC</a>
-                    <a href="" class="bottom_tel_number">+375 (29) 333-33-33 A1</a>
+                    <a href="" class="top_tel_number">+375 (29) 333-33-33  MTC</a>
+                    <a href="" class="bottom_tel_number">+375 (29) 333-33-33  A1</a>
                 </li>
                 <li id="showinmobilemenu" class="socials_bottom">
                     <div class="mobilemenulinks">
                         <a href=""><img src="../Pictures/tiktok.png" width="40px"></a>
-                        <a href="https://t.me/my_dance_collection"><img src="../Pictures/telegram.png" width="40px"></a>
-                        <a href="https://www.instagram.com/my_dance_collection/"><img src="../Pictures/insta.png"
-                                width="40px"></a>
+                        <a href=""><img src="../Pictures/telegram.png" width="40px"></a>
+                        <a href=""><img src="../Pictures/insta.png" width="40px"></a>
                         <a href=""><img src="../Pictures/youtube.png" width="40px"></a>
                     </div>
                 </li>
-
-                <li id="top" style="float: right; margin-top: 20px; display: none;">
-                    <a href="#0" class="cd-subnav-trigger"><span>МЕНЮ</span></a>
-                    <ul>
-                        <li class="go-back" style="float: right; padding: 15px;"><a href="#0">&#10006;</a></li>
-                        <li><a href="MYDC copy.html">ГЛАВНАЯ</a></li>
-                        <li><a href="abonements.html">АБОНЕМЕНТЫ</a></li>
-                        <li><a href="raspisanie.html">РАСПИСАНИЕ</a></li>
-                        <li><a href="napravlenia.html">НАПРАВЛЕНИЯ</a></li>
-                        <li><a href="pedagogi.html">ПЕДАГОГИ</a></li>
-                        <li><a href="">НАШЕ ПРОСТРАНСТВО</a></li>
+                <li id="top" style="float: right; display: none;">
+					<a href="#0" class="cd-subnav-trigger">МЕНЮ</a>
+					<ul>
+						<li class="go-back" style="float: right; padding: 15px;"><a href="#0">&#10006;</a></li>
+                        <li><a href="MYDC.html">ГЛАВНАЯ</a></li>
+						<li><a href="abonements.html">АБОНЕМЕНТЫ</a></li>
+						<li><a href="raspisanie.html">РАСПИСАНИЕ</a></li>
+						<li><a href="napravlenia.html">НАПРАВЛЕНИЯ</a></li>
+						<li><a href="pedagogi.html">ПЕДАГОГИ</a></li>
+						<li><a href="nasheprostranstvo.html">НАШЕ ПРОСТРАНСТВО</a></li>
                         <li><a href="">КОНТАКТЫ</a></li>
-                        <li><a href="#0" class="placeholder">Placeholder</a></li>
-                    </ul>
-                </li>
-                <li id="hideafterscrolling4" style="float: right; margin-top: 20px;">
-                    <a class="button4" style="padding-top: 14px;" href="mailto:support@company.com">ЗАПИСЬ ОНЛАЙН</a>
-                </li>
-                <li id="hideafterscrolling5" style="float: right; margin-top: 25px;">
-                    <a href="" style="font-size: 20px;">+375 (29) 333-33-33</a>
-                    <a href="" style="font-size: 20px;">+375 (29) 333-33-33</a>
-                </li>
-            </ul> <!-- .cd-main-nav -->
-        </nav> <!-- .cd-main-nav-wrapper -->
-        <a href="#0" class="cd-nav-trigger"><span></span></a>
-    </header>
+						<li><a href="#0" class="placeholder">Placeholder</a></li>
+					</ul>
+				</li>
+			</ul> <!-- .cd-main-nav -->
+		</nav> <!-- .cd-main-nav-wrapper -->
+		<a href="#0" class="cd-nav-trigger"><span></span></a>
+	</header>
 
     <main class="cd-main-content">
         <div class="mydc_video">
-            <img class="photo" src="../Pictures/new/new.jpg">
+            <img class="photo" src="../Pictures/img2.jpg">
 
             <div class="slideshow">
                 <img src="../Pictures/new/sonya.jpg" alt="" class="i_1">
@@ -96,61 +121,148 @@
             <p class="mydc_video_text">MY DANCE COLLECTION</p>
             <p class="view-project-hover">Твоя территория танца</p>
         </div>
-<div class="mobile_version_content">
-        <a href="../Pages/pedagogi.html" class="animate__animated animate__fadeInRightBig">
-            <p class="link_text_top">ПЕДАГОГИ</p>
-        </a>
-        <div class="container_top">
-            <div class="card">
-                <img src="../Pictures//gallery/sasha_horiz_color.jpg">
-                <div class="card__head">STEPAN KSENZOV</div>
+
+<script>
+
+</script>
+
+        <div class="mobile_version_content">
+            <a href="../Pages/pedagogi.html">
+                <p class="link_text_top">ПЕДАГОГИ</p>
+            </a>
+            <div class="container_top">
+                <div class="card">
+                    <img src="../Pictures//gallery/sasha_horiz_color.jpg">
+                    <div class="card__head">STEPAN KSENZOV</div>
+                </div>
+                <div class="card">
+                    <img src="../Pictures//gallery/masha_horiz_color.jpg">
+                    <div class="card__head" id="top_right">ANASTASIA AKUDOVICH</div>
+                </div>
             </div>
-            <div class="card">
-                <img src="../Pictures//gallery/masha_horiz_color.jpg">
-                <div class="card__head" id="top_right">ANASTASIA AKUDOVICH</div>
+
+            <a href="../Pages/napravlenia.html">
+                <p class="link_text_middle">НАПРАВЛЕНИЯ</p>
+            </a>
+            <div class="container_middle">
+                <div class="card">
+                    <img src="../Pictures/gallery/all1_horizontal_color.jpg">
+                    <div class="card__head" id="pic110">CONTEMPORARY</div>
+                </div>
+                <div class="card">
+                    <img src="../Pictures/gallery/all4_horizontal_color.jpg">
+                    <div class="card__head" id="pic85">HIP-HOP</div>
+                </div>
+                <div class="card">
+                    <img src="../Pictures/gallery/all1_horizontal_color.jpg">
+                    <div class="card__head" id="pic62">GIRLY HOREO</div>
+                </div>
+                <div class="card">
+                    <img src="../Pictures/gallery/all2_horizontal_color.jpg">
+                    <div class="card__head" id="pic40">KIDS DANCE</div>
+                </div>
+                <div class="card">
+                    <img src="../Pictures/gallery/sasha_horiz_color.jpg">
+                    <div class="card__head" id="pic20">STRETCHING</div>
+                </div>
+            </div>
+
+            <a href="../Pages/nasheprostranstvo.html">
+                <p class="link_text_bottom">НАШЕ ПРОСТРАНСТВО</p>
+            </a>
+            <div class="container_bottom">
+                <div class="card">
+                    <img src="../Pictures/zal1.jpg">
+                    <div class="card__head">НАШ ЗАЛ</div>
+                </div>
+                <div class="card">
+                    <img src="../Pictures/zal4.jpg">
+                    <div class="card__head" id="bot_right">УДОБСТВА</div>
+                </div>
             </div>
         </div>
 
-        <a href="../Pages/napravlenia.html">
-            <p class="link_text_middle">НАПРАВЛЕНИЯ</p>
-        </a>
-        <div class="container_middle">
-            <div class="card">
-                <img src="../Pictures/gallery/all1_horizontal_color.jpg">
-                <div class="card__head" id="pic110">CONTEMPORARY</div>
+
+
+        <div class="pc_version_content">
+            <div class="content_container">
+                <div class="text_container">
+                    <a href="../Pages/pedagogi.html" id="top_text_container"
+                        class="animate__animated animate__rotateOutUpLeft link_text_top">ПЕДАГОГИ</a>
+                </div>
+                <div class="inside_content_container">
+                    <div class="animate__animated animate__fadeInRightBig container_top" id="container_top">
+                        <div class="card">
+                            <img src="../Pictures//gallery/dark_horiz.jpg">
+                            <div class="card__head">STEPAN KSENZOV</div>
+                        </div>
+                        <div class="card">
+                            <img src="../Pictures//gallery/dark_horiz.jpg">
+                            <div class="card__head" id="top_right">ANASTASIA AKUDOVICH</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <img src="../Pictures/gallery/all4_horizontal_color.jpg">
-                <div class="card__head" id="pic85">HIP-HOP</div>
+
+            <div class="content_container">
+                <div class="text_container">
+                    <a href="../Pages/napravlenia.html">
+                        <p id="middle_text_container"
+                            class="animate__animated animate__rotateOutUpLeft link_text_middle">НАПРАВЛЕНИЯ</p>
+                    </a>
+                </div>
+                <div class="inside_content_container">
+                    <div id="container_middle_object"
+                        class="animate__animated animate__fadeInRightBig container_middle">
+                        <div class="card">
+                            <img src="../Pictures//gallery/dark_horiz.jpg">
+                            <div class="card__head" id="pic110">CONTEMPORARY</div>
+                        </div>
+                        <div class="card">
+                            <img src="../Pictures//gallery/dark_horiz.jpg">
+                            <div class="card__head" id="pic85">HIP-HOP</div>
+                        </div>
+                        <div class="card">
+                            <img src="../Pictures//gallery/dark_horiz.jpg">
+                            <div class="card__head" id="pic62">GIRLY HOREO</div>
+                        </div>
+                        <div class="card">
+                            <img src="../Pictures//gallery/dark_horiz.jpg">
+                            <div class="card__head" id="pic40">KIDS DANCE</div>
+                        </div>
+                        <div class="card">
+                            <img src="../Pictures//gallery/dark_horiz.jpg">
+                            <div class="card__head" id="pic20">STRETCHING</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <img src="../Pictures/gallery/all1_horizontal_color.jpg">
-                <div class="card__head" id="pic62">GIRLY HOREO</div>
-            </div>
-            <div class="card">
-                <img src="../Pictures/gallery/all2_horizontal_color.jpg">
-                <div class="card__head" id="pic40">KIDS DANCE</div>
-            </div>
-            <div class="card">
-                <img src="../Pictures/gallery/sasha_horiz_color.jpg">
-                <div class="card__head" id="pic20">STRETCHING</div>
+
+            <div class="content_container">
+                <div class="text_container">
+                    <a href="../Pages/nasheprostranstvo.html">
+                        <p id="bottom_text_container"
+                            class="animate__animated animate__rotateOutUpLeft link_text_bottom">ПРОСТРАНСТВО</p>
+                    </a>
+                </div>
+                <div class="inside_content_container">
+                    <div id="container_bottom_object"
+                        class="animate__animated animate__fadeInRightBig container_bottom">
+                        <div class="card">
+                            <img src="../Pictures//gallery/dark_horiz.jpg">
+                            <div class="card__head">НАШ ЗАЛ</div>
+                        </div>
+                        <div class="card">
+                            <img src="../Pictures//gallery/dark_horiz.jpg">
+                            <div class="card__head" id="bot_right">УДОБСТВА</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <a href="../Pages/nasheprostranstvo.html">
-            <p class="link_text_bottom">НАШЕ ПРОСТРАНСТВО</p>
-        </a>
-        <div class="container_bottom">
-            <div class="card">
-                <img src="../Pictures/zal1.jpg">
-                <div class="card__head">НАШ ЗАЛ</div>
-            </div>
-            <div class="card">
-                <img src="../Pictures/zal4.jpg">
-                <div class="card__head" id="bot_right">УДОБСТВА</div>
-            </div>
-        </div>
-    </div>
+
+
 
 
         <div class="map">
