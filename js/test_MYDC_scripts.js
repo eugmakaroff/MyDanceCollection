@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $(window).scroll(function () {
         if (window.innerWidth > 853) {
-            if ($(window).scrollTop() > 450) {
+            if ($(window).scrollTop() > 300) {
                 $('#top_text_container').show()
                 $('#container_top').show()
             }
@@ -16,7 +16,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     $(window).scroll(function () {
         if (window.innerWidth > 853) {
-            if ($(window).scrollTop() > 850) {
+            if ($(window).scrollTop() > 800) {
                 $('#middle_text_container').show()
                 $('#container_middle_object').show()
             }

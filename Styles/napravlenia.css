@@ -1,93 +1,33 @@
-.content{
-    width: 80%;
-    position: relative;
-    height: 300px;
-    margin: auto;
-    background-color: rgb(26, 24, 24);
-    opacity: 0.99;
-    transition: 0.3s;
-    margin-bottom: 30px;
-    border-radius: 20px;
-    z-index: 1;
-  }
-  .content img{
-    float: right;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 20px;
-    height: 100%;
-    width: auto;
-    transition: 0.3s;
-  }
-  .styletext{
-    width: 60%;
-    display: block;
-    text-align: center;
-    padding-top: 30px;
-    font-family: 'Downcome';
-    transform: scaleX(1.5) skewX(5deg);
-    font-size: 70px;
-    font-style: italic;
-    color: white;
-  }
-  .videolink{
-    width: 60%;
-    display: block;
-    text-align: center;
-    padding-top: 30px;
-    font-size: 40px;
-    font-style: italic;
-    color: white;
-  }
+.content-box-element {
+	position: relative;
+}
 
-  .videobox{
-    display: none;
-    width: 80%;
-    height: 70%;
-    background-color: black;
-    border: 5px solid white;
-    position: fixed;
-    padding-left: 30px;
-    transform: translateX(-50%);
-    left: 50%;
-    z-index: 9999;
-  }
+.content-box-element:before, .content-box-element:after {
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	background: linear-gradient(45deg, #233329, #63D471, #20BF55, #03e434, #012e05);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+  border-radius: 50px;
+	z-index: -1;
+	animation: steam 20s linear infinite;
+}
 
-  .iframe{
-    padding: 30px;
-    width: 50%;
-    display: inline-block;
-  }
-  .boxsecondtext{
-    width: 40%;
-    color: white;
-    font-size: 20px;
-    display: inline-block;
-  }
-  .boxsecondtext span{
-    color: gray;
-    font-size: 30px;
-    display: inline-block;
-  }
-
-  .cancellation{
-    font-size: 50px;
-    color: white;
-  }
-  .canceldiv{
-    padding: 20px;
-    position: sticky;
-    float: right;
-    top: 0;
-  }
-
-  .container{
-    padding-top: 50px;
-    display: block;
-    position: relative;
-  }
-
-  @keyframes bordering {
-	100% {
-        border: 5px solid green;
+@keyframes steam {
+	0% {
+		background-position: 0 0;
 	}
-  }
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.content-box-element:after {
+	filter: blur(50px);
+}
