@@ -10,6 +10,7 @@ $(document).ready(function(){
             $('#hideafterscrolling6').fadeIn(100)
             $('#hideafterscrolling7').fadeIn(100)
             $('#hideafterscrolling8').fadeIn(100)
+            $('#hideafterscrolling9').fadeIn(100)
         }
         else{
             $('#hideafterscrolling1').fadeOut(1)
@@ -20,6 +21,7 @@ $(document).ready(function(){
             $('#hideafterscrolling6').fadeOut(1)
             $('#hideafterscrolling7').fadeOut(1)
             $('#hideafterscrolling8').fadeOut(1)
+            $('#hideafterscrolling9').fadeOut(1)
         }
     }
     });
