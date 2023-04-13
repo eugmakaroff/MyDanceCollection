@@ -93,9 +93,11 @@
                 color: silver;
                 width: 90%;
                 margin: auto;
-                margin-top: 10px;
-                margin-bottom: 10px;
-                border-radius: 50px;
+                margin-top: 40px;
+                margin-bottom: 40px;
+                border: 1px solid white;
+                filter: drop-shadow(53px -33px 15px #000);
+                border-radius: 20px;
             }
 
             .pic-element {
@@ -126,15 +128,15 @@
             .content-box-element:nth-child(odd) img {
                 width: 100%;
                 display: flex;
-                border-top-left-radius: 50px;
-                border-bottom-left-radius: 50px;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
             }
 
             .content-box-element:nth-child(even) img {
                 width: 100%;
                 display: flex;
-                border-top-right-radius: 50px;
-                border-bottom-right-radius: 50px;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
             }
 
             .modal-window {
@@ -145,7 +147,7 @@
                 height: fit-content;
                 background-color: black;
                 border: 3px solid white;
-                border-radius: 30px;
+                border-radius: 10px;
                 z-index: 1;
             }
 
@@ -175,16 +177,10 @@
                     width: 90%;
                     left: 5%;
                     top: 5%;
-                    border-radius: 50px;
+                    border-radius: 20px;
                 }
 
-                .content-box {
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    margin: auto;
-                    margin-top: 50px;
-                }
+
 
                 .content-box-element {
                     display: flex;
@@ -204,11 +200,11 @@
                 }
 
                 .content-box-element:nth-child(odd) img {
-                    border-radius: 50px 50px 0 0 !important;
+                    border-radius: 20px 20px 0 0 !important;
                 }
 
                 .content-box-element:nth-child(even) img {
-                    border-radius: 0 0 50px 50px !important;
+                    border-radius: 0 0 20px 20px !important;
                 }
 
                 .text-element .head-text {
@@ -228,7 +224,7 @@
                     right: 5%;
                     position: absolute;
                     background-color: black;
-                    border-radius: 50px;
+                    border-radius: 20px;
                     width: 50px;
                     height: 50px;
                     display: flex;
@@ -240,7 +236,7 @@
 
                 .container .main-video-container .main-video {
                     margin-bottom: 10px;
-                    border-radius: 50px 50px 0 0 !important;
+                    border-radius: 20px 20px 0 0 !important;
                 }
 
                 .container .video-list-container {
@@ -283,7 +279,7 @@
 
             .container .main-video-container {
                 flex: 1 1 700px;
-                border-radius: 30px;
+                border-radius: 10px;
                 box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
                 /* background-color: #fff; */
                 padding: 15px;
@@ -508,6 +504,7 @@
         <div class="footer-container">
             <p class="footertop1">ТАНЦЕВАЛЬНАЯ СТУДИЯ MY DANCE COLLECTION</p>
             <p class="footertop2">УЧИМ ТАНЦЕВАТЬ ДЕТЕЙ И ВЗРОСЛЫХ</p>
+            <div class="hr_div"></div>
             <div class="footer">
                 <div class="footer_element">
                     <img src="../Pictures/Logo MyDC.png" class="footerlogoimage">
@@ -531,6 +528,7 @@
                     <img class="hi-icon" src="../Pictures/youtube.png">
                 </div>
             </div>
+            <div class="hr_div"></div>
             <div class="footer-bottom">
                 <p class="footer-company-about">
                     <span>About the company</span>

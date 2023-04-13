@@ -75,15 +75,14 @@
   .view-project-hover {
 	opacity: 0;
 	width: fit-content;
-	letter-spacing: 3px;
 	font-weight: bold;
 	text-transform: uppercase;
 	opacity: 0;
 	margin: auto;
 	text-align: center;
-	font-size: 30px;
+	font-size: 25px;
 	transition: .7s;
-	top: 37%;
+	top: 35%;
 	left: 0;
 	right: 0;
 	position: absolute; 

@@ -2,6 +2,14 @@
 	font-family: 'Uni Sans';
 }
 
+	.hr_div{
+		width: 80%;
+		height: 2px; 
+		margin: auto; 
+		margin-top: 10px; 
+		background: rgb(1,255,0);
+        background: linear-gradient(90deg, rgba(1,255,0,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+	}
 	.footertop1{
 		font-size: 55px;
 		width: fit-content;

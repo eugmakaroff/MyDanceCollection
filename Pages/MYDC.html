@@ -10,7 +10,7 @@
     <script src="../js/jquery-2.1.1.js"></script>
     <script src="../js/main.js"></script> <!-- Resource jQuery -->
 
-    <script src="../js/test_MYDC_scripts.js"></script>
+    <!-- <script src="../js/test_MYDC_scripts.js"></script> -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="../Styles/footer.css">
@@ -23,9 +23,9 @@
 </head>
 
 <body>
-    <div id="preloader">
+    <!-- <div id="preloader">
         <div id="status">&nbsp;</div>
-    </div>
+    </div> -->
     <header>
 		<nav class="cd-main-nav-wrapper">
 			<ul class="cd-main-nav">
@@ -154,15 +154,16 @@
             </div>
         </div>
 
-        
         <div class="pc_version_content">
             <div class="content_container">
                 <div class="text_container">
-                    <a href="../Pages/pedagogi.html" id="top_text_container"
-                        class="animate__animated animate__rotateOutUpLeft link_text_top">НАПРАВЛЕНИЯ</a>
+                    <a href="../Pages/napravlenia.html">
+                        <p id="top_text_container"
+                            class="link_text_top" style="transform: scaleY(1.5) skewY(4deg) rotate(-90deg);">НАПРАВЛЕНИЯ</p>
+                    </a>
                 </div>
                 <div class="inside_content_container">
-                    <div class="animate__animated animate__fadeInRightBig container_top" id="container_top">
+                    <div class="container_top" id="container_top">
                         <div class="card">
                             <img src="../Pictures/gallery/all1_horizontal_color.jpg">
                             <div class="card__head" id="pic110">CONTEMPORARY</div>
@@ -191,12 +192,12 @@
                 <div class="text_container">
                     <a href="../Pages/napravlenia.html">
                         <p id="middle_text_container"
-                            class="animate__animated animate__rotateOutUpLeft link_text_middle">ПЕДАГОГИ</p>
+                            class="link_text_middle" style="transform: scaleY(1.5) skewY(4deg) rotate(-90deg);">ПЕДАГОГИ</p>
                     </a>
                 </div>
                 <div class="inside_content_container">
                     <div id="container_middle_object"
-                        class="animate__animated animate__fadeInRightBig container_middle">
+                        class="container_middle">
                         <div class="card">
                             <img src="../Pictures//gallery/sasha_horiz_color.jpg">
                             <div class="card__head">STEPAN KSENZOV</div>
@@ -213,12 +214,12 @@
                 <div class="text_container">
                     <a href="../Pages/nasheprostranstvo.html">
                         <p id="bottom_text_container"
-                            class="animate__animated animate__rotateOutUpLeft link_text_bottom">НАШЕ ПРОСТРАНСТВО</p>
+                            class="link_text_bottom" style="transform: scaleY(1.25) skewY(4deg) rotate(-90deg);">НАШЕ ПРОСТРАНСТВО</p>
                     </a>
                 </div>
                 <div class="inside_content_container">
                     <div id="container_bottom_object"
-                        class="animate__animated animate__fadeInRightBig container_bottom">
+                        class="container_bottom">
                         <div class="card">
                             <img src="../Pictures/zal1.jpg">
                             <div class="card__head">НАШ ЗАЛ</div>
@@ -233,7 +234,6 @@
         </div>
 
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3&amp;sensor=false"></script>
-
         <script>
    var CustomMapStyles = [
     {
@@ -424,6 +424,7 @@ google.maps.event.addDomListener(window, "load", function () {
         <div class="footer-container">
             <p class="footertop1">ТАНЦЕВАЛЬНАЯ СТУДИЯ MY DANCE COLLECTION</p>
             <p class="footertop2">УЧИМ ТАНЦЕВАТЬ ДЕТЕЙ И ВЗРОСЛЫХ</p>
+            <div class="hr_div"></div>
             <div class="footer">
                 <div class="footer_element">
                     <img src="../Pictures/Logo MyDC.png" class="footerlogoimage">
@@ -447,6 +448,7 @@ google.maps.event.addDomListener(window, "load", function () {
                     <img class="hi-icon" src="../Pictures/youtube.png">
                 </div>
             </div>
+            <div class="hr_div"></div>
             <div class="footer-bottom">
                 <p class="footer-company-about">
                     <span>About the company</span>

@@ -21,6 +21,24 @@
     <link rel="stylesheet" href="../Styles/navmenu.css"> <!-- Resource style -->
     <link rel="stylesheet" href="../Styles/merch.css">
 
+
+
+    <link rel="stylesheet" href="splide-core.min.css">
+    <link rel="stylesheet" href="splide-default.min.css">
+    <link rel="stylesheet" href="splide.min.css">
+    <script src="splide.min.js"></script>
+    <script src="splide.js"></script>
+    <script>
+        new Splide( '.splide' ).mount();
+      </script>
+      <script>
+        document.addEventListener( 'DOMContentLoaded', function() {
+          var splide = new Splide( '.splide' );
+          splide.mount();
+        } );
+      </script>
+
+
     <title>MERCH</title>
 </head>
 
@@ -83,9 +101,26 @@
 	</header>
 
     <main class="cd-main-content">
-        <div class="footer-container">
+
+
+
+        <section class="splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                  <ul class="splide__list">
+                      <li class="splide__slide"><img src="../Pictures/raspisanie1-2.png"></li>
+                      <li class="splide__slide"><img src="../Pictures/raspisanie3-4.png"></li>
+                      <li class="splide__slide"><img src="../Pictures/raspisanie5-6.png"></li>
+                  </ul>
+            </div>
+          </section>
+
+
+
+
+          <div class="footer-container">
             <p class="footertop1">ТАНЦЕВАЛЬНАЯ СТУДИЯ MY DANCE COLLECTION</p>
             <p class="footertop2">УЧИМ ТАНЦЕВАТЬ ДЕТЕЙ И ВЗРОСЛЫХ</p>
+            <div class="hr_div"></div>
             <div class="footer">
                 <div class="footer_element">
                     <img src="../Pictures/Logo MyDC.png" class="footerlogoimage">
@@ -109,6 +144,7 @@
                     <img class="hi-icon" src="../Pictures/youtube.png">
                 </div>
             </div>
+            <div class="hr_div"></div>
             <div class="footer-bottom">
                 <p class="footer-company-about">
                     <span>About the company</span>

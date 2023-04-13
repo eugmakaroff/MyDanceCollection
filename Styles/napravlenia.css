@@ -7,11 +7,11 @@
 	position: absolute;
 	left: -2px;
 	top: -2px;
-	background: linear-gradient(45deg, #233329, #63D471, #20BF55, #03e434, #012e05);
+	/* background: linear-gradient(45deg, #233329, #63D471, #20BF55, #03e434, #012e05); */
 	background-size: 400%;
 	width: calc(100% + 4px);
 	height: calc(100% + 4px);
-  border-radius: 50px;
+  	border-radius: 50px;
 	z-index: -1;
 	animation: steam 20s linear infinite;
 }
@@ -30,4 +30,17 @@
 
 .content-box-element:after {
 	filter: blur(50px);
+}
+
+
+
+.content-box {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	margin-top: 50px;
+	background-image: url(../Pictures/fon.png);
+	background-size: 150%;
+	background-position: center;
 }

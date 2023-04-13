@@ -93,20 +93,23 @@ html{
 /*text links*/
 .link_text_top{
     font-family: 'Downcome';
-    font-size: 70px;
+    font-size: 65px;
+    padding-right: 7px;
     color: white;
     z-index: 99999999;
 }
 .link_text_middle{
     font-family: 'Downcome';
-    font-size: 70px;
+    font-size: 65px;
+    padding-left: 30px;
     color: white;
 }
 .link_text_bottom{
     font-family: 'Downcome';
-    font-size: 70px;
+    font-size: 65px;
     white-space: pre;
     width: 300% !important;
+    padding-left: 20px;
     color: white;
 }
 
@@ -138,10 +141,10 @@ html{
 }
 
 .container_top .card .card__head {
-    color: black;
+    color: white;
     font-weight: 900;
-    background: rgba(48, 255, 0, 0.5);
-    padding: 0.5em;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);    padding: 0.5em;
     transform-origin: 0% 0%;
     transition: all 0.5s ease-in-out;
     min-width: 100%;
@@ -149,7 +152,7 @@ html{
     position: absolute;
     top: 0;
     left: 0;
-    font-size: 0.8em;
+    font-size: 1em;
     white-space: nowrap;
 }
 .container_top .card:hover #pic20{
@@ -180,9 +183,9 @@ html{
 .container_top .card:hover .card__head {
     text-align: center;
     top: calc(100% - 2.5em);
-    color: white;
-    background: rgba(0, 0, 0, 0.5);
-    font-size: 0.9em;
+    color: black;
+    background: rgba(48, 255, 0, 1);
+    background: linear-gradient(360deg, rgba(48, 255, 0, 1) 0%, rgba(255,255,255,0) 100%);    font-size: 0.9em;
     transform: rotate(-2deg) skewX(-2deg);
 }
 
@@ -222,10 +225,10 @@ html{
 }
 
 .container_middle .card .card__head {
-    color: black;
+    color: white;
     font-weight: 900;
-    background: rgba(48, 255, 0, 0.5);
-    padding: 0.5em;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);    padding: 0.5em;    padding: 0.5em;
     transform-origin: 0% 0%;
     transform: rotate(-2deg) skewX(-2deg);
     transition: all 0.5s ease-in-out;
@@ -257,9 +260,9 @@ html{
 .container_middle .card:hover .card__head {
     text-align: center;
     top: calc(100% - 12em);
-    color: white;
-    background: rgba(0, 0, 0, 0.5);
-    font-size: 13px;
+    color: black;
+    background: rgba(48, 255, 0, 1);
+    background: linear-gradient(360deg, rgba(48, 255, 0, 1) 0%, rgba(255,255,255,0) 100%);    font-size: 13px;
     transform: rotate(2deg) skew(2deg);
 }
 
@@ -303,10 +306,10 @@ html{
 }
 
 .container_bottom .card .card__head {
-    color: black;
+    color: white;
     font-weight: 900;
-    background: rgba(48, 255, 0, 0.5);
-    padding: 0.5em;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);    padding: 0.5em;    padding: 0.5em;
     transform: rotate(2deg) skew(3deg);
     transform-origin: 0% 0%;
     transition: all 0.5s ease-in-out;
@@ -331,8 +334,9 @@ html{
 .container_bottom .card:hover .card__head {
     text-align: center;
     top: calc(100% - 2.5em);
-    color: white;
-    background: rgba(0, 0, 0, 0.5);
+    color: black;
+    background: rgba(48, 255, 0, 1);
+    background: linear-gradient(360deg, rgba(48, 255, 0, 1) 0%, rgba(255,255,255,0) 100%);
     font-size: 1.4em;
     transform: rotate(0deg) skew(-5deg);
 }
@@ -472,7 +476,7 @@ html{
 }
 .content_container p{
     display: block;
-    width: 100%;
+    /* width: 100%; */
 }
 
 /*text keyframes*/

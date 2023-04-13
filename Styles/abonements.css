@@ -35,7 +35,7 @@
   letter-spacing: normal;
   width: fit-content;
   margin: auto;
-  transform: scaleX(1.5);
+  transform: scaleX(1.5) skewX(4deg);
   font-style: italic;
   font-size: 35px;
 }
