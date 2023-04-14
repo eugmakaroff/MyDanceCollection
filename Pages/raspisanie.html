@@ -15,6 +15,20 @@
     <link rel="stylesheet" href="../Styles/reset.css"> <!-- CSS reset -->
     <link rel="stylesheet" href="../Styles/raspisanie.css">
 
+
+
+    <link rel="stylesheet" href="splide.min.css">
+    <script src="splide.min.js"></script>
+    <script src="splide.js"></script>
+    <script>
+        new Splide( '.splide' ).mount();
+      </script>
+      <script>
+        document.addEventListener( 'DOMContentLoaded', function() {
+          var splide = new Splide( '.splide' );
+          splide.mount();
+        } );
+      </script>
     <title>Raspisanie</title>
 </head>
 
@@ -76,7 +90,6 @@
 		<a href="#0" class="cd-nav-trigger"><span></span></a>
 	</header>
     <main class="cd-main-content">
-        /*pc version*/
         <div class="pc_version_raspisanie">
             <div class="slideshow-container">
                 <div class="mySlides fade">
@@ -137,75 +150,20 @@
 
 
         <div class="mobile_version_raspisanie">
-            <div class="slideshow-container">
-                <div class="myslidesMobile fade">
-                    <img src="../Pictures/raspisanie1.png" style="width:100%">
+            <section class="splide" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide"><img src="../Pictures/raspisanie1.png"></li>
+                          <li class="splide__slide"><img src="../Pictures/raspisanie2.png"></li>
+                          <li class="splide__slide"><img src="../Pictures/raspisanie3.png"></li>
+                          <li class="splide__slide"><img src="../Pictures/raspisanie4.png"></li>
+                          <li class="splide__slide"><img src="../Pictures/raspisanie5.png"></li>
+                          <li class="splide__slide"><img src="../Pictures/raspisanie6.png"></li>
+                      </ul>
                 </div>
-                <div class="myslidesMobile fade">
-                    <img src="../Pictures/raspisanie2.png" style="width:100%">
-                </div>
-                <div class="myslidesMobile fade">
-                    <img src="../Pictures/raspisanie3.png" style="width:100%">
-                </div>
-
-                <div class="myslidesMobile fade">
-                    <img src="../Pictures/raspisanie4.png" style="width:100%">
-                </div>
-                <div class="myslidesMobile fade">
-                    <img src="../Pictures/raspisanie5.png" style="width:100%">
-                </div>
-                <div class="myslidesMobile fade">
-                    <img src="../Pictures/raspisanie6.png" style="width:100%">
-                </div>
-                <a class="prev" id="mobile_version_raspisanie" onclick="plusslidesMobile(-1)">&#10094;</a>
-                <a class="next" id="mobile_version_raspisanie" onclick="plusslidesMobile(1)">&#10095;</a>
-            </div>
-            <br>
-            <div style="text-align:center" class="mobile_version_raspisanie">
-                <span class="dotMobile" onclick="currentSlide(0)"></span>
-                <span class="dotMobile" onclick="currentSlide(1)"></span>
-                <span class="dotMobile" onclick="currentSlide(2)"></span>
-                <span class="dotMobile" onclick="currentSlide(3)"></span>
-                <span class="dotMobile" onclick="currentSlide(4)"></span>
-                <span class="dotMobile" onclick="currentSlide(5)"></span>
-            </div>
+            </section>
         </div>
 
-        <script>
-            let slideIndexMobile = 0;
-            const slidesMobile = document.getElementsByClassName("myslidesMobile");
-            const dotsMobile = document.getElementsByClassName("dotMobile");
-
-            showslidesMobile();
-            function currentSlide(index) {
-                slideIndexMobile = index;
-                showslidesMobile();
-            }
-            function plusslidesMobile(step) {
-
-                if (step < 0) {
-                    slideIndexMobile -= 2;
-
-                    if (slideIndexMobile < 0) {
-                        slideIndexMobile = slidesMobile.length - 1;
-                    }
-                }
-
-                showslidesMobile();
-            }
-            function showslidesMobile() {
-                for (let i = 0; i < slidesMobile.length; i++) {
-                    slidesMobile[i].style.display = "none";
-                    dotsMobile[i].classList.remove('active');
-                }
-                slideIndexMobile++;
-                if (slideIndexMobile > slidesMobile.length) {
-                    slideIndexMobile = 1
-                }
-                slidesMobile[slideIndexMobile - 1].style.display = "block";
-                dotsMobile[slideIndexMobile - 1].classList.add('active');
-            }
-        </script>
 
 
 <div class="footer-container">

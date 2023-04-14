@@ -2,13 +2,12 @@
 	box-sizing: border-box
 }
 main{
-	background-image: url(../Pictures/Logo\ MyDC.png);
+	/* background-image: url(../Pictures/Logo\ MyDC.png); */
 	background-size: 100%;
 }
 body {
 	margin: 0
 }
-
 .mySlides {
 	display: none
 }
@@ -100,53 +99,20 @@ img {
 		opacity: 1
 	}
 }
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-	.prev,
-	.next,
-	.text {
-		font-size: 11px
-	}
-}
-
-@media only screen and (min-width: 600px) {
-	.footer-distributed{
-		background: transparent;
-	}
-}
-.pc_version_raspisanie{
-	display: block;
-	background-size: 100%;
-}
 @media only screen and (max-width: 600px) {
+	.mobile_version_raspisanie{
+		display: block;
+		margin-top: 50px;
+	}
 	.pc_version_raspisanie{
 		display: none;
 	}
 }
-.mobile_version_raspisanie{
-	display: none;
-}
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) {
 	.mobile_version_raspisanie{
-		display: block;
-	}
-}
-
-
-#pc_version_raspisanie{
-	display: block;
-}
-@media only screen and (max-width: 600px) {
-	#pc_version_raspisanie{
 		display: none;
 	}
-}
-#mobile_version_raspisanie{
-	display: none;
-}
-@media only screen and (max-width: 600px) {
-	#mobile_version_raspisanie{
+	.pc_version_raspisanie{
 		display: block;
 	}
 }
