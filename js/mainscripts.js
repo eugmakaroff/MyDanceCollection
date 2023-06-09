@@ -49,4 +49,33 @@ jQuery(window).load(function() {
     jQuery("#status").delay(5000).fadeOut();
     // will fade out the whole DIV that covers the website.
     jQuery("#preloader").delay(2000).fadeOut("slow");
-    })
+})
+
+
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if (window.innerWidth > 853){
+        if($(window).scrollTop()>500){
+            $('#first_caption').fadeOut(700)
+        }
+    }
+    });
+})
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if (window.innerWidth > 853){
+        if($(window).scrollTop()>850){
+            $('#second_caption').fadeOut(700)
+        }
+    }
+    });
+})
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if (window.innerWidth > 853){
+        if($(window).scrollTop()>1200){
+            $('#third_caption').fadeOut(700)
+        }
+    }
+    });
+})
