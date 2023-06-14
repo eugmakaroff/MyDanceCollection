@@ -395,7 +395,7 @@ header::before {
     display: inline-block;
     height: fit-content;
     vertical-align: middle;
-    padding: .5em .5em;
+    padding: 0 .5em;
   }
   .cd-main-nav li a {
     /* display: inline-block; */
@@ -461,7 +461,7 @@ header::before {
     padding-left: 1.1em;
   }
   .cd-main-nav li ul {
-    height: 80px;
+    height: 60px;
     z-index: 1;
     background-color: #303030;
     /* padding left = logo size + logo left position*/
@@ -509,6 +509,8 @@ header::before {
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
     transform: translateY(0);
+    padding: 0 0 0 30px;
+    background: linear-gradient(0deg, rgba(42,42,42,0.6111694677871149) 0%, rgba(42,42,42,0.8072478991596639) 35%, rgba(41,41,41,1) 100%);
   }
   .cd-main-nav.moves-out > li ul li {
     opacity: 1;

@@ -155,7 +155,7 @@ html{
     font-size: 1em;
     white-space: nowrap;
 }
-.container_top .card:hover #pic20{
+/* .container_top .card:hover #pic20{
     top: calc(100% - 7em);
 }
 .container_top .card:hover #pic40{
@@ -169,7 +169,7 @@ html{
 }
 .container_top .card:hover #pic110{
     top: calc(100% - 3em);
-}
+} */
 
 .container_top .card:hover {
     flex-grow: 1.5;
@@ -400,9 +400,9 @@ html{
             100% 100%,
             0 90%);
 }
-.container_middle .card:nth-child(1) {
+/* .container_middle .card:nth-child(1) {
     display: none;
-}
+} */
 /*third container nashe prostranstvo*/
 .container_bottom {
     background-color: transparent;
@@ -587,4 +587,29 @@ html{
     .pc_version_content{
         display: block;
     }
+}
+
+
+
+
+
+/*1 element*/
+.container_top .card:hover #pic40{
+    bottom: 0;
+}
+/*2 element*/
+.container_top .card:hover #pic110{
+    bottom: 0;
+}
+/*3 element*/
+.container_top .card:hover #pic62{
+    bottom: 0;
+}
+/*4 element*/
+.container_top .card:hover #pic85{
+    bottom: 0;
+}
+/*5 element*/
+.container_top .card:hover #pic20{
+    bottom: 0;
 }
