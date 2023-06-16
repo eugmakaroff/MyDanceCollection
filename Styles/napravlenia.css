@@ -39,10 +39,10 @@ body {
 	display: flex;
 	flex-direction: column;
 	margin: auto;
-	margin-top: 50px;
-	background-image: url(../Pictures/images/fon_napravlenia_pedagogi.jpg);
-	background-size: 100%;
-	background-position: center;
+	/* margin-top: 50px; */
+	background-image: url(../Pictures/fon_copy.png);
+	background-size: 150%;
+	background-position: top;
 }
 
 
@@ -56,28 +56,30 @@ body {
 	display: flex;
 	flex-direction: column;
 	margin: auto;
-	margin-top: 50px;
+	margin-top: 0;
 }
 
 .content-box-element {
 	display: flex;
 	background-color: black;
 	color: silver;
-	width: 90%;
+	width: 80%;
 	margin: auto;
-	margin-top: 40px;
-	margin-bottom: 40px;
-	border: 1px solid white;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	/* border: 1px solid white; */
 	filter: drop-shadow(53px -33px 15px #000);
 	border-radius: 20px;
+	height: 380px;
 }
 
 .pic-element {
 	width: 60%;
+	height: 380px;
 }
 
 .text-element {
-	width: 40%;
+	width: 60%;
 	display: flex;
 	flex-direction: column;
 }
@@ -90,10 +92,10 @@ body {
 }
 
 .decsription {
-	text-align: center;
+	text-align: justify;
 	width: 70%;
 	margin: auto;
-	font-size: 15px;
+	font-size: 12px;
 	line-height: 2;
 }
 
@@ -102,6 +104,7 @@ body {
 	display: flex;
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
+	height: 380px;
 }
 
 .content-box-element:nth-child(even) img {
@@ -109,6 +112,7 @@ body {
 	display: flex;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
+	height: 380px;
 }
 
 .modal-window {

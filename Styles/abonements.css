@@ -37,13 +37,13 @@
   margin: auto;
   transform: scaleX(1.5) skewX(4deg);
   font-style: italic;
-  font-size: 35px;
+  font-size: 20px;
 }
 .text1{
   font-size: 1.05rem;
   width: 90%;
   line-height: 1;
-  margin: auto;
+  margin: 10px auto;
 }
 .text2{
   font-size: 1.05rem;
