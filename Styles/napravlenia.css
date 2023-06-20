@@ -70,12 +70,12 @@ body {
 	/* border: 1px solid white; */
 	filter: drop-shadow(53px -33px 15px #000);
 	border-radius: 20px;
-	height: 380px;
+	height: fit-content;
 }
 
 .pic-element {
 	width: 60%;
-	height: 380px;
+	height: auto;
 }
 
 .text-element {
@@ -360,4 +360,19 @@ button {
 		height: 250px;
 		padding: 5px;
 	}
+}
+
+
+
+.pic-element {
+	display: flex;
+    align-items: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.pic-element img {
+    width: 100% !important;
+    height: auto !important;
+    position: absolute;
 }
