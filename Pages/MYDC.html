@@ -29,7 +29,7 @@
     <header>
 		<nav class="cd-main-nav-wrapper">
 			<ul class="cd-main-nav">
-                <li id="hideafterscrolling1"><a href="MYDC.html" class="nospan"><img src="../Pictures/Logo MyDC.png" class="logoimagemain"></a></li>
+                <li id="hideafterscrolling1"><a href="MYDC.html" class="nospan"><img src="../Pictures/logos/Logo MyDC.png" class="logoimagemain"></a></li>
 				<li id="hideafterscrolling2"><a href="abonements.html"><span data-hover="АБОНЕМЕНТЫ">АБОНЕМЕНТЫ</span></a></li>
 				<li id="hideafterscrolling3"><a href="raspisanie.html"><span data-hover="РАСПИСАНИЕ">РАСПИСАНИЕ</span></a></li>
                 <li id="hideafterscrolling4"><a href="napravlenia.html"><span data-hover="НАПРАВЛЕНИЯ">НАПРАВЛЕНИЯ</span></a></li>
@@ -57,10 +57,10 @@
                 </li>
                 <li id="showinmobilemenu" class="socials_bottom">
                     <div class="mobilemenulinks">
-                        <a href=""><img src="../Pictures/tiktok.png" width="40px"></a>
-                        <a href=""><img src="../Pictures/telegram.png" width="40px"></a>
-                        <a href=""><img src="../Pictures/insta.png" width="40px"></a>
-                        <a href=""><img src="../Pictures/youtube.png" width="40px"></a>
+                        <a href=""><img src="../Pictures/logos/tiktok.png" width="40px"></a>
+                        <a href=""><img src="../Pictures/logos/telegram.png" width="40px"></a>
+                        <a href=""><img src="../Pictures/logos/insta.png" width="40px"></a>
+                        <a href=""><img src="../Pictures/logos/youtube.png" width="40px"></a>
                     </div>
                 </li>
                 <li id="top" style="float: right; display: none;">
@@ -83,6 +83,16 @@
 		<a href="#0" class="cd-nav-trigger"><span></span></a>
 	</header>
 
+    <div class="publicdoc_modal_window" id="publicdoc_modal_window_div">
+        <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, dolorem. Nihil nam molestias enim totam sequi nobis vel soluta autem eius pariatur facilis asperiores eveniet praesentium earum, illum omnis non.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, dolorem. Nihil nam molestias enim totam sequi nobis vel soluta autem eius pariatur facilis asperiores eveniet praesentium earum, illum omnis non.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, dolorem. Nihil nam molestias enim totam sequi nobis vel soluta autem eius pariatur facilis asperiores eveniet praesentium earum, illum omnis non.
+        </p>
+        <a class="download" onclick="">СКАЧАТЬ</p>
+        <a class="close" onclick="closePublicDocModalWindow()">X</a>
+    </div>
+ 
     <main class="cd-main-content">
         <div class="mydc_video">
             <img class="photo" src="../Pictures/new/new.jpg">
@@ -105,11 +115,11 @@
             <div class="container_top">
                 <div class="card">
                     <img src="../Pictures/photos/MyDCStepan-7.jpg">
-                    <div class="card__head">STEPAN KSENZOV</div>
+                    <div class="card__head">СТЕПАН КСЕНЗОВ</div>
                 </div>
                 <div class="card">
                     <img src="../Pictures/photos/anastasia.jpg">
-                    <div class="card__head" id="top_right">ANASTASIA AKUDOVICH</div>
+                    <div class="card__head" id="top_right">АНАСТАСИЯ АКУДОВИЧ</div>
                 </div>
             </div>
 
@@ -144,12 +154,16 @@
             </a>
             <div class="container_bottom">
                 <div class="card">
-                    <img src="../Pictures/zal1.jpg">
+                    <img src="../Pictures/zal/zal1.jpg">
                     <div class="card__head">НАШ ЗАЛ</div>
                 </div>
                 <div class="card">
-                    <img src="../Pictures/zal4.jpg">
-                    <div class="card__head" id="bot_right">УДОБСТВА</div>
+                    <img src="../Pictures/zal/zal4.jpg">
+                    <div class="card__head" id="center">УДОБСТВА</div>
+                </div>
+                <div class="card">
+                    <img src="../Pictures/zal/parking.jpg">
+                    <div class="card__head" id="bot_right">ПАРКОВКА</div>
                 </div>
             </div>
         </div>
@@ -200,11 +214,11 @@
                         class="container_middle">
                         <div class="card">
                             <img src="../Pictures/photos/MyDCStepan-7.jpg">
-                            <div class="card__head">STEPAN KSENZOV</div>
+                            <div class="card__head">СТЕПАН КСЕНЗОВ</div>
                         </div>
                         <div class="card">
                             <img src="../Pictures/photos/anastasia.jpg">
-                            <div class="card__head" id="top_right">ANASTASIA AKUDOVICH</div>
+                            <div class="card__head" id="top_right">АНАСТАСИЯ АКУДОВИЧ</div>
                         </div>
                     </div>
                 </div>
@@ -221,202 +235,24 @@
                     <div id="container_bottom_object"
                         class="container_bottom">
                         <div class="card">
-                            <img src="../Pictures/zal1.jpg">
+                            <img src="../Pictures/zal/zal1.jpg">
                             <div class="card__head">НАШ ЗАЛ</div>
                         </div>
                         <div class="card">
-                            <img src="../Pictures/zal4.jpg">
-                            <div class="card__head" id="bot_right">УДОБСТВА</div>
+                            <img src="../Pictures/zal/zal4.jpg">
+                            <div class="card__head" id="center">УДОБСТВА</div>
+                        </div>
+                        <div class="card">
+                            <img src="../Pictures/zal/parking.jpg">
+                            <div class="card__head" id="bot_right">ПАРКОВКА</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3&amp;sensor=false"></script>
-        <script>
-   var CustomMapStyles = [
-    {
-        "featureType": "all",
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "saturation": 36
-            },
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 40
-            }
-        ]
-    },
-    {
-        "featureType": "all",
-        "elementType": "labels.text.stroke",
-        "stylers": [
-            {
-                "visibility": "on"
-            },
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 16
-            }
-        ]
-    },
-    {
-        "featureType": "all",
-        "elementType": "labels.icon",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "administrative",
-        "elementType": "geometry.fill",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 20
-            }
-        ]
-    },
-    {
-        "featureType": "administrative",
-        "elementType": "geometry.stroke",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 17
-            },
-            {
-                "weight": 1.2
-            }
-        ]
-    },
-    {
-        "featureType": "landscape",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 20
-            }
-        ]
-    },
-    {
-        "featureType": "poi",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 21
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "elementType": "geometry.fill",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 17
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "elementType": "geometry.stroke",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 29
-            },
-            {
-                "weight": 0.2
-            }
-        ]
-    },
-    {
-        "featureType": "road.arterial",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 18
-            }
-        ]
-    },
-    {
-        "featureType": "road.local",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 16
-            }
-        ]
-    },
-    {
-        "featureType": "transit",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 19
-            }
-        ]
-    },
-    {
-        "featureType": "water",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 17
-            }
-        ]
-    }
-];
-
-google.maps.event.addDomListener(window, "load", function () {
-
-    // Initialize your map
-    var map = new google.maps.Map(document.getElementById("map_div"), {
-        center: new google.maps.LatLng(33.808678, -117.918921),
-        zoom: 14,
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
-        styles: CustomMapStyles
-    });
-});
-        </script>
         <div class="map" id="map_div" style="height: 600px;">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1367.5842000619664!2d27.4574951806551!3d53.907639782496155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc52d2f060de3%3A0x6eaa6e0c0ffa53db!2zNjIvMSwg0JzQuNC90YHQug!5e0!3m2!1sru!2sby!4v1661412791261!5m2!1sru!2sby"
+            <iframe style="filter: invert(90%)" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3371.781525818591!2d27.486350892948114!3d53.91348412541537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc5391c066db3%3A0x3fcdfafc34734e36!2svulica%20Matusievi%C4%8Da%2020%2C%20Minsk%2C%20Belarus!5e0!3m2!1sen!2slt!4v1687886820818!5m2!1sen!2slt"
                 width="100%" height="450" style="border:0;" allowfullscreen="true" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
@@ -427,25 +263,25 @@ google.maps.event.addDomListener(window, "load", function () {
             <div class="hr_div"></div>
             <div class="footer">
                 <div class="footer_element">
-                    <img src="../Pictures/Logo MyDC.png" class="footerlogoimage">
+                    <img src="../Pictures/logos/Logo MyDC.png" class="footerlogoimage">
                 </div>
                 <div class="footer_element">
-                    <a class="publicdoc" href="">ПУБЛИЧНЫЙ ДОГОВОР</a>
+                    <a class="publicdoc" onclick="showPublicDocModalWindow()">ПУБЛИЧНЫЙ ДОГОВОР</a>
                 </div>
                 <div class="footer_element">
                     <p class="address">Г. МИНСК
-                        УЛИЦА 666</p>
+                        УЛИЦА МАТУСЕВИЧА 20</p>
                 </div>
                 <div class="footer_element" style="flex-direction: column;">
                     <p class="phonenumber">+375-29-333-33-33</p>
                     <p class="phonenumber">+375-29-222-22-22</p>
                 </div>
                 <div class="footer_element">
-                    <a href="" target="_blank"><img class="hi-icon" src="../Pictures/tiktok.png"></a>
-                    <a href="https://instagram.com/my_dance_collection?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><img class="hi-icon" src="../Pictures/insta.png"></a>
-                    <a href="https://t.me/my_dance_collection" target="_blank"><img class="hi-icon" src="../Pictures/telegram.png"></a>
-                    <a href="mailto:mydcstudio@gmail.com" target="_blank"><img class="hi-icon" src="../Pictures/email.png"></a>
-                    <a href="" target="_blank"><img class="hi-icon" src="../Pictures/youtube.png"></a>
+                    <a href="" target="_blank"><img class="hi-icon" src="../Pictures/logos/tiktok.png"></a>
+                    <a href="https://instagram.com/my_dance_collection?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><img class="hi-icon" src="../Pictures/logos/insta.png"></a>
+                    <a href="https://t.me/my_dance_collection" target="_blank"><img class="hi-icon" src="../Pictures/logos/telegram.png"></a>
+                    <a href="mailto:mydcstudio@gmail.com" target="_blank"><img class="hi-icon" src="../Pictures/logos/email.png"></a>
+                    <a href="" target="_blank"><img class="hi-icon" src="../Pictures/logos/youtube.png"></a>
                 </div>
             </div>
             <div class="hr_div"></div>

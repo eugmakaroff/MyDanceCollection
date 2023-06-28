@@ -1,18 +1,27 @@
 .flex-container {
-  display: inline-block;
-  position: relative;
-  background-image: url(../Pictures/abonsbackground.jpg);
-  background-position: top;
-  background-size: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
   color: white;
   text-align: center;
   margin-top: 50px;
   line-height: 2;
 }
-
+@media only screen and (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+.whole_abons{
+  background-image: url(../Pictures/images/abonsbackground.jpg);
+  background-position: top;
+  background-size: 100%;
+}
 .aboncontainer {
-  display: inline-block;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
   line-height: 1.5;
   width: 28%;
   margin-top: 20px;
@@ -20,61 +29,26 @@
 
 .abonement {
   width: 90%;
-  /* height: 100%; */
   border-radius: 10px;
-  /* margin-bottom: 20px; */
+  margin: auto;
+  transition: 1s ease-in-out;
 }
-
-
-
-
-
-
-/* Это стилизация для конкретного примера, вы можете стилизировать под свой макет */ 
-/* .aboncontainer .abonimagecontainer img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: all .3s ease;
-} */
-
-/* Сразу скрываем вторую картинку */
-/* .aboncontainer .abonimagecontainer:nth-of-type(2) {
-  display: none;
-} */
-
-/* При наведении курсора на родительский класс aboncontainer первую картинку скрываем, а вторую показываем */
-
-/* .aboncontainer:hover .abonimagecontainer:nth-of-type(1) {
-  display: none;
-}
-
-.aboncontainer:hover .abonimagecontainer:nth-of-type(2) {
-  display: block;
-}
-
-.aboncontainer:hover {
-  cursor: pointer;
-} */
 
 .abonement_back{
-  display: none;
+  opacity: 0;
+  position: absolute;
+  left: 5%;
+  width: 90%;
+  border-radius: 10px;
+  transition: 1s ease-in-out;
 }
-.abonimagecontainer:hover .abonement_back{
-  display: block;
-  width: 10%;
+.aboncontainer:hover .abonement_back{
+  opacity: 1;
+  transition: 1s ease-in-out;
 }
-
-
-
-
-
-
-
-.abonimagecontainer{
-  height: 70%;
-  margin: auto;
-  width: 80%;
+.aboncontainer:hover .abonement{
+  opacity: 0;
+  transition: 1s ease-in-out;
 }
 
 .title{
@@ -178,8 +152,9 @@ padding-bottom: 100px;
 }
 @media only screen and (max-width: 853px) {
   .aboncontainer {
-    width: 45%;
+    width: 80%;
     margin-top: 20px;
+    margin: auto;
   }
   .text1{
     font-size: 0.9rem;
@@ -193,31 +168,23 @@ padding-bottom: 100px;
 @media only screen and (max-width: 500px) {
   .aboncontainer {
     line-height: 1.9;
-    width: 45%;
     margin-top: 0px;
   }
-  .abonimagecontainer{
-    height: 80px;
-    margin: auto;
-    width: 90%;
-  }
 .title{
-  font-size: 15px;
+  font-size: 25px;
   width: fit-content;
   margin: auto;
   right: 0;
   left: 0;
 }
 .text1{
-  font-size: 10px;
-  width: 150px;
+  font-size: 20px;
 }
 .text2{
-  font-size: 10px;
-  width: 150px;
+  font-size: 20px;
 }
 .bottom{
-  font-size: 15px;
+  font-size: 25px;
 }
 .contbottom{
 width: 70%;
@@ -237,13 +204,8 @@ padding-bottom: 30px;
 @media only screen and (max-width: 410px) {
   .aboncontainer {
     line-height: 1.9;
-    width: 90%;
+    width: 70%;
     margin-top: 0px;
-  }
-  .abonimagecontainer{
-    height: auto;
-    margin: auto;
-    width: 90%;
   }
   .title{
     font-size: 22px;

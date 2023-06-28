@@ -79,3 +79,21 @@ $(document).ready(function(){
     }
     });
 })
+
+
+
+/*public doc*/
+function showPublicDocModalWindow() {
+    document.getElementById('publicdoc_modal_window_div').style.display = "flex";
+}
+function closePublicDocModalWindow() {
+    document.getElementById('publicdoc_modal_window_div').style.display = "none";
+}
+
+/*napravlenia pedagogi modal window*/
+function showDiv() {
+    document.getElementById('welcomeDiv').style.display = "block";
+}
+function closeDiv() {
+    document.getElementById('welcomeDiv').style.display = "none";
+}

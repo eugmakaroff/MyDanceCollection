@@ -36,7 +36,7 @@
     <header>
 		<nav class="cd-main-nav-wrapper">
 			<ul class="cd-main-nav">
-                <li id="hideafterscrolling1"><a href="MYDC.html" class="nospan"><img src="../Pictures/Logo MyDC.png" class="logoimagemain"></a></li>
+                <li id="hideafterscrolling1"><a href="MYDC.html" class="nospan"><img src="../Pictures/logos/Logo MyDC.png" class="logoimagemain"></a></li>
 				<li id="hideafterscrolling2"><a href="abonements.html"><span data-hover="АБОНЕМЕНТЫ">АБОНЕМЕНТЫ</span></a></li>
 				<li id="hideafterscrolling3"><a href="raspisanie.html"><span data-hover="РАСПИСАНИЕ" style="color: #01ff00; font-weight: bold;">РАСПИСАНИЕ</span></a></li>
                 <li id="hideafterscrolling4"><a href="napravlenia.html"><span data-hover="НАПРАВЛЕНИЯ">НАПРАВЛЕНИЯ</span></a></li>
@@ -64,10 +64,10 @@
                 </li>
                 <li id="showinmobilemenu" class="socials_bottom">
                     <div class="mobilemenulinks">
-                        <a href=""><img src="../Pictures/tiktok.png" width="40px"></a>
-                        <a href=""><img src="../Pictures/telegram.png" width="40px"></a>
-                        <a href=""><img src="../Pictures/insta.png" width="40px"></a>
-                        <a href=""><img src="../Pictures/youtube.png" width="40px"></a>
+                        <a href=""><img src="../Pictures/logos/tiktok.png" width="40px"></a>
+                        <a href=""><img src="../Pictures/logos/telegram.png" width="40px"></a>
+                        <a href=""><img src="../Pictures/logos/insta.png" width="40px"></a>
+                        <a href=""><img src="../Pictures/logos/youtube.png" width="40px"></a>
                     </div>
                 </li>
                 <li id="top" style="float: right; display: none;">
@@ -89,17 +89,28 @@
 		</nav>
 		<a href="#0" class="cd-nav-trigger"><span></span></a>
 	</header>
+    
+    <div class="publicdoc_modal_window" id="publicdoc_modal_window_div">
+        <p class="publicdoc_modal_window_text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, dolorem. Nihil nam molestias enim totam sequi nobis vel soluta autem eius pariatur facilis asperiores eveniet praesentium earum, illum omnis non.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, dolorem. Nihil nam molestias enim totam sequi nobis vel soluta autem eius pariatur facilis asperiores eveniet praesentium earum, illum omnis non.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, dolorem. Nihil nam molestias enim totam sequi nobis vel soluta autem eius pariatur facilis asperiores eveniet praesentium earum, illum omnis non.
+        </p>
+        <a class="download" onclick="">СКАЧАТЬ</p>
+        <a class="close" onclick="closePublicDocModalWindow()">X</a>
+    </div>
+ 
     <main class="cd-main-content">
         <div class="pc_version_raspisanie">
             <div class="slideshow-container">
                 <div class="mySlides fade">
-                    <img src="../Pictures/raspisanie1-2.png" style="width:100%">
+                    <img src="../Pictures/raspisanie_img/raspisanie1-2.png" style="width:100%">
                 </div>
                 <div class="mySlides fade">
-                    <img src="../Pictures/raspisanie3-4.png" style="width:100%">
+                    <img src="../Pictures/raspisanie_img/raspisanie3-4.png" style="width:100%">
                 </div>
                 <div class="mySlides fade">
-                    <img src="../Pictures/raspisanie5-6.png" style="width:100%">
+                    <img src="../Pictures/raspisanie_img/raspisanie5-6.png" style="width:100%">
                 </div>
                 <a class="prev" id="pc_version_raspisanie" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" id="pc_version_raspisanie" onclick="plusSlides(1)">&#10095;</a>
@@ -153,12 +164,12 @@
             <section class="splide" aria-label="Splide Basic HTML Example">
                 <div class="splide__track">
                       <ul class="splide__list">
-                          <li class="splide__slide"><img src="../Pictures/raspisanie1.png"></li>
-                          <li class="splide__slide"><img src="../Pictures/raspisanie2.png"></li>
-                          <li class="splide__slide"><img src="../Pictures/raspisanie3.png"></li>
-                          <li class="splide__slide"><img src="../Pictures/raspisanie4.png"></li>
-                          <li class="splide__slide"><img src="../Pictures/raspisanie5.png"></li>
-                          <li class="splide__slide"><img src="../Pictures/raspisanie6.png"></li>
+                          <li class="splide__slide"><img src="../Pictures/raspisanie_img/raspisanie1.png"></li>
+                          <li class="splide__slide"><img src="../Pictures/raspisanie_img/raspisanie2.png"></li>
+                          <li class="splide__slide"><img src="../Pictures/raspisanie_img/raspisanie3.png"></li>
+                          <li class="splide__slide"><img src="../Pictures/raspisanie_img/raspisanie4.png"></li>
+                          <li class="splide__slide"><img src="../Pictures/raspisanie_img/raspisanie5.png"></li>
+                          <li class="splide__slide"><img src="../Pictures/raspisanie_img/raspisanie6.png"></li>
                       </ul>
                 </div>
             </section>
@@ -172,10 +183,10 @@
     <div class="hr_div"></div>
     <div class="footer">
         <div class="footer_element">
-            <img src="../Pictures/Logo MyDC.png" class="footerlogoimage">
+            <img src="../Pictures/logos/Logo MyDC.png" class="footerlogoimage">
         </div>
         <div class="footer_element">
-            <a class="publicdoc" href="">ПУБЛИЧНЫЙ ДОГОВОР</a>
+            <a class="publicdoc" onclick="showPublicDocModalWindow()">ПУБЛИЧНЫЙ ДОГОВОР</a>
         </div>
         <div class="footer_element">
             <p class="address">Г. МИНСК
@@ -186,11 +197,11 @@
             <p class="phonenumber">+375-29-222-22-22</p>
         </div>
         <div class="footer_element">
-            <a href="" target="_blank"><img class="hi-icon" src="../Pictures/tiktok.png"></a>
-            <a href="https://instagram.com/my_dance_collection?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><img class="hi-icon" src="../Pictures/insta.png"></a>
-            <a href="https://t.me/my_dance_collection" target="_blank"><img class="hi-icon" src="../Pictures/telegram.png"></a>
-            <a href="mailto:mydcstudio@gmail.com" target="_blank"><img class="hi-icon" src="../Pictures/email.png"></a>
-            <a href="" target="_blank"><img class="hi-icon" src="../Pictures/youtube.png"></a>
+            <a href="" target="_blank"><img class="hi-icon" src="../Pictures/logos/tiktok.png"></a>
+            <a href="https://instagram.com/my_dance_collection?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><img class="hi-icon" src="../Pictures/logos/insta.png"></a>
+            <a href="https://t.me/my_dance_collection" target="_blank"><img class="hi-icon" src="../Pictures/logos/telegram.png"></a>
+            <a href="mailto:mydcstudio@gmail.com" target="_blank"><img class="hi-icon" src="../Pictures/logos/email.png"></a>
+            <a href="" target="_blank"><img class="hi-icon" src="../Pictures/logos/youtube.png"></a>
         </div>
     </div>
     <div class="hr_div"></div>

@@ -11,9 +11,9 @@
   <script src="../js/main.js"></script> <!-- Resource jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <link rel="stylesheet" href="../Styles/footer.css">
-  <link rel="stylesheet" href="../Styles/navmenu.css">
   <link rel="stylesheet" href="../Styles/reset.css"> <!-- CSS reset -->
   <link rel="stylesheet" href="../Styles/nasheprostranstvo.css">
+  <link rel="stylesheet" href="../Styles/navmenu.css">
 
 
 
@@ -36,7 +36,7 @@
   <header>
     <nav class="cd-main-nav-wrapper">
       <ul class="cd-main-nav">
-        <li id="hideafterscrolling1"><a href="MYDC.html" class="nospan"><img src="../Pictures/Logo MyDC.png"
+        <li id="hideafterscrolling1"><a href="MYDC.html" class="nospan"><img src="../Pictures/logos/Logo MyDC.png"
               class="logoimagemain"></a></li>
         <li id="hideafterscrolling2"><a href="abonements.html"><span data-hover="АБОНЕМЕНТЫ">АБОНЕМЕНТЫ</span></a></li>
         <li id="hideafterscrolling3"><a href="raspisanie.html"><span data-hover="РАСПИСАНИЕ">РАСПИСАНИЕ</span></a></li>
@@ -68,10 +68,10 @@
         </li>
         <li id="showinmobilemenu" class="socials_bottom">
           <div class="mobilemenulinks">
-            <a href=""><img src="../Pictures/tiktok.png" width="40px"></a>
-            <a href=""><img src="../Pictures/telegram.png" width="40px"></a>
-            <a href=""><img src="../Pictures/insta.png" width="40px"></a>
-            <a href=""><img src="../Pictures/youtube.png" width="40px"></a>
+            <a href=""><img src="../Pictures/logos/tiktok.png" width="40px"></a>
+            <a href=""><img src="../Pictures/logos/telegram.png" width="40px"></a>
+            <a href=""><img src="../Pictures/logos/insta.png" width="40px"></a>
+            <a href=""><img src="../Pictures/logos/youtube.png" width="40px"></a>
           </div>
         </li>
         <li id="top" style="float: right; display: none;">
@@ -93,13 +93,24 @@
     </nav>
     <a href="#0" class="cd-nav-trigger"><span></span></a>
   </header>
+
+  <div class="publicdoc_modal_window" id="publicdoc_modal_window_div">
+    <p class="publicdoc_modal_window_text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, dolorem. Nihil nam molestias enim totam sequi nobis vel soluta autem eius pariatur facilis asperiores eveniet praesentium earum, illum omnis non.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, dolorem. Nihil nam molestias enim totam sequi nobis vel soluta autem eius pariatur facilis asperiores eveniet praesentium earum, illum omnis non.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, dolorem. Nihil nam molestias enim totam sequi nobis vel soluta autem eius pariatur facilis asperiores eveniet praesentium earum, illum omnis non.
+    </p>
+    <a class="download" onclick="">СКАЧАТЬ</p>
+    <a class="close" onclick="closePublicDocModalWindow()">X</a>
+  </div>
+
   <main class="cd-main-content">
     <p class="descr1">ОСНАЩЕНИЕ</p>
     <div class="container">
       <div class="card">
         <div class="face face1">
           <div class="content">
-            <img src="../Pictures/dance.png" width="50" style="margin: 10px;">
+            <img src="../Pictures/icons/dance.png" width="50" style="margin: 10px;">
             <h3>10 направлений</h3>
           </div>
         </div>
@@ -114,7 +125,7 @@
       <div class="card">
         <div class="face face1">
           <div class="content">
-            <img src="../Pictures/condition.png" width="50" style="margin: 10px;">
+            <img src="../Pictures/icons/condition.png" width="50" style="margin: 10px;">
             <h3>Кондиционеры</h3>
           </div>
         </div>
@@ -129,7 +140,7 @@
       <div class="card">
         <div class="face face1">
           <div class="content">
-            <img src="../Pictures/shower.png" width="50" style="margin: 10px;">
+            <img src="../Pictures/icons/shower.png" width="50" style="margin: 10px;">
             <h3>Душ</h3>
           </div>
         </div>
@@ -144,7 +155,7 @@
       <div class="card">
         <div class="face face1">
           <div class="content">
-            <img src="../Pictures/wi-fi.png" width="50" style="margin: 10px;">
+            <img src="../Pictures/icons/wi-fi.png" width="50" style="margin: 10px;">
             <h3>Wi-fi</h3>
           </div>
         </div>
@@ -159,7 +170,7 @@
       <div class="card">
         <div class="face face1">
           <div class="content">
-            <img src="../Pictures/lockers.png" width="50" style="margin: 10px;">
+            <img src="../Pictures/icons/lockers.png" width="50" style="margin: 10px;">
             <h3>Персональные шкафчики</h3>
           </div>
         </div>
@@ -174,7 +185,7 @@
       <div class="card">
         <div class="face face1">
           <div class="content">
-            <img src="../Pictures/parking.png" width="50" style="margin: 10px;">
+            <img src="../Pictures/icons/parking.png" width="50" style="margin: 10px;">
             <h3>Парковка</h3>
           </div>
         </div>
@@ -200,7 +211,7 @@
       <div class="card" id="visible_on_dekstop">
         <div class="face face1">
           <div class="content">
-            <img src="../Pictures/hall.png" width="50" style="margin: 10px;">
+            <img src="../Pictures/icons/hall.png" width="50" style="margin: 10px;">
             <h3>Комфортный зал</h3>
           </div>
         </div>
@@ -220,29 +231,29 @@
     <div class="pc_version_zal">
       <div class="slideshow-container">
         <div class="mySlides fade">
-          <img src="../Pictures/zal1.jpg" style="width:100%">
+          <img src="../Pictures/zal/zal1.jpg" style="width:100%">
         </div>
         <div class="mySlides fade">
-          <img src="../Pictures/zal2.jpg" style="width:100%">
+          <img src="../Pictures/zal/zal2.jpg" style="width:100%">
         </div>
         <div class="mySlides fade">
-          <img src="../Pictures/zal3.jpg" style="width:100%">
+          <img src="../Pictures/zal/zal3.jpg" style="width:100%">
         </div>
         <div class="mySlides fade">
-          <img src="../Pictures/zal4.jpg" style="width:100%">
+          <img src="../Pictures/zal/zal4.jpg" style="width:100%">
         </div>
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
       <br>
       <div class="navigation_images">
-        <span class="dot" onclick="currentSlide(0)"> <img src="../Pictures/zal1.jpg" style="width:100%">
+        <span class="dot" onclick="currentSlide(0)"> <img src="../Pictures/zal/zal1.jpg" style="width:100%">
         </span>
-        <span class="dot" onclick="currentSlide(1)"> <img src="../Pictures/zal2.jpg" style="width:100%">
+        <span class="dot" onclick="currentSlide(1)"> <img src="../Pictures/zal/zal2.jpg" style="width:100%">
         </span>
-        <span class="dot" onclick="currentSlide(2)"> <img src="../Pictures/zal3.jpg" style="width:100%">
+        <span class="dot" onclick="currentSlide(2)"> <img src="../Pictures/zal/zal3.jpg" style="width:100%">
         </span>
-        <span class="dot" onclick="currentSlide(3)"> <img src="../Pictures/zal4.jpg" style="width:100%">
+        <span class="dot" onclick="currentSlide(3)"> <img src="../Pictures/zal/zal4.jpg" style="width:100%">
         </span>
       </div>
     </div>
@@ -291,10 +302,10 @@
       <section class="splide" aria-label="Splide Basic HTML Example">
           <div class="splide__track">
                 <ul class="splide__list">
-                    <li class="splide__slide"><img src="../Pictures/zal1.jpg"></li>
-                    <li class="splide__slide"><img src="../Pictures/zal2.jpg"></li>
-                    <li class="splide__slide"><img src="../Pictures/zal3.jpg"></li>
-                    <li class="splide__slide"><img src="../Pictures/zal4.jpg"></li>
+                    <li class="splide__slide"><img src="../Pictures/zal/zal1.jpg"></li>
+                    <li class="splide__slide"><img src="../Pictures/zal/zal2.jpg"></li>
+                    <li class="splide__slide"><img src="../Pictures/zal/zal3.jpg"></li>
+                    <li class="splide__slide"><img src="../Pictures/zal/zal4.jpg"></li>
                 </ul>
           </div>
       </section>
@@ -302,18 +313,7 @@
 
     <p class="descr">ФОТОГАЛЕРЕЯ</p>
     <div class="gallery">
-      <style>
-        #dekstop_visible {
-          display: flex;
-        }
-
-        @media only screen and (max-width: 800px) {
-          #dekstop_visible {
-            display: none;
-          }
-        }
-      </style>
-      <div class="gallery__column" id="dekstop_visible">
+      <div class="gallery__column">
         <a class="gallery__link">
           <figure class="gallery__thumb">
             <img src="../Pictures/photos/MyDCKids-102.jpg" class="gallery__image">
@@ -333,6 +333,7 @@
           <figure class="gallery__thumb">
             <img src="../Pictures/gallery/zlata_color.jpg" class="gallery__image">
           </figure>
+        </a>
       </div>
 
       <div class="gallery__column">
@@ -343,7 +344,7 @@
         </a>
         <a class="gallery__link">
           <figure class="gallery__thumb">
-            <img src="../Pictures/new/шапка.jpg" class="gallery__image">
+            <img src="../Pictures/new/new.jpg" class="gallery__image">
           </figure>
         </a>
         <a class="gallery__link">
@@ -355,6 +356,7 @@
           <figure class="gallery__thumb">
             <img src="../Pictures/gallery/masha_horiz_color.jpg" class="gallery__image">
           </figure>
+        </a>
       </div>
 
       <div class="gallery__column">
@@ -375,8 +377,9 @@
         </a>
         <a class="gallery__link">
           <figure class="gallery__thumb">
-            <img src="../Pictures/photos/MyDCKids-9.jpg" class="gallery__image">
+            <img src="../Pictures/gallery/katya_color.jpg" class="gallery__image">
           </figure>
+        </a>
       </div>
 
       <div class="gallery__column">
@@ -397,7 +400,7 @@
         </a>
         <a class="gallery__link">
           <figure class="gallery__thumb">
-            <img src="../Pictures/photos/MyDCKate-23.jpg" class="gallery__image">
+            <img src="../Pictures/photos/MyDCKids-9.jpg" class="gallery__image">
           </figure>
         </a>
       </div>
@@ -410,10 +413,10 @@
       <div class="hr_div"></div>
       <div class="footer">
         <div class="footer_element">
-          <img src="../Pictures/Logo MyDC.png" class="footerlogoimage">
+          <img src="../Pictures/logos/Logo MyDC.png" class="footerlogoimage">
         </div>
         <div class="footer_element">
-          <a class="publicdoc" href="">ПУБЛИЧНЫЙ ДОГОВОР</a>
+          <a class="publicdoc" onclick="showPublicDocModalWindow()">ПУБЛИЧНЫЙ ДОГОВОР</a>
         </div>
         <div class="footer_element">
           <p class="address">Г. МИНСК
@@ -424,12 +427,12 @@
           <p class="phonenumber">+375-29-222-22-22</p>
         </div>
         <div class="footer_element">
-          <a href="" target="_blank"><img class="hi-icon" src="../Pictures/tiktok.png"></a>
-          <a href="https://instagram.com/my_dance_collection?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><img class="hi-icon" src="../Pictures/insta.png"></a>
-          <a href="https://t.me/my_dance_collection" target="_blank"><img class="hi-icon" src="../Pictures/telegram.png"></a>
-          <a href="mailto:mydcstudio@gmail.com" target="_blank"><img class="hi-icon" src="../Pictures/email.png"></a>
-          <a href="" target="_blank"><img class="hi-icon" src="../Pictures/youtube.png"></a>
-      </div>
+          <a href="" target="_blank"><img class="hi-icon" src="../Pictures/logos/tiktok.png"></a>
+          <a href="https://instagram.com/my_dance_collection?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><img class="hi-icon" src="../Pictures/logos/insta.png"></a>
+          <a href="https://t.me/my_dance_collection" target="_blank"><img class="hi-icon" src="../Pictures/logos/telegram.png"></a>
+          <a href="mailto:mydcstudio@gmail.com" target="_blank"><img class="hi-icon" src="../Pictures/logos/email.png"></a>
+          <a href="" target="_blank"><img class="hi-icon" src="../Pictures/logos/youtube.png"></a>
+        </div>
       </div>
       <div class="hr_div"></div>
       <div class="footer-bottom">

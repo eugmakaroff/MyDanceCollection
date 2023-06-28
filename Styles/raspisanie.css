@@ -1,12 +1,6 @@
-* {
-	box-sizing: border-box
-}
 main{
 	/* background-image: url(../Pictures/Logo\ MyDC.png); */
 	background-size: 100%;
-}
-body {
-	margin: 0
 }
 .mySlides {
 	display: none
