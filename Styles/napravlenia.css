@@ -82,7 +82,7 @@ body {
 	width: 60%;
 	display: flex;
 	flex-direction: column;
-	padding: 20px;
+	padding: 20px 0;
 }
 
 .text-element .head-text {
@@ -390,10 +390,10 @@ button {
 @media only screen and (min-width: 600px) {
 	.pic-element:nth-child(odd) img {
 		-webkit-mask-image: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-		mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+		-moz-mask-image: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
 	}
 	.pic-element:nth-child(even) img {
 		-webkit-mask-image: -webkit-gradient(linear, right top, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-		mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+		-moz-mask-image: -webkit-gradient(linear, right top, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
 	}
 }

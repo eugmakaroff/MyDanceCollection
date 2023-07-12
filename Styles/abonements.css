@@ -31,7 +31,7 @@
   width: 90%;
   border-radius: 10px;
   margin: auto;
-  transition: 1s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .abonement_back{
@@ -40,15 +40,15 @@
   left: 5%;
   width: 90%;
   border-radius: 10px;
-  transition: 1s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .aboncontainer:hover .abonement_back{
   opacity: 1;
-  transition: 1s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .aboncontainer:hover .abonement{
   opacity: 0;
-  transition: 1s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .title{

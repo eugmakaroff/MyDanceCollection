@@ -97,3 +97,11 @@ function showDiv() {
 function closeDiv() {
     document.getElementById('welcomeDiv').style.display = "none";
 }
+
+/*zapis online buttons scripts*/
+function show_form_zapis() {
+    document.getElementById('feedback-form').style.display = "block";
+}
+function close_form_zapis() {
+    document.getElementById('feedback-form').style.display = "none";
+}

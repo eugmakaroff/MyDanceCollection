@@ -28,7 +28,7 @@
     <header>
 		<nav class="cd-main-nav-wrapper">
 			<ul class="cd-main-nav">
-                <li id="hideafterscrolling1"><a href="MYDC.html" class="nospan"><img src="../Pictures/logos/Logo MyDC.png" class="logoimagemain"></a></li>
+                <li id="hideafterscrolling1"><a href="index.html" class="nospan"><img src="../Pictures/logos/Logo MyDC.png" class="logoimagemain"></a></li>
 				<li id="hideafterscrolling2"><a href="abonements.html"><span data-hover="АБОНЕМЕНТЫ">АБОНЕМЕНТЫ</span></a></li>
 				<li id="hideafterscrolling3"><a href="raspisanie.html"><span data-hover="РАСПИСАНИЕ">РАСПИСАНИЕ</span></a></li>
                 <li id="hideafterscrolling4"><a href="napravlenia.html"><span data-hover="НАПРАВЛЕНИЯ">НАПРАВЛЕНИЯ</span></a></li>
@@ -36,13 +36,13 @@
                 <li id="hideafterscrolling6"><a href="nasheprostranstvo.html"><span data-hover="НАШЕ ПРОСТРАНСТВО">НАШЕ ПРОСТРАНСТВО</span></a></li>
                 <li id="hideafterscrolling9"><a href="merch.html"><span data-hover="МЕРЧ" style="color: #01ff00; font-weight: bold;">МЕРЧ</span></a></li>
                 <li id="hideafterscrolling7">
-                    <a class="button4" href="mailto:support@company.com"><p>ЗАПИСЬ ОНЛАЙН</p></a>
+                    <a class="button4" onclick="show_form_zapis()"><p>ЗАПИСЬ ОНЛАЙН</p></a>
                 </li>
                 <li id="hideafterscrolling8">
                     <a href="">+375 (29) 333-33-33</a>
                     <a href="">+375 (29) 333-33-33</a>
                 </li>
-                <li id="showinmobilemenu" style="margin-top: 30px;"><a href="MYDC.html">ГЛАВНАЯ</a></li>
+                <li id="showinmobilemenu" style="margin-top: 30px;"><a href="index.html">ГЛАВНАЯ</a></li>
                 <li id="showinmobilemenu"><a href="abonements.html">АБОНЕМЕНТЫ</a></li>
 				<li id="showinmobilemenu"><a href="raspisanie.html">РАСПИСАНИЕ</a></li>
                 <li id="showinmobilemenu"><a href="napravlenia.html">НАПРАВЛЕНИЯ</a></li>
@@ -66,7 +66,7 @@
 					<a href="#0" class="cd-subnav-trigger">МЕНЮ</a>
 					<ul>
 						<li class="go-back" style="float: right; padding: 15px;"><a href="#0">&#10006;</a></li>
-                        <li><a href="MYDC.html">ГЛАВНАЯ</a></li>
+                        <li><a href="index.html">ГЛАВНАЯ</a></li>
 						<li><a href="abonements.html">АБОНЕМЕНТЫ</a></li>
 						<li><a href="raspisanie.html">РАСПИСАНИЕ</a></li>
 						<li><a href="napravlenia.html">НАПРАВЛЕНИЯ</a></li>
@@ -93,11 +93,7 @@
     </div>
 
     <main class="cd-main-content">
-
-
-
-
-          <div class="footer-container">
+        <div class="footer-container">
             <p class="footertop1">ТАНЦЕВАЛЬНАЯ СТУДИЯ MY DANCE COLLECTION</p>
             <p class="footertop2">УЧИМ ТАНЦЕВАТЬ ДЕТЕЙ И ВЗРОСЛЫХ</p>
             <div class="hr_div"></div>
@@ -110,7 +106,7 @@
                 </div>
                 <div class="footer_element">
                     <p class="address">Г. МИНСК
-                        УЛИЦА 666</p>
+                        УЛИЦА МАТУСЕВИЧА 20</p>
                 </div>
                 <div class="footer_element" style="flex-direction: column;">
                     <p class="phonenumber">+375-29-333-33-33</p>
@@ -136,6 +132,13 @@
             </div>
         </div>
     </main>
+    <!-- Форма обратной связи -->
+<div class="zapis_form_modal" id="feedback-form">
+    <div class="close-button-zapis-online">
+        <a onclick="close_form_zapis()"><p>&#10006;</p></a>
+    </div>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf-BZjMF9m9w3BQx_Gkr5bov4Kfq3DMEpfewrIi_NhVFzb2xA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></body>
+</div>
 </body>
 
 </html>
