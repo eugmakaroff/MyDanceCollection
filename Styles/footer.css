@@ -18,30 +18,41 @@ html{
 a{
 	text-decoration: none;
 }
-	.hr_div{
+	.hr_div, .sec-hr_div{
 		width: 80%;
 		height: 2px; 
 		margin: auto; 
-		margin-top: 10px; 
 		background: rgb(1,255,0);
         background: linear-gradient(90deg, rgba(1,255,0,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+	}
+	.hr_div{
+		margin-top: 20px; 
+	}
+	.sec-hr_div{
+		margin-bottom: 20px; 
+	}
+	@media only screen and (max-width: 500px) {
+		.sec-hr_div{
+			margin-top: 15px; 
+		}
 	}
 	.footertop1{
 		font-size: 55px;
 		width: fit-content;
 		margin: auto;
-		margin-bottom: 10px;
+		margin-bottom: -10px;
 		right: 0;
 		left: 0;
 		transform: scaleX(1.5) skewX(6deg);
 		font-style: italic;
-		letter-spacing: 1px;
+		letter-spacing: 0.5px;
+		line-height: 1;
 		color: white;
 		text-align: center !important;
 		font-family: 'Downcome';
 		/* padding-top: 100px; */
 	}
-	.footertop2{
+	.footertop2 {
 		margin: auto;
 		width: fit-content;
 		right: 0;
@@ -49,7 +60,9 @@ a{
 		margin-bottom: 40px;
 		transform: scaleX(1.5) skewX(6deg);
 		font-size: 55px;
-		letter-spacing: 1px;
+		letter-spacing: 0.5px;
+		line-height: 1 !important;
+		margin-top: 10px;
 		font-style: italic;
 		color: white;
 		text-align: center !important;
@@ -62,16 +75,16 @@ a{
 	}
 	.publicdoc{
 		text-decoration: none;
-		font-size: 22px;
+		font-size: 20px;
 		color: white;
 	}
 	.address {
-		font-size: 22px;
+		font-size: 20px;
 		color: white;
 	}
 	.phonenumber{
 		color: white;
-		font-size: 22px;
+		font-size: 20px;
 		margin-bottom: 0px;
 	}
 	/* Effect 2 */
@@ -106,16 +119,13 @@ a{
 
 	/* Footer Right */
 	.footer-company-about {
-		color: #92999f;
-		font-size: 20px;
-		font-weight: normal;
-	}
-	.footer-company-about span {
-		display: block;
-		color: #ffffff;
-		font-size: 24px;
-		font-weight: bold;
 		margin-bottom: 1%;
+		padding: 0 30px;
+		line-height: 1.5; 
+		font-size: 15px; 
+		color: white; 
+		letter-spacing: 2px;
+		text-align: center;
 	}
 	.map {
 		position: relative;
@@ -135,13 +145,13 @@ a{
 		width: 90px;
 	}
 	.publicdoc{
-		font-size: 21px;
+		font-size: 19px;
 	}
 	.address {
-		font-size: 21px;
+		font-size: 19px;
 	}
 	.phonenumber{
-		font-size: 21px;
+		font-size: 19px;
 	}
 	/* Effect 2 */
 	.hi-icon {
@@ -162,13 +172,13 @@ a{
 		width: 90px;
 	}
 	.publicdoc{
-		font-size: 20px;
+		font-size: 18px;
 	}
 	.address {
-		font-size: 20px;
+		font-size: 18px;
 	}
 	.phonenumber{
-		font-size: 20px;
+		font-size: 18px;
 	}
 	/* Effect 2 */
 	.hi-icon {
@@ -189,13 +199,13 @@ a{
 		width: 90px;
 	}
 	.publicdoc{
-		font-size: 19px;
+		font-size: 17px;
 	}
 	.address {
-		font-size: 19px;
+		font-size: 17px;
 	}
 	.phonenumber{
-		font-size: 19px;
+		font-size: 17px;
 	}
 	/* Effect 2 */
 	.hi-icon {
@@ -216,13 +226,13 @@ a{
 		width: 90px;
 	}
 	.publicdoc{
-		font-size: 18px;
+		font-size: 16px;
 	}
 	.address {
-		font-size: 18px;
+		font-size: 16px;
 	}
 	.phonenumber{
-		font-size: 18px;
+		font-size: 16px;
 	}
 	/* Effect 2 */
 	.hi-icon {
@@ -242,13 +252,13 @@ a{
 		width: 85px;
 	}
 	.publicdoc{
-		font-size: 17px;
+		font-size: 15px;
 	}
 	.address {
-		font-size: 17px;
+		font-size: 15px;
 	}
 	.phonenumber{
-		font-size: 17px;
+		font-size: 15px;
 	}
 	/* Effect 2 */
 	.hi-icon {
@@ -269,13 +279,13 @@ a{
 		width: 83px;
 	}
 	.publicdoc{
-		font-size: 16px;
+		font-size: 14px;
 	}
 	.address {
-		font-size: 16px;
+		font-size: 14px;
 	}
 	.phonenumber{
-		font-size: 16px;
+		font-size: 14px;
 	}
 	/* Effect 2 */
 	.hi-icon {
@@ -295,13 +305,13 @@ a{
 		width: 81px;
 	}
 	.publicdoc{
-		font-size: 15px;
+		font-size: 13px;
 	}
 	.address {
-		font-size: 15px;
+		font-size: 13px;
 	}
 	.phonenumber{
-		font-size: 15px;
+		font-size: 13px;
 	}
 	/* Effect 2 */
 	.hi-icon {
@@ -321,13 +331,13 @@ a{
 		width: 79px;
 	}
 	.publicdoc{
-		font-size: 14px;
+		font-size: 12px;
 	}
 	.address {
-		font-size: 14px;
+		font-size: 12px;
 	}
 	.phonenumber{
-		font-size: 14px;
+		font-size: 12px;
 	}
 	/* Effect 2 */
 	.hi-icon {
@@ -347,13 +357,13 @@ a{
 		width: 77px;
 	}
 	.publicdoc{
-		font-size: 13px;
+		font-size: 11px;
 	}
 	.address {
-		font-size: 13px;
+		font-size: 11px;
 	}
 	.phonenumber{
-		font-size: 13px;
+		font-size: 11px;
 	}
 	/* Effect 2 */
 	.hi-icon {
@@ -373,13 +383,13 @@ a{
 		width: 75px;
 	}
 	.publicdoc{
-		font-size: 12px;
+		font-size: 10px;
 	}
 	.address {
-		font-size: 12px;
+		font-size: 10px;
 	}
 	.phonenumber{
-		font-size: 12px;
+		font-size: 10px;
 	}
 	/* Effect 2 */
 	.hi-icon {
@@ -399,13 +409,13 @@ a{
 		width: 73px;
 	}
 	.publicdoc{
-		font-size: 11px;
+		font-size: 9px;
 	}
 	.address {
-		font-size: 11px;
+		font-size: 9px;
 	}
 	.phonenumber{
-		font-size: 11px;
+		font-size: 9px;
 	}
 	/* Effect 2 */
 	.hi-icon {
@@ -425,13 +435,13 @@ a{
 		width: 71px;
 	}
 	.publicdoc{
-		font-size: 10px;
+		font-size: 8px;
 	}
 	.address {
-		font-size: 10px;
+		font-size: 8px;
 	}
 	.phonenumber{
-		font-size: 10px;
+		font-size: 8px;
 	}
 	/* Effect 2 */
 	.hi-icon {
@@ -451,13 +461,13 @@ a{
 		width: 69px;
 	}
 	.publicdoc{
-		font-size: 9px;
+		font-size: 7px;
 	}
 	.address {
-		font-size: 9px;
+		font-size: 7px;
 	}
 	.phonenumber{
-		font-size: 9px;
+		font-size: 7px;
 	}
 	/* Effect 2 */
 	.hi-icon {
@@ -477,13 +487,13 @@ a{
 		width: 67px;
 	}
 	.publicdoc{
-		font-size: 8.5px;
+		font-size: 6.5px;
 	}
 	.address {
-		font-size: 8.5px;
+		font-size: 6.5px;
 	}
 	.phonenumber{
-		font-size: 8.5px;
+		font-size: 6.5px;
 	}
 	/* Effect 2 */
 	.hi-icon {
@@ -503,13 +513,13 @@ a{
 		width: 65px;
 	}
 	.publicdoc{
-		font-size: 8px;
+		font-size: 7px;
 	}
 	.address {
-		font-size: 8px;
+		font-size: 7px;
 	}
 	.phonenumber{
-		font-size: 8px;
+		font-size: 7px;
 	}
 	/* Effect 2 */
 	.hi-icon {
@@ -529,13 +539,13 @@ a{
 		width: 63px;
 	}
 	.publicdoc{
-		font-size: 7.5px;
+		font-size: 6.5px;
 	}
 	.address {
-		font-size: 7.5px;
+		font-size: 6.5px;
 	}
 	.phonenumber{
-		font-size: 7.5px;
+		font-size: 6.5px;
 	}
 	/* Effect 2 */
 	.hi-icon {
@@ -552,13 +562,13 @@ a{
 	}
 	/* Footers */
 	.publicdoc{
-		font-size: 7px;
+		font-size: 6px;
 	}
 	.address {
-		font-size: 7px;
+		font-size: 6px;
 	}
 	.phonenumber{
-		font-size: 7px;
+		font-size: 6px;
 	}
 	/* Effect 2 */
 	.hi-icon {
@@ -580,13 +590,13 @@ a{
 
 	/* Footers */
 	.publicdoc{
-		font-size: 25px;
+		font-size: 22px;
 	}
 	.address {
-		font-size: 25px;
+		font-size: 22px;
 	}
 	.phonenumber{
-		font-size: 25px;
+		font-size: 22px;
 	}
 	/* Effect 2 */
 	.hi-icon {
@@ -604,13 +614,13 @@ a{
 
 	/* Footers */
 	.publicdoc{
-		font-size: 23px;
+		font-size: 20px;
 	}
 	.address {
-		font-size: 23px;
+		font-size: 20px;
 	}
 	.phonenumber{
-		font-size: 23px;
+		font-size: 20px;
 	}
 	/* Effect 2 */
 	.hi-icon {
@@ -628,13 +638,13 @@ a{
 
 	/* Footers */
 	.publicdoc{
-		font-size: 20px;
+		font-size: 18px;
 	}
 	.address {
-		font-size: 20px;
+		font-size: 18px;
 	}
 	.phonenumber{
-		font-size: 20px;
+		font-size: 18px;
 	}
 	/* Effect 2 */
 	.hi-icon {
@@ -652,13 +662,13 @@ a{
 
 	/* Footers */
 	.publicdoc{
-		font-size: 18px;
+		font-size: 16px;
 	}
 	.address {
-		font-size: 18px;
+		font-size: 16px;
 	}
 	.phonenumber{
-		font-size: 18px;
+		font-size: 16px;
 	}
 	/* Effect 2 */
 	.hi-icon {
@@ -666,17 +676,13 @@ a{
 		margin: 0 0 0 12px;
 	}
 	.footer-company-about {
-		width: 70%;
+		width: 95%;
 		margin: auto;
-		font-size: 10px;
-		line-height: 1.3;
+		font-size: 6px;
 	}
 
 	.footer-company-name {
 		font-size: 10px;
-	}
-	.footer-company-about span {
-		font-size: 14px;
 	}
 }
 @media only screen and (max-width: 430px) {
@@ -689,13 +695,13 @@ a{
 
 	/* Footers */
 	.publicdoc{
-		font-size: 17px;
+		font-size: 15px;
 	}
 	.address {
-		font-size: 17px;
+		font-size: 15px;
 	}
 	.phonenumber{
-		font-size: 17px;
+		font-size: 15px;
 	}
 	/* Effect 2 */
 	.hi-icon {
@@ -714,13 +720,13 @@ a{
 	}
 	/* Footers */
 	.publicdoc{
-		font-size: 16px;
+		font-size: 14px;
 	}
 	.address {
-		font-size: 16px;
+		font-size: 14px;
 	}
 	.phonenumber{
-		font-size: 16px;
+		font-size: 14px;
 	}
 	/* Effect 2 */
 	.hi-icon {
@@ -740,13 +746,13 @@ a{
 
 	/* Footers */
 	.publicdoc{
-		font-size: 15px;
+		font-size: 13px;
 	}
 	.address {
-		font-size: 15px;
+		font-size: 13px;
 	}
 	.phonenumber{
-		font-size: 15px;
+		font-size: 13px;
 	}
 	/* Effect 2 */
 	.hi-icon {
@@ -781,38 +787,24 @@ a{
 .footer-container{
 	width: 100%;
 	margin-top: 20px;
-	padding-top: 50px;
+	/* padding-top: 50px; */
 	background: linear-gradient(180deg, rgba(0, 0, 0, 1) 71%, rgba(29, 120, 6, 1) 100%);
 }
 .footer-bottom {
 	color: white;
 }
-.footer-company-about {
-	color: #92999f;
-	font-size: 20px;
-	font-weight: normal;
-}
-.footer-company-about span {
-	display: block;
-	color: #ffffff;
-	font-size: 24px;
-	font-weight: bold;
-	margin-bottom: 1%;
-}
+
 @media only screen and (max-width: 650px) {
 	.footer {
 		flex-direction: column;
 	}
 	.footer_element {
-		padding: 15px 0 15px 0;
+		padding: 5px 0 5px 0;
 	}
 	.footer-company-about {
-		font-size: 10px;
-		width: 80%;
+		font-size: 7px;
+		width: 95%;
 		margin: auto;
-	}
-	.footer-company-about span {
-		font-size: 12px;
 	}
 }
 
@@ -823,4 +815,10 @@ a{
 @font-face {
   font-family: 'Uni Sans';
   src: url('../Fonts/Uni\ Sans\ Thin.otf');
+}
+
+
+main * {
+	line-height: 1.5 !important; 
+	letter-spacing: 2px;
 }

@@ -66,9 +66,8 @@
           <a class="button4" onclick="show_form_zapis()"><p>ЗАПИСЬ ОНЛАЙН</p></a>
         </li>
         <li id="hideafterscrolling8">
-          <a href="">+375 (29) 333-33-33</a>
-          <a href="">+375 (29) 333-33-33</a>
-        </li>
+          <a href="tel:+375 (29) 560-98-88">+375 (29) 560-98-88</a>
+      </li>
         <li id="showinmobilemenu" style="margin-top: 30px;"><a href="index.html">ГЛАВНАЯ</a></li>
         <li id="showinmobilemenu"><a href="abonements.html">АБОНЕМЕНТЫ</a></li>
         <li id="showinmobilemenu"><a href="raspisanie.html">РАСПИСАНИЕ</a></li>
@@ -78,9 +77,8 @@
         <li id="showinmobilemenu"><a href="merch-page-in-progress.html">МЕРЧ</a></li>
         <li id="showinmobilemenu"><a href="">КОНТАКТЫ</a></li>
         <li id="showinmobilemenu" class="tel_bottom">
-          <a href="" class="top_tel_number">+375 (29) 333-33-33 MTC</a>
-          <a href="" class="bottom_tel_number">+375 (29) 333-33-33 A1</a>
-        </li>
+          <a href="tel:+375 (29) 560-98-88" class="bottom_tel_number">+375 (29) 560-98-88</a>
+      </li>
         <li id="showinmobilemenu" class="socials_bottom">
           <div class="mobilemenulinks">
             <a href=""><img src="../Pictures/logos/tiktok.png" width="40px"></a>
@@ -88,21 +86,6 @@
             <a href=""><img src="../Pictures/logos/insta.png" width="40px"></a>
             <a href=""><img src="../Pictures/logos/youtube.png" width="40px"></a>
           </div>
-        </li>
-        <li id="top" style="float: right; display: none;">
-          <a href="#0" class="cd-subnav-trigger">МЕНЮ</a>
-          <ul>
-            <li class="go-back" style="float: right; padding: 15px;"><a href="#0">&#10006;</a></li>
-            <li><a href="index.html">ГЛАВНАЯ</a></li>
-            <li><a href="abonements.html">АБОНЕМЕНТЫ</a></li>
-            <li><a href="raspisanie.html">РАСПИСАНИЕ</a></li>
-            <li><a href="napravlenia.html">НАПРАВЛЕНИЯ</a></li>
-            <li><a href="pedagogi.html">ПЕДАГОГИ</a></li>
-            <li><a href="nasheprostranstvo.html">НАШЕ ПРОСТРАНСТВО</a></li>
-            <li><a href="merch-page-in-progress.html">МЕРЧ</a></li>
-            <li><a href="">КОНТАКТЫ</a></li>
-            <li><a href="#0" class="placeholder">Placeholder</a></li>
-          </ul>
         </li>
       </ul>
     </nav>
@@ -115,7 +98,7 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, dolorem. Nihil nam molestias enim totam sequi nobis vel soluta autem eius pariatur facilis asperiores eveniet praesentium earum, illum omnis non.
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, dolorem. Nihil nam molestias enim totam sequi nobis vel soluta autem eius pariatur facilis asperiores eveniet praesentium earum, illum omnis non.
     </p>
-    <a class="download" onclick="">СКАЧАТЬ</p>
+    <a class="download" onclick="">СКАЧАТЬ</p></a>
     <a class="close" onclick="closePublicDocModalWindow()">X</a>
   </div>
 
@@ -212,17 +195,7 @@
           </div>
         </div>
       </div>
-      <style>
-        #visible_on_dekstop {
-          display: inline-block;
-        }
 
-        @media only screen and (max-width: 800px) {
-          #visible_on_dekstop {
-            display: none;
-          }
-        }
-      </style>
       <div class="card" id="visible_on_dekstop">
         <div class="face face1">
           <div class="content">
@@ -243,7 +216,7 @@
 
 
     <p class="descr">ЗАЛ И РАЗМЕЩЕНИЕ</p>
-    <div class="pc_version_zal">
+    <!-- <div class="pc_version_zal">
       <div class="slideshow-container">
         <div class="mySlides fade">
           <img src="../Pictures/zal/zal1.jpg" style="width:100%">
@@ -271,63 +244,23 @@
         <span class="dot" onclick="currentSlide(3)"> <img src="../Pictures/zal/zal4.jpg" style="width:100%">
         </span>
       </div>
-    </div>
-    <script>
-      let slideIndex = 0;
-      let timeoutId = null;
-      const slides = document.getElementsByClassName("mySlides");
-      const dots = document.getElementsByClassName("dot");
-
-      showSlides();
-      function currentSlide(index) {
-        slideIndex = index;
-        showSlides();
-      }
-      function plusSlides(step) {
-
-        if (step < 0) {
-          slideIndex -= 2;
-
-          if (slideIndex < 0) {
-            slideIndex = slides.length - 1;
-          }
-        }
-
-        showSlides();
-      }
-      function showSlides() {
-        for (let i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-          dots[i].classList.remove('active');
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-          slideIndex = 1
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].classList.add('active');
-        if (timeoutId) {
-          clearTimeout(timeoutId);
-        }
-        timeoutId = setTimeout(showSlides, 5000); // Change image every 5 seconds
-      }
-    </script>
+    </div> -->
 
     <div class="mobile_version_zal">
       <section class="splide" aria-label="Splide Basic HTML Example">
           <div class="splide__track">
                 <ul class="splide__list">
-                    <li class="splide__slide"><img src="../Pictures/zal/zal1.jpg"></li>
+                    <!-- <li class="splide__slide"><img src="../Pictures/zal/zal1.jpg"></li>
                     <li class="splide__slide"><img src="../Pictures/zal/zal2.jpg"></li>
                     <li class="splide__slide"><img src="../Pictures/zal/zal3.jpg"></li>
-                    <li class="splide__slide"><img src="../Pictures/zal/zal4.jpg"></li>
+                    <li class="splide__slide"><img src="../Pictures/zal/zal4.jpg"></li> -->
                 </ul>
           </div>
       </section>
     </div>
 
     <p class="descr">ФОТОГАЛЕРЕЯ</p>
-    <div class="gallery">
+    <div class="gallery" id="openGalleryBtn">
       <div class="gallery__column">
         <a class="gallery__link">
           <figure class="gallery__thumb">
@@ -421,8 +354,62 @@
       </div>
     </div>
 
+
+
+    <!-- <button id="openGalleryBtn">Open Gallery</button> -->
+    <div id="galleryContainer">
+      <div id="gallery">
+        <img src="../Pictures/nashe_prostranstvo-gallery-full/MyDCAlexandra-6.jpg" alt="Фото 1">
+        <img src="../Pictures/nashe_prostranstvo-gallery-full/MyDCKate-14.jpg" alt="Фото 2">
+        <img src="../Pictures/nashe_prostranstvo-gallery-full/MyDCKate-19.jpg" alt="Фото 3">
+        <img src="../Pictures/nashe_prostranstvo-gallery-full/MyDCKate-23.jpg" alt="Фото 4">
+        <img src="../Pictures/nashe_prostranstvo-gallery-full/MyDCKate-7.jpg" alt="Фото 5">
+        <img src="../Pictures/nashe_prostranstvo-gallery-full/MyDCKids-10.jpg" alt="Фото 6">
+        <img src="../Pictures/nashe_prostranstvo-gallery-full/MyDCKids-102.jpg" alt="Фото 7">
+        <img src="../Pictures/nashe_prostranstvo-gallery-full/MyDCKids-45.jpg" alt="Фото 8">
+        <img src="../Pictures/nashe_prostranstvo-gallery-full/MyDCKids-6.jpg" alt="Фото 9">
+        <img src="../Pictures/nashe_prostranstvo-gallery-full/MyDCMasha-12.jpg" alt="Фото 10">
+        <img src="../Pictures/nashe_prostranstvo-gallery-full/MyDCMasha-6.jpg" alt="Фото 11">
+        <img src="../Pictures/nashe_prostranstvo-gallery-full/MyDCMasha-9.jpg" alt="Фото 12">
+        <img src="../Pictures/nashe_prostranstvo-gallery-full/MyDCPolina-12.jpg" alt="Фото 13">
+        <img src="../Pictures/nashe_prostranstvo-gallery-full/MyDCPolina-25.jpg" alt="Фото 14">
+        <img src="../Pictures/nashe_prostranstvo-gallery-full/MyDCPolina-5.jpg" alt="Фото 15">
+        <img src="../Pictures/nashe_prostranstvo-gallery-full/MyDCSonya-7.jpg" alt="Фото 16">
+        <img src="../Pictures/nashe_prostranstvo-gallery-full/MyDCStepan-1.jpg" alt="Фото 17">
+        <img src="../Pictures/nashe_prostranstvo-gallery-full/MyDCTeam-10.jpg" alt="Фото 18">
+        <img src="../Pictures/nashe_prostranstvo-gallery-full/MyDCTeam-16.jpg" alt="Фото 19">
+        <img src="../Pictures/nashe_prostranstvo-gallery-full/MyDCTeam-20.jpg" alt="Фото 20">
+        <img src="../Pictures/nashe_prostranstvo-gallery-full/MyDCTeam-21.jpg" alt="Фото 21">
+        <img src="../Pictures/nashe_prostranstvo-gallery-full/MyDCTeam-29.jpg" alt="Фото 22">
+        <img src="../Pictures/nashe_prostranstvo-gallery-full/MyDCTeam-6.jpg" alt="Фото 23">
+        <img src="../Pictures/nashe_prostranstvo-gallery-full/MyDCVictoriya-16.jpg" alt="Фото 24">
+        <img src="../Pictures/nashe_prostranstvo-gallery-full/MyDCVictoriya-19.jpg" alt="Фото 25">
+        <img src="../Pictures/nashe_prostranstvo-gallery-full/MyDCVictoriya-22.jpg" alt="Фото 26">
+        <img src="../Pictures/nashe_prostranstvo-gallery-full/MyDCVictoriya-8.jpg" alt="Фото 27">
+        <img src="../Pictures/nashe_prostranstvo-gallery-full/MyDCYana-18.jpg" alt="Фото 28">
+        <img src="../Pictures/nashe_prostranstvo-gallery-full/MyDCYana-20.jpg" alt="Фото 29">
+        <img src="../Pictures/nashe_prostranstvo-gallery-full/MyDCYana-6.jpg" alt="Фото 30">
+        <img src="../Pictures/nashe_prostranstvo-gallery-full/MyDCYana-9.jpg" alt="Фото 31">
+        <img src="../Pictures/nashe_prostranstvo-gallery-full/MyDCZlata-11.jpg" alt="Фото 32">
+        <img src="../Pictures/nashe_prostranstvo-gallery-full/MyDCZlata-19.jpg" alt="Фото 33">
+        <img src="../Pictures/nashe_prostranstvo-gallery-full/MyDCZlata-26.jpg" alt="Фото 34">
+        <img src="../Pictures/nashe_prostranstvo-gallery-full/MyDCZlata-31.jpg" alt="Фото 35">
+        <img src="../Pictures/nashe_prostranstvo-gallery-full/MyDCZlata-33.jpg" alt="Фото 36">
+      </div>
+      <button id="prevButton">&#10094;</button>
+      <button id="nextButton">&#10095;</button>
+      <button id="closeButton">&#10006;</button>
+
+      <!-- <button style="background-color: white; color: black; opacity: 0.5; border: 2px solid black; border-radius: 10px; font-size: 50px;" id="closeButton">ЗАКРЫТЬ</button> -->
+    </div>
+    <script src="../js/np_scripts.js"></script>
+
+    <div style="width: fit-content; margin: auto;">
+      <a class="button4" style="height: 40px;margin-top: 10px; margin-right: 0;" onclick="show_form_zapis()">ЗАПИСЬ ОНЛАЙН</a>
+    </div>
+
     <div class="footer-container">
-      <p class="footertop1">ТАНЦЕВАЛЬНАЯ СТУДИЯ MY DANCE COLLECTION</p>
+      <p class="footertop1">СТУДИЯ MY DANCE COLLECTION</p>
       <p class="footertop2">УЧИМ ТАНЦЕВАТЬ ДЕТЕЙ И ВЗРОСЛЫХ</p>
       <div class="hr_div"></div>
       <div class="footer">
@@ -437,24 +424,23 @@
                   УЛИЦА МАТУСЕВИЧА 20</p>
           </div>
           <div class="footer_element" style="flex-direction: column;">
-              <p class="phonenumber">+375-29-333-33-33</p>
-              <p class="phonenumber">+375-29-222-22-22</p>
+              <a href="tel:+375 (29) 560-98-88"><p class="phonenumber">+375 (29) 560-98-88</p></a>
           </div>
           <div class="footer_element">
-              <a href="" target="_blank"><img class="hi-icon" src="../Pictures/logos/tiktok.png"></a>
+              <a href="https://www.tiktok.com/@my.dance.collecti?_t=8eLJuxrBEFK" target="_blank"><img class="hi-icon" src="../Pictures/logos/tiktok.png"></a>
               <a href="https://instagram.com/my_dance_collection?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><img class="hi-icon" src="../Pictures/logos/insta.png"></a>
               <a href="https://t.me/my_dance_collection" target="_blank"><img class="hi-icon" src="../Pictures/logos/telegram.png"></a>
               <a href="mailto:mydcstudio@gmail.com" target="_blank"><img class="hi-icon" src="../Pictures/logos/email.png"></a>
               <a href="" target="_blank"><img class="hi-icon" src="../Pictures/logos/youtube.png"></a>
           </div>
       </div>
-      <div class="hr_div"></div>
+      <div class="sec-hr_div"></div>
       <div class="footer-bottom">
           <p class="footer-company-about">
-              <span>About the company</span>
-              Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor
-              lacus
-              vehicula sit amet.
+              Танцевальная студия MY DANCE COLLECTION - танцы для взрослых и детей в Минске
+              Общество с ограниченной ответственностью «Коллекция танцы» УНП 193696336 Республика Беларусь,
+              Юридический адрес: 220040, г. Минск, ул. Восточная 39, пом.2Н/22,
+               Свидетельство о государственной регистрации № 0218220 от 05.07.2023 выданное Минским горисполкомом
           </p><br>
           <p class="footer-company-name">My Dance Collection © 2023</p>
       </div>

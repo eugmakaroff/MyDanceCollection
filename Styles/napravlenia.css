@@ -35,11 +35,6 @@
 
 
 body {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	margin: auto;
-	/* margin-top: 50px; */
 	background-image: url(../Pictures/images/fon_copy.png);
 	background-size: 150%;
 	background-position: top;
@@ -148,7 +143,8 @@ button {
 	margin: auto;
 	width: fit-content;
 	background: transparent;
-	color: silver;
+	color: white;
+	font-weight: bold;
 	font-size: 20px;
 	padding-top: 10px;
 }
@@ -194,8 +190,10 @@ button {
 
 	.text-element .head-text {
 		font-size: 25px;
-		margin-top: 20px;
-		margin-bottom: 20px;
+		margin: auto;
+		margin-top: 10px;
+		margin-bottom: 15px;
+		width: fit-content;
 	}
 
 	.decsription {
@@ -395,5 +393,22 @@ button {
 	.pic-element:nth-child(even) img {
 		-webkit-mask-image: -webkit-gradient(linear, right top, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
 		-moz-mask-image: -webkit-gradient(linear, right top, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+	}
+}
+
+
+#mobile-version-napravlenia{
+	display: none;
+}
+#pc-version-napravlenia{
+	display: block;
+}
+
+@media only screen and (max-width: 1255px) {
+	#mobile-version-napravlenia{
+		display: block;
+	}
+	#pc-version-napravlenia{
+		display: none;
 	}
 }

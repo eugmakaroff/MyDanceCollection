@@ -42,11 +42,14 @@ header a:focus span {
   padding: 20px;
 }
 #hideafterscrolling7, #hideafterscrolling8{
-  margin-top: 45px;
   float: right;
 }
 #hideafterscrolling7{
+  margin-top: 55px;
   margin-right: 20px;
+}
+#hideafterscrolling8{
+  margin-top: 63px;
 }
 .button4 p{
   height: 100%;

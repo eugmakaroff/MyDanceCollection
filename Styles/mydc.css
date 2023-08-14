@@ -353,7 +353,7 @@
     background: rgba(48, 255, 0, 1);
     background: linear-gradient(360deg, rgba(48, 255, 0, 1) 0%, rgba(255,255,255,0) 100%);
     font-size: 1.4em;
-    transform: rotate(0deg) skew(-5deg);
+    transform: rotate(0deg) skew(0deg);
 }
 .container_bottom .card:nth-child(1):hover .card__head {
     top: calc(100% - 2em);
@@ -592,11 +592,11 @@
 }
 
 .container_top .card:hover .card__head{
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 .container_middle .card:hover .card__head{
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 .container_bottom .card:hover .card__head{
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }

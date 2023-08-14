@@ -1,4 +1,4 @@
-.flex-container {
+.flex-container, .flex-container-2, .flex-container-3 {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -8,9 +8,16 @@
   margin-top: 50px;
   line-height: 2;
 }
+
 @media only screen and (max-width: 600px) {
-  .flex-container {
+  .flex-container, .flex-container-2, .flex-container-3 {
     flex-direction: column;
+  }
+  .flex-container-2 {
+    margin-top: 0px;
+  }
+  .flex-container-3 {
+    margin-top: 0px;
   }
 }
 .whole_abons{
@@ -31,7 +38,8 @@
   width: 90%;
   border-radius: 10px;
   margin: auto;
-  transition: 0.5s ease-in-out;
+  transition: 0.2s ease-in-out;
+  margin-bottom: 10px;
 }
 
 .abonement_back{
@@ -40,15 +48,16 @@
   left: 5%;
   width: 90%;
   border-radius: 10px;
-  transition: 0.5s ease-in-out;
+  margin-bottom: 10px;
+  transition: 0.2s ease-in-out;
 }
 .aboncontainer:hover .abonement_back{
   opacity: 1;
-  transition: 0.5s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 .aboncontainer:hover .abonement{
   opacity: 0;
-  transition: 0.5s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .title{
@@ -90,15 +99,14 @@
 width: 70%;
 text-align: center;
 margin: auto;
-padding-top: 100px;
-padding-bottom: 100px;
+padding-bottom: 30px;
 }
 .contbottomtexttitle{
   font-size: 30px;
 }
 
 .contbottomtext{
-  font-size: 15px;
+  font-size: 13px;
 }
 @media only screen and (max-width: 1224px) {
   .title{
@@ -147,7 +155,7 @@ padding-bottom: 100px;
   }
   
   .contbottomtext{
-    font-size: 10px;
+    font-size: 8px;
   }
 }
 @media only screen and (max-width: 853px) {
@@ -178,10 +186,10 @@ padding-bottom: 100px;
   left: 0;
 }
 .text1{
-  font-size: 20px;
+  font-size: 12px;
 }
 .text2{
-  font-size: 20px;
+  font-size: 12px;
 }
 .bottom{
   font-size: 25px;
@@ -198,7 +206,7 @@ padding-bottom: 30px;
 }
 
 .contbottomtext{
-  font-size: 10px;
+  font-size: 7px;
 }
 }
 @media only screen and (max-width: 410px) {
@@ -216,11 +224,11 @@ padding-bottom: 30px;
     left: 0;
   }
   .text1{
-    font-size: 17px;
+    font-size: 10px;
     width: 90%;
   }
   .text2{
-    font-size: 17px;
+    font-size: 10px;
     width: 90%;
   }
 .bottom{
@@ -240,7 +248,7 @@ padding-bottom: 20px;
 }
 
 .contbottomtext{
-  font-size: 14px;
+  font-size: 10px;
 }
 .button4{
   height: 19px !important;
