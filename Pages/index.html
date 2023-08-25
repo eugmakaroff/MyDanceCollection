@@ -8,16 +8,62 @@
     <script type="text/javascript" src="../js/mainscripts.js"></script>
     <script src="../js/modernizr.js"></script> <!-- Modernizr -->
     <script src="../js/jquery-2.1.1.js"></script>
-    <script src="../js/main.js"></script> <!-- Resource jQuery -->
-
-    <!-- <script src="../js/test_MYDC_scripts.js"></script> -->
+    <script src="../js/main.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="../Styles/footer.css">
     <link rel="stylesheet" href="../Styles/mainpagecontent.css">
     <link rel="stylesheet" href="../Styles/reset.css"> <!-- CSS reset -->
-    <link rel="stylesheet" href="../Styles/navmenu.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="../Styles/navmenu.css">
     <link rel="stylesheet" href="../Styles/mydc.css">
+
+
+
+    <link rel="stylesheet" href="splide_first_container.css">
+    <link rel="stylesheet" href="splide_second_container.css">
+    <link rel="stylesheet" href="splide_third_container.css">
+
+
+    <script src="splide_top.min.js"></script>
+    <script src="splide_middle.min.js"></script>
+    <script src="splide_bottom.min.js"></script>
+
+
+    <script src="splide_top.js"></script>
+    <script src="splide_middle.js"></script>
+    <script src="splide_bottom.js"></script>
+
+        <script>
+        new Splide_top( '.splide_top' ).mount();
+        </script>
+        <script>
+        document.addEventListener( 'DOMContentLoaded', function() {
+            var splide_top = new Splide_top( '.splide_top' );
+            splide_top.mount();
+        } );
+        </script>
+
+
+<script>
+    new Splide_middle( '.splide_middle' ).mount();
+    </script>
+                <script>
+                    document.addEventListener( 'DOMContentLoaded', function() {
+                        var splide_middle = new Splide_middle( '.splide_middle' );
+                        splide_middle.mount();
+                    } );
+                    </script>
+
+<script>
+    new Splide_bottom( '.splide_bottom' ).mount();
+    </script>
+                                    <script>
+                                        document.addEventListener( 'DOMContentLoaded', function() {
+                                            var splide_bottom = new Splide_bottom( '.splide_bottom' );
+                                            splide_bottom.mount();
+                                        } );
+                                        </script>
+
 
     <title>MYDC</title>
 </head>
@@ -40,9 +86,9 @@
 };
 </script>
 <body>
-    <div id="preloader">
+    <!-- <div id="preloader">
         <div id="status">&nbsp;</div>
-    </div>
+    </div> -->
     <header>
 		<nav class="cd-main-nav-wrapper">
 			<ul class="cd-main-nav">
@@ -112,59 +158,229 @@
             <a href="../Pages/pedagogi.html">
                 <p class="link_text_top">ПЕДАГОГИ</p>
             </a>
+            <style>
+                .splide_top__slide .card{
+                    flex: 1;
+                    display: flex;
+                    flex-direction: row;
+                    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+                    height: 75vmin;
+                    position: relative;
+                }
+                .splide_top__slide .card:hover {
+                    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+                    flex-grow: 2;
+                }
+                .splide_top__slide .card:hover img {
+                    filter: grayscale(0);
+                }
+                .splide_top__slide .card img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: all 1s ease-in-out;
+                    filter: grayscale(100%);
+                }
+                .splide_top__slide .card .card__head {
+                    padding: 0.5em;
+                    transform-origin: 0% 0%;
+                    transform: rotate(0deg) skewX(0deg);
+                    transition: all 0.5s ease-in-out;
+                    min-width: 100%;
+                    text-align: center;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    margin-top: 0px;
+                }
+                .splide_top__slide .card:hover .card__head {
+                    top: calc(100% - 2em) !important;
+                    transform: rotate(-4deg) skewX(-2deg);
+                }
+                @media only screen and (max-width: 600px) {
+                    .container_top .card:not(:nth-child(5)) {
+                        margin-right: 0em;
+                    }
+                }
+            </style>
             <div class="container_top">
-                <div class="card">
-                    <img src="../Pictures/photos/MyDCStepan-7.jpg">
-                    <div class="card__head">СТЕПАН КСЕНЗОВ</div>
-                </div>
-                <div class="card">
-                    <img src="../Pictures/photos/anastasia.jpg">
-                    <div class="card__head" id="top_right">АНАСТАСИЯ АКУДОВИЧ</div>
-                </div>
+                <section class="splide_top" aria-label="splide_top Basic HTML Example">
+                    <div class="splide_top__track">
+                          <ul class="splide_top__list">
+                              <li class="splide_top__slide">
+                                <div class="card">
+                                    <img src="../Pictures/photos/MyDCStepan-7.jpg">
+                                    <div class="card__head">СТЕПАН КСЕНЗОВ</div>
+                                </div>
+                              </li>
+                              <li class="splide_top__slide">
+                                <div class="card">
+                                    <img src="../Pictures/photos/anastasia.jpg">
+                                    <div class="card__head">АНАСТАСИЯ АКУДОВИЧ</div>
+                                </div>
+                              </li>
+                          </ul>
+                    </div>
+                </section>
             </div>
 
             <a href="../Pages/napravlenia.html">
                 <p class="link_text_middle">НАПРАВЛЕНИЯ</p>
             </a>
+            <style>
+                .splide_middle__slide .card{
+                    flex: 1;
+                    display: flex;
+                    flex-direction: row;
+                    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+                    height: 75vmin;
+                    position: relative;
+                }
+                .splide_middle__slide .card:hover {
+                    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+                    flex-grow: 2;
+                }
+                .splide_middle__slide .card:hover img {
+                    filter: grayscale(0);
+                }
+                .splide_middle__slide .card img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: all 1s ease-in-out;
+                    filter: grayscale(100%);
+                }
+                .splide_middle__slide .card .card__head {
+                    padding: 0.5em;
+                    transform-origin: 0% 0%;
+                    transform: rotate(-4deg) skewX(-2deg);
+                    transition: all 0.5s ease-in-out;
+                    min-width: 100%;
+                    text-align: center;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    margin-top: 24px;
+                }
+                .splide_middle__slide .card:hover .card__head {
+                    top: calc(100% - 5em) !important;
+                    transform: rotate(4deg) skewX(2deg);
+                }
+            </style>
             <div class="container_middle">
-                <div class="card">
-                    <img src="../Pictures/photos/MyDCKidsS-3.jpg">
-                    <div class="card__head" id="pic40">KIDS DANCE</div>
+            <section class="splide_middle" aria-label="splide_middle Basic HTML Example">
+                <div class="splide_middle__track">
+                      <ul class="splide_middle__list">
+                          <li class="splide_middle__slide">
+                            <div class="card">
+                                <img src="../Pictures/photos/MyDCKidsS-3.jpg">
+                                <div class="card__head" id="pic40">KIDS DANCE</div>
+                            </div>
+                          </li>
+                          <li class="splide_middle__slide">
+                            <div class="card">
+                                <img src="../Pictures/photos/dance_show-4.jpeg">
+                                <div class="card__head" id="pic110">DANCE SHOW</div>
+                            </div>
+                          </li>
+                          <li class="splide_middle__slide">
+                            <div class="card">
+                                <img src="../Pictures/photos/lady-dance.JPG">
+                                <div class="card__head" id="pic62">LADY DANCE</div>
+                            </div>
+                          </li>
+
+                          <li class="splide_middle__slide">
+                            <div class="card">
+                                <img src="../Pictures/photos/MyDCAlexandra-10.jpg">
+                                <div class="card__head" id="pic85">HIP-HOP</div>
+                            </div>
+                          </li>
+                          <li class="splide_middle__slide">
+                            <div class="card">
+                                <img src="../Pictures/photos/Anastasia-3.jpg">
+                                <div class="card__head" id="pic20">STRETCHING</div>
+                            </div>
+                          </li>
+                      </ul>
                 </div>
-                <div class="card">
-                    <img src="../Pictures/photos/dance_show-4.jpeg">
-                    <div class="card__head" id="pic110">DANCE SHOW</div>
-                </div>
-                <div class="card">
-                    <img src="../Pictures/photos/lady-dance.JPG">
-                    <div class="card__head" id="pic62">LADY DANCE</div>
-                </div>
-                <div class="card">
-                    <img src="../Pictures/photos/MyDCAlexandra-10.jpg">
-                    <div class="card__head" id="pic85">HIP-HOP</div>
-                </div>
-                <div class="card">
-                    <img src="../Pictures/photos/Anastasia-3.jpg">
-                    <div class="card__head" id="pic20">STRETCHING</div>
-                </div>
+            </section>
             </div>
+
 
             <a href="../Pages/nasheprostranstvo.html">
                 <p class="link_text_bottom">НАШЕ ПРОСТРАНСТВО</p>
             </a>
+            <style>
+                .splide_middle__slide .card{
+                    flex: 1;
+                    display: flex;
+                    flex-direction: row;
+                    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+                    height: 75vmin;
+                    position: relative;
+                }
+                .splide_bottom_middle__slide .card:hover {
+                    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+                    flex-grow: 2;
+                }
+                .splide_bottom_middle__slide .card:hover img {
+                    filter: grayscale(0);
+                }
+                .splide_bottom_middle__slide .card img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: all 1s ease-in-out;
+                    filter: grayscale(100%);
+                }
+                .splide_bottom_middle__slide .card .card__head {
+                    padding: 0.5em;
+                    transform-origin: 0% 0%;
+                    transform: rotate(-4deg) skewX(-2deg);
+                    transition: all 0.5s ease-in-out;
+                    min-width: 100%;
+                    text-align: center;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    margin-top: 24px;
+                }
+                .splide_bottom_middle__slide .card:hover .card__head {
+                    top: calc(100% - 5em) !important;
+                    transform: rotate(4deg) skewX(2deg);
+                }
+                @media only screen and (max-width: 600px) {
+                    .container_bottom .card:not(:nth-child(3)) {
+                        margin-right: 0em;
+                    }
+                }
+            </style>
             <div class="container_bottom">
-                <div class="card">
-                    <!-- <img src="../Pictures/zal/zal1.jpg"> -->
-                    <div class="card__head">НАШ ЗАЛ</div>
-                </div>
-                <div class="card">
-                    <!-- <img src="../Pictures/zal/zal4.jpg"> -->
-                    <div class="card__head" id="center">УДОБСТВА</div>
-                </div>
-                <div class="card">
-                    <!-- <img src="../Pictures/zal/parking.jpg"> -->
-                    <div class="card__head" id="bot_right">ПАРКОВКА</div>
-                </div>
+                <section class="splide_bottom" aria-label="splide_bottom Basic HTML Example">
+                    <div class="splide_bottom__track">
+                          <ul class="splide_bottom__list">
+                              <li class="splide_bottom__slide">
+                                <div class="card">
+                                    <img src="../Pictures/zal/zal1.jpg">
+                                    <div class="card__head">НАШ ЗАЛ</div>
+                                </div>
+                              </li>
+                              <li class="splide_bottom__slide">
+                                <div class="card">
+                                    <img src="../Pictures/zal/zal4.jpg">
+                                    <div class="card__head">УДОБСТВА</div>
+                                </div>
+                              </li>
+                              <li class="splide_bottom__slide">
+                                <div class="card">
+                                    <img src="../Pictures/zal/parking.jpg">
+                                    <div class="card__head">ПАРКОВКА</div>
+                                </div>
+                              </li>
+                          </ul>
+                    </div>
+                </section>
             </div>
         </div>
 
@@ -235,15 +451,15 @@
                     <div id="container_bottom_object"
                         class="container_bottom">
                         <div class="card">
-                            <!-- <img src="../Pictures/zal/zal1.jpg"> -->
+                            <img src="../Pictures/zal/zal1.jpg">
                             <div class="card__head">НАШ ЗАЛ</div>
                         </div>
                         <div class="card">
-                            <!-- <img src="../Pictures/zal/zal4.jpg"> -->
+                            <img src="../Pictures/zal/zal4.jpg">
                             <div class="card__head" id="center">УДОБСТВА</div>
                         </div>
                         <div class="card">
-                            <!-- <img src="../Pictures/zal/parking.jpg"> -->
+                            <img src="../Pictures/zal/parking.jpg">
                             <div class="card__head" id="bot_right">ПАРКОВКА</div>
                         </div>
                     </div>
