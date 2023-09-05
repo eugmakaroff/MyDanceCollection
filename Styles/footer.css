@@ -655,10 +655,10 @@ a{
 }
 @media only screen and (max-width: 500px) {
 	.footertop1{
-		font-size: 15px;
+		font-size: 17px;
 	}
 	.footertop2{
-		font-size: 15px;
+		font-size: 17px;
 	}
 
 	/* Footers */
@@ -688,10 +688,10 @@ a{
 }
 @media only screen and (max-width: 430px) {
 	.footertop1{
-		font-size: 13px;
+		font-size: 15px;
 	}
 	.footertop2{
-		font-size: 13px;
+		font-size: 15px;
 	}
 
 	/* Footers */
@@ -803,7 +803,7 @@ a{
 		padding: 5px 0 5px 0;
 	}
 	.footer-company-about {
-		font-size: 7px;
+		font-size: 10px;
 		width: 95%;
 		margin: auto;
 	}
