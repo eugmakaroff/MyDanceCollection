@@ -792,13 +792,13 @@ header::before {
   display: none;
   border: 2px solid white;
   border-radius: 20px;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   align-items: center;
   font-size: 20px;
   position: fixed;
   width: 90%;
-  height: 80%;
-  top: 10%;
+  height: 90%;
+  top: 5%;
   z-index: 100;
   left: 5%;
   background-color: gray;
@@ -811,13 +811,17 @@ header::before {
   right: 0;
   padding: 20px;
 }
-.publicdoc_modal_window .download{
+.publicdoc_modal_window .download {
   position: absolute;
+  left: 50%;
   bottom: 20px;
+  background-color: black;
+  color: white;
+  padding: 10px;
 }
-.publicdoc_modal_window .publicdoc_modal_window_text{
-  width: 90%;
-  height: 80%;
+.publicdoc_modal_window .publicdoc_modal_window_text {
+  width: 100%;
+  height: 100%;
 }
 
 /*zapis online modal window set up*/
